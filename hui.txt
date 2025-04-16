@@ -1,0 +1,39 @@
+- tải phần mềm
+- sử dụng phần mềm
+- hốt hụi =
+- tạo dây hụi =
+- đóng hụi =
+- tất toán hụi chết =
+- in bill
+- xóa hốt hụi = 
+- gom hụi viên bị trùng = 
+- thêm số phần hụi = 
+- giảm số phần hụi =
+- thay đổi hụi viên = 
+- hốt hụi nhiều người cùng kỳ = 
+- xóa tất toán hụi chết
+- tất toán hụi sống =
+- tạo dây hụi góp =
+- mở hụi mãn trở lại hoạt động =
+- mãn dây hụi = 
+- đóng lại hụi cũ để tính cân bằng chính xác =
+- xóa kỳ hốt =
+- xóa kỳ đóng bị lỗi =
+- xác nhận đóng tất cả hụi
+- cân bằng âm dương =
+
+- thay đổi hội viên kỳ hốt (thay đổi hụi viên)
+- thay đổi thông tin kỳ hốt hụi (xóa kỳ hốt)
+- phục hồi tất toán hụi chết (xóa tất toán hụi chết)
+- đúp dây hụi
+- đúp hụi 
+
+doi_tuong -> hoat_dong_chinh -> hoat_dong_phu -> -> doi_tuong_phu -> tro_tu -> tro_tu2 -> trang_thai
+
+hụi -> thay đổi -> kỳ -> hốt -> thông tin
+hội -> thay đổi -> kỳ -> hốt -> viên
+
+
+- KHÔNG được dùng hình ảnh hoặc video từ các phần không liên quan hoặc từ chủ đề khác.
+- Nếu văn bản chứa thẻ <img> hoặc <iframe>, bạn PHẢI đưa chúng vào cuối câu trả lời.
+- KHÔNG được nói "không có video" nếu trong context có thẻ <iframe>.

@@ -1,0 +1,54 @@
+- phần mềm
+	- tải
+	- sử dụng
+- hụi
+	- hốt
+		- nhiều người
+	- đóng
+		- cũ
+	- tất toán
+		- sống
+		- chết
+	- tạo
+		- dây
+			- góp
+	- gom
+		- viên
+			- bị trùng
+	- thêm
+		- số phần
+	- giảm
+		- số phần
+	- thay đổi
+		- kỳ
+			- hốt
+				- thông tin 
+		- viên
+	- xóa
+		- hốt
+		- tất toán
+			- chết
+	- mở
+		- dây
+			- mãn
+	- mãn
+		- dây
+	- xác nhận
+		- đóng
+			- tất cả
+- hội
+	- thay đổi
+		- kỳ
+			- hốt
+				- viên
+- bill
+	- in
+		- tất cả
+- kỳ
+	- xóa
+		- hốt
+			- bị lỗi
+		- đóng
+			- bị lỗi
+- âm dương
+	- cân bằng

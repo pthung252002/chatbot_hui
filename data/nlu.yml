@@ -1,0 +1,1512 @@
+version: "3.1"
+
+nlu:
+  - intent: greeting
+    examples: |
+      - anh ơi
+      - bạn ơi
+      - em ơi
+      - chị oi
+      - bạn oi
+      - ê
+      - xin chào
+      - cho tôi hỏi
+      - cho em hỏi
+      - cho mình hỏi
+      - cho bên anh hỏi
+      - cho bên chị hỏi
+      - này
+      - chào
+      - xin chào
+      - hi
+      - hello
+
+  - intent: bye
+    examples: |
+      - tạm biệt
+      - hẹn gặp lại
+      - bye
+
+  - intent: ask_actions
+    examples: |
+      - [tải](hoat_dong_chinh) [phần mềm](doi_tuong)
+      - [tải](hoat_dong_chinh) [phần mềm](doi_tuong) thì sao
+      - cách [tải](hoat_dong_chinh) [phần mềm](doi_tuong)
+      - cách để [tải](hoat_dong_chinh) [phần mềm](doi_tuong)
+      - em hãy chị chị cách để [tải](hoat_dong_chinh) [phần mềm](doi_tuong)
+      - làm sao để [tải](hoat_dong_chinh) [phần mềm](doi_tuong) vậy em
+      - chị không biết cách để [tải](hoat_dong_chinh) [phần mềm](doi_tuong) em hướng dẫn cho chị với
+      - bây giờ chị muốn [tải](hoat_dong_chinh) [phần mềm](doi_tuong) em chỉ chị với
+      - [tải](hoat_dong_chinh) [phần mềm](doi_tuong) như thế nào vậy
+      - [tải](hoat_dong_chinh) [phần mềm](doi_tuong) như thế nào vậy em, chỉ chị đi
+      - [tải](hoat_dong_chinh) [phần mềm](doi_tuong) trên iphone sao vậy em, chỉ chị với
+      - [tải](hoat_dong_chinh) [phần mềm](doi_tuong) ở chỗ nào vậy anh ơi
+      - [tải](hoat_dong_chinh) [phần mềm](doi_tuong) chỗ nào vậy, chỉ em với anh
+      - [tải](hoat_dong_chinh) [phần mềm](doi_tuong) về máy sao vậy hướng dẫn em với anh
+      - [tải](hoat_dong_chinh) cái [phần mềm](doi_tuong) về máy thì lam sao ạ
+      - anh ơi chỉ em [tải](hoat_dong_chinh) cái [phần mềm](doi_tuong) đi anh ơi
+      - anh ơi, anh hưỡng dẫn em cách [tải](hoat_dong_chinh) cái [phần mềm](doi_tuong) với ạ, em chưa rõ vụ này
+      - hướng dẫn chi tiết cách [tải](hoat_dong_chinh) [phần mềm](doi_tuong)
+      - hướng dẫn chi tiết cách [tải](hoat_dong_chinh) [phần mềm](doi_tuong) trên điện thoại android
+      - chi tiết cách [tải](hoat_dong_chinh) [phần mềm](doi_tuong) trên iphone
+      - làm sao để [tải](hoat_dong_chinh) [phần mềm](doi_tuong) về máy
+      - trên đt iphone làm sao để [tải](hoat_dong_chinh) [phần mềm](doi_tuong)
+      - vui lòng hướng dẫn chi tiết cách để [tải](hoat_dong_chinh) [phần mềm](doi_tuong)
+      - trên đt iphone làm sao để [tải](hoat_dong_chinh) [phần mềm](doi_tuong)
+      - [tải](hoat_dong_chinh) [phần mềm](doi_tuong) về laptop có được không ạ
+      - trên iphone [tải](hoat_dong_chinh) [phần mềm](doi_tuong) về được không ạ
+      - anh ơi, máy iphone của em có thể [tải](hoat_dong_chinh) [phần mềm](doi_tuong) không ạ ?
+      - [tải](hoat_dong_chinh) [phần mềm](doi_tuong) về cái đt của em sao ạ, chỉ em với
+      - cách để [tải](hoat_dong_chinh) [phần mềm](doi_tuong) về điện thoại hệ điều hành iphone
+      - trên đt iphone có [tải](hoat_dong_chinh) [phần mềm](doi_tuong) được không hả anh
+      - anh ơi, có thể [tải](hoat_dong_chinh) [phần mềm](doi_tuong) về điện thoại được không ak
+      - anh có thể hướng dẫn chi tiết cách [tải](hoat_dong_chinh) [phần mềm](doi_tuong) được không
+      - làm sao để [tải](hoat_dong_chinh) [phần mềm](doi_tuong) vậy hả anh
+      - làm sao để [tải](hoat_dong_chinh) cái [phần mềm](doi_tuong) này về đt vậy ạ
+      - vui lòng hướng dẫn cách để [tải](hoat_dong_chinh) [phần mềm](doi_tuong)
+      - anh ơi [tải](hoat_dong_chinh) [phần mềm](doi_tuong) về máy thì vào đâu anh
+      - [tải](hoat_dong_chinh) [phần mềm](doi_tuong) về điện thoại có được không anh, được thì chỉ em với
+      - [tải](hoat_dong_chinh) [phần mềm](doi_tuong) của anh ở đâu vậy anh, chỉ em tải được không
+      - cách để [tải](hoat_dong_chinh) [phần mềm](doi_tuong) trên laptop
+      - em muốn biết cách để [tải](hoat_dong_chinh) [phần mềm](doi_tuong) trên máy iphone
+      - chi tiết cách để [tải](hoat_dong_chinh) [phần mềm](doi_tuong) về máy tính cá nhân
+      - [sử dụng](hoat_dong_chinh) [phần mềm](doi_tuong)
+      - [sử dụng](hoat_dong_chinh) [phần mềm](doi_tuong) thì sao
+      - cách [sử dụng](hoat_dong_chinh) [phần mềm](doi_tuong)
+      - cách để [sử dụng](hoat_dong_chinh) [phần mềm](doi_tuong)
+      - em hãy chị chị cách để [sử dụng](hoat_dong_chinh) [phần mềm](doi_tuong)
+      - làm sao để [sử dụng](hoat_dong_chinh) [phần mềm](doi_tuong) vậy em
+      - chị không biết cách để [sử dụng](hoat_dong_chinh) [phần mềm](doi_tuong) em hướng dẫn cho chị với
+      - bây giờ chị muốn [sử dụng](hoat_dong_chinh) [phần mềm](doi_tuong) em chỉ chị với
+      - [sử dụng](hoat_dong_chinh) [phần mềm](doi_tuong) như thế nào vậy
+      - [sử dụng](hoat_dong_chinh) [phần mềm](doi_tuong) như thế nào vậy em, chỉ chị đi
+      - [sử dụng](hoat_dong_chinh) [phần mềm](doi_tuong) trên iphone sao vậy em, chỉ chị với
+      - [sử dụng](hoat_dong_chinh) [phần mềm](doi_tuong) ở chỗ nào vậy anh ơi
+      - [sử dụng](hoat_dong_chinh) [phần mềm](doi_tuong) chỗ nào vậy, chỉ em với anh
+      - [sử dụng](hoat_dong_chinh) [phần mềm](doi_tuong) về máy sao vậy hướng dẫn em với anh
+      - hướng dẫn chi tiết cách [sử dụng](hoat_dong_chinh) [phần mềm](doi_tuong)
+      - hướng dẫn chi tiết cách [sử dụng](hoat_dong_chinh) [phần mềm](doi_tuong) trên điện thoại android
+      - chi tiết cách [sử dụng](hoat_dong_chinh) [phần mềm](doi_tuong) trên iphone
+      - làm sao để [sử dụng](hoat_dong_chinh) [phần mềm](doi_tuong) về máy
+      - trên đt iphone làm sao để [sử dụng](hoat_dong_chinh) [phần mềm](doi_tuong)
+      - vui lòng hướng dẫn chi tiết cách để [sử dụng](hoat_dong_chinh) [phần mềm](doi_tuong)
+      - trên đt iphone làm sao để [sử dụng](hoat_dong_chinh) [phần mềm](doi_tuong)
+      - [sử dụng](hoat_dong_chinh) [phần mềm](doi_tuong) về laptop có được không ạ
+      - trên iphone [sử dụng](hoat_dong_chinh) [phần mềm](doi_tuong) về được không ạ
+      - anh ơi, máy iphone của em có thể [sử dụng](hoat_dong_chinh) [phần mềm](doi_tuong) không ạ ?
+      - [sử dụng](hoat_dong_chinh) [phần mềm](doi_tuong) về cái đt của em sao ạ, chỉ em với
+      - cách để [sử dụng](hoat_dong_chinh) [phần mềm](doi_tuong) về điện thoại hệ điều hành iphone
+      - trên đt iphone có [sử dụng](hoat_dong_chinh) [phần mềm](doi_tuong) được không hả anh
+      - anh ơi, có thể [sử dụng](hoat_dong_chinh) [phần mềm](doi_tuong) về điện thoại được không ak
+      - anh có thể hướng dẫn chi tiết cách [sử dụng](hoat_dong_chinh) [phần mềm](doi_tuong) được không
+      - làm sao để [sử dụng](hoat_dong_chinh) [phần mềm](doi_tuong) vậy hả anh
+      - vui lòng hướng dẫn cách để [sử dụng](hoat_dong_chinh) [phần mềm](doi_tuong)
+      - anh ơi [sử dụng](hoat_dong_chinh) [phần mềm](doi_tuong) về máy thì vào đâu anh
+      - [sử dụng](hoat_dong_chinh) [phần mềm](doi_tuong) về điện thoại có được không anh, được thì chỉ em với
+      - [sử dụng](hoat_dong_chinh) [phần mềm](doi_tuong) của anh ở đâu vậy anh, chỉ em tải được không
+      - cách để [sử dụng](hoat_dong_chinh) [phần mềm](doi_tuong) trên laptop
+      - em muốn biết cách để [sử dụng](hoat_dong_chinh) [phần mềm](doi_tuong) trên máy iphone
+      - chi tiết cách để [sử dụng](hoat_dong_chinh) [phần mềm](doi_tuong) về máy tính cá nhân
+      - [hốt](hoat_dong_phu) [hụi](doi_tuong)
+      - [hốt](hoat_dong_phu) [hụi](doi_tuong) thì sao
+      - cách [hốt](hoat_dong_phu) [hụi](doi_tuong)
+      - cách để [hốt](hoat_dong_phu) [hụi](doi_tuong)
+      - em hãy chị chị cách để [hốt](hoat_dong_phu) [hụi](doi_tuong)
+      - làm sao để [hốt](hoat_dong_phu) [hụi](doi_tuong) vậy em
+      - chị không biết cách để [hốt](hoat_dong_phu) [hụi](doi_tuong) em hướng dẫn cho chị với
+      - bây giờ chị muốn [hốt](hoat_dong_phu) [hụi](doi_tuong) em chỉ chị với
+      - [hốt](hoat_dong_phu) [hụi](doi_tuong) như thế nào vậy
+      - [hốt](hoat_dong_phu) [hụi](doi_tuong) như thế nào vậy em, chỉ chị đi
+      - [hốt](hoat_dong_phu) [hụi](doi_tuong) trên iphone sao vậy em, chỉ chị với
+      - [hốt](hoat_dong_phu) [hụi](doi_tuong) ở chỗ nào vậy anh ơi
+      - [hốt](hoat_dong_phu) [hụi](doi_tuong) chỗ nào vậy, chỉ em với anh
+      - [hốt](hoat_dong_phu) [hụi](doi_tuong) về máy sao vậy hướng dẫn em với anh
+      - hướng dẫn chi tiết cách [hốt](hoat_dong_phu) [hụi](doi_tuong)
+      - hướng dẫn chi tiết cách [hốt](hoat_dong_phu) [hụi](doi_tuong) trên điện thoại android
+      - chi tiết cách [hốt](hoat_dong_phu) [hụi](doi_tuong) trên iphone
+      - làm sao để [hốt](hoat_dong_phu) [hụi](doi_tuong) về máy
+      - trên đt iphone làm sao để [hốt](hoat_dong_phu) [hụi](doi_tuong)
+      - vui lòng hướng dẫn chi tiết cách để [hốt](hoat_dong_phu) [hụi](doi_tuong)
+      - trên đt iphone làm sao để [hốt](hoat_dong_phu) [hụi](doi_tuong)
+      - [hốt](hoat_dong_phu) [hụi](doi_tuong) về laptop có được không ạ
+      - trên iphone [hốt](hoat_dong_phu) [hụi](doi_tuong) về được không ạ
+      - anh ơi, máy iphone của em có thể [hốt](hoat_dong_phu) [hụi](doi_tuong) không ạ ?
+      - [hốt](hoat_dong_phu) [hụi](doi_tuong) về cái đt của em sao ạ, chỉ em với
+      - cách để [hốt](hoat_dong_phu) [hụi](doi_tuong) về điện thoại hệ điều hành iphone
+      - trên đt iphone có [hốt](hoat_dong_phu) [hụi](doi_tuong) được không hả anh
+      - anh ơi, có thể [hốt](hoat_dong_phu) [hụi](doi_tuong) về điện thoại được không ak
+      - anh có thể hướng dẫn chi tiết cách [hốt](hoat_dong_phu) [hụi](doi_tuong) được không
+      - làm sao để [hốt](hoat_dong_phu) [hụi](doi_tuong) vậy hả anh
+      - vui lòng hướng dẫn cách để [hốt](hoat_dong_phu) [hụi](doi_tuong)
+      - anh ơi [hốt](hoat_dong_phu) [hụi](doi_tuong) về máy thì vào đâu anh
+      - [hốt](hoat_dong_phu) [hụi](doi_tuong) về điện thoại có được không anh, được thì chỉ em với
+      - [hốt](hoat_dong_phu) [hụi](doi_tuong) của anh ở đâu vậy anh, chỉ em tải được không
+      - cách để [hốt](hoat_dong_phu) [hụi](doi_tuong) trên laptop
+      - em muốn biết cách để [hốt](hoat_dong_phu) [hụi](doi_tuong) trên máy iphone
+      - chi tiết cách để [hốt](hoat_dong_phu) [hụi](doi_tuong) về máy tính cá nhân
+      - [tạo](hoat_dong_chinh) [dây](tro_tu) [hụi](doi_tuong)
+      - [tạo](hoat_dong_chinh) [dây](tro_tu) [hụi](doi_tuong) thì sao
+      - cách [tạo](hoat_dong_chinh) [dây](tro_tu) [hụi](doi_tuong)
+      - cách để [tạo](hoat_dong_chinh) [dây](tro_tu) [hụi](doi_tuong)
+      - em hãy chị chị cách để [tạo](hoat_dong_chinh) [dây](tro_tu) [hụi](doi_tuong)
+      - làm sao để [tạo](hoat_dong_chinh) [dây](tro_tu) [hụi](doi_tuong) vậy em
+      - chị không biết cách để [tạo](hoat_dong_chinh) [dây](tro_tu) [hụi](doi_tuong) em hướng dẫn cho chị với
+      - bây giờ chị muốn [tạo](hoat_dong_chinh) [dây](tro_tu) [hụi](doi_tuong) em chỉ chị với
+      - [tạo](hoat_dong_chinh) [dây](tro_tu) [hụi](doi_tuong) như thế nào vậy
+      - [tạo](hoat_dong_chinh) [dây](tro_tu) [hụi](doi_tuong) như thế nào vậy em, chỉ chị đi
+      - [tạo](hoat_dong_chinh) [dây](tro_tu) [hụi](doi_tuong) trên iphone sao vậy em, chỉ chị với
+      - [tạo](hoat_dong_chinh) [dây](tro_tu) [hụi](doi_tuong) ở chỗ nào vậy anh ơi
+      - [tạo](hoat_dong_chinh) [dây](tro_tu) [hụi](doi_tuong) chỗ nào vậy, chỉ em với anh
+      - [tạo](hoat_dong_chinh) [dây](tro_tu) [hụi](doi_tuong) về máy sao vậy hướng dẫn em với anh
+      - hướng dẫn chi tiết cách [tạo](hoat_dong_chinh) [dây](tro_tu) [hụi](doi_tuong)
+      - hướng dẫn chi tiết cách [tạo](hoat_dong_chinh) [dây](tro_tu) [hụi](doi_tuong) trên điện thoại android
+      - chi tiết cách [tạo](hoat_dong_chinh) [dây](tro_tu) [hụi](doi_tuong) trên iphone
+      - làm sao để [tạo](hoat_dong_chinh) [dây](tro_tu) [hụi](doi_tuong) về máy
+      - trên đt iphone làm sao để [tạo](hoat_dong_chinh) [dây](tro_tu) [hụi](doi_tuong)
+      - vui lòng hướng dẫn chi tiết cách để [tạo](hoat_dong_chinh) [dây](tro_tu) [hụi](doi_tuong)
+      - trên đt iphone làm sao để [tạo](hoat_dong_chinh) [dây](tro_tu) [hụi](doi_tuong)
+      - [tạo](hoat_dong_chinh) [dây](tro_tu) [hụi](doi_tuong) về laptop có được không ạ
+      - trên iphone [tạo](hoat_dong_chinh) [dây](tro_tu) [hụi](doi_tuong) về được không ạ
+      - anh ơi, máy iphone của em có thể [tạo](hoat_dong_chinh) [dây](tro_tu) [hụi](doi_tuong) không ạ ?
+      - [tạo](hoat_dong_chinh) [dây](tro_tu) [hụi](doi_tuong) về cái đt của em sao ạ, chỉ em với
+      - cách để [tạo](hoat_dong_chinh) [dây](tro_tu) [hụi](doi_tuong) về điện thoại hệ điều hành iphone
+      - trên đt iphone có [tạo](hoat_dong_chinh) [dây](tro_tu) [hụi](doi_tuong) được không hả anh
+      - anh ơi, có thể [tạo](hoat_dong_chinh) [dây](tro_tu) [hụi](doi_tuong) về điện thoại được không ak
+      - anh có thể hướng dẫn chi tiết cách [tạo](hoat_dong_chinh) [dây](tro_tu) [hụi](doi_tuong) được không
+      - làm sao để [tạo](hoat_dong_chinh) [dây](tro_tu) [hụi](doi_tuong) vậy hả anh
+      - vui lòng hướng dẫn cách để [tạo](hoat_dong_chinh) [dây](tro_tu) [hụi](doi_tuong)
+      - anh ơi [tạo](hoat_dong_chinh) [dây](tro_tu) [hụi](doi_tuong) về máy thì vào đâu anh
+      - [tạo](hoat_dong_chinh) [dây](tro_tu) [hụi](doi_tuong) về điện thoại có được không anh, được thì chỉ em với
+      - [tạo](hoat_dong_chinh) [dây](tro_tu) [hụi](doi_tuong) của anh ở đâu vậy anh, chỉ em tải được không
+      - cách để [tạo](hoat_dong_chinh) [dây](tro_tu) [hụi](doi_tuong) trên laptop
+      - em muốn biết cách để [tạo](hoat_dong_chinh) [dây](tro_tu) [hụi](doi_tuong) trên máy iphone
+      - chi tiết cách để [tạo](hoat_dong_chinh) [dây](tro_tu) [hụi](doi_tuong) về máy tính cá nhân
+      - [đóng](hoat_dong_phu) [hụi](doi_tuong)
+      - [đóng](hoat_dong_phu) [hụi](doi_tuong) thì sao
+      - cách [đóng](hoat_dong_phu) [hụi](doi_tuong)
+      - cách để [đóng](hoat_dong_phu) [hụi](doi_tuong)
+      - em hãy chị chị cách để [đóng](hoat_dong_phu) [hụi](doi_tuong)
+      - làm sao để [đóng](hoat_dong_phu) [hụi](doi_tuong) vậy em
+      - chị không biết cách để [đóng](hoat_dong_phu) [hụi](doi_tuong) em hướng dẫn cho chị với
+      - bây giờ chị muốn [đóng](hoat_dong_phu) [hụi](doi_tuong) em chỉ chị với
+      - [đóng](hoat_dong_phu) [hụi](doi_tuong) như thế nào vậy
+      - [đóng](hoat_dong_phu) [hụi](doi_tuong) như thế nào vậy em, chỉ chị đi
+      - [đóng](hoat_dong_phu) [hụi](doi_tuong) trên iphone sao vậy em, chỉ chị với
+      - [đóng](hoat_dong_phu) [hụi](doi_tuong) ở chỗ nào vậy anh ơi
+      - [đóng](hoat_dong_phu) [hụi](doi_tuong) chỗ nào vậy, chỉ em với anh
+      - [đóng](hoat_dong_phu) [hụi](doi_tuong) về máy sao vậy hướng dẫn em với anh
+      - hướng dẫn chi tiết cách [đóng](hoat_dong_phu) [hụi](doi_tuong)
+      - hướng dẫn chi tiết cách [đóng](hoat_dong_phu) [hụi](doi_tuong) trên điện thoại android
+      - chi tiết cách [đóng](hoat_dong_phu) [hụi](doi_tuong) trên iphone
+      - làm sao để [đóng](hoat_dong_phu) [hụi](doi_tuong) về máy
+      - trên đt iphone làm sao để [đóng](hoat_dong_phu) [hụi](doi_tuong)
+      - vui lòng hướng dẫn chi tiết cách để [đóng](hoat_dong_phu) [hụi](doi_tuong)
+      - trên đt iphone làm sao để [đóng](hoat_dong_phu) [hụi](doi_tuong)
+      - [đóng](hoat_dong_phu) [hụi](doi_tuong) về laptop có được không ạ
+      - trên iphone [đóng](hoat_dong_phu) [hụi](doi_tuong) về được không ạ
+      - anh ơi, máy iphone của em có thể [đóng](hoat_dong_phu) [hụi](doi_tuong) không ạ ?
+      - [đóng](hoat_dong_phu) [hụi](doi_tuong) về cái đt của em sao ạ, chỉ em với
+      - cách để [đóng](hoat_dong_phu) [hụi](doi_tuong) về điện thoại hệ điều hành iphone
+      - trên đt iphone có [đóng](hoat_dong_phu) [hụi](doi_tuong) được không hả anh
+      - anh ơi, có thể [đóng](hoat_dong_phu) [hụi](doi_tuong) về điện thoại được không ak
+      - anh có thể hướng dẫn chi tiết cách [đóng](hoat_dong_phu) [hụi](doi_tuong) được không
+      - làm sao để [đóng](hoat_dong_phu) [hụi](doi_tuong) vậy hả anh
+      - vui lòng hướng dẫn cách để [đóng](hoat_dong_phu) [hụi](doi_tuong)
+      - anh ơi [đóng](hoat_dong_phu) [hụi](doi_tuong) về máy thì vào đâu anh
+      - [đóng](hoat_dong_phu) [hụi](doi_tuong) về điện thoại có được không anh, được thì chỉ em với
+      - [đóng](hoat_dong_phu) [hụi](doi_tuong) của anh ở đâu vậy anh, chỉ em tải được không
+      - cách để [đóng](hoat_dong_phu) [hụi](doi_tuong) trên laptop
+      - em muốn biết cách để [đóng](hoat_dong_phu) [hụi](doi_tuong) trên máy iphone
+      - chi tiết cách để [đóng](hoat_dong_phu) [hụi](doi_tuong) về máy tính cá nhân
+      - [tất toán](hoat_dong_phu) [hụi](doi_tuong) [chết](trang_thai)
+      - [tất toán](hoat_dong_phu) [hụi](doi_tuong) [chết](trang_thai) thì sao
+      - cách [tất toán](hoat_dong_phu) [hụi](doi_tuong) [chết](trang_thai)
+      - cách để [tất toán](hoat_dong_phu) [hụi](doi_tuong) [chết](trang_thai)
+      - em hãy chị chị cách để [tất toán](hoat_dong_phu) [hụi](doi_tuong) [chết](trang_thai)
+      - làm sao để [tất toán](hoat_dong_phu) [hụi](doi_tuong) [chết](trang_thai) vậy em
+      - chị không biết cách để [tất toán](hoat_dong_phu) [hụi](doi_tuong) [chết](trang_thai) em hướng dẫn cho chị với
+      - bây giờ chị muốn [tất toán](hoat_dong_phu) [hụi](doi_tuong) [chết](trang_thai) em chỉ chị với
+      - [tất toán](hoat_dong_phu) [hụi](doi_tuong) [chết](trang_thai) như thế nào vậy
+      - [tất toán](hoat_dong_phu) [hụi](doi_tuong) [chết](trang_thai) như thế nào vậy em, chỉ chị đi
+      - [tất toán](hoat_dong_phu) [hụi](doi_tuong) [chết](trang_thai) trên iphone sao vậy em, chỉ chị với
+      - [tất toán](hoat_dong_phu) [hụi](doi_tuong) [chết](trang_thai) ở chỗ nào vậy anh ơi
+      - [tất toán](hoat_dong_phu) [hụi](doi_tuong) [chết](trang_thai) chỗ nào vậy, chỉ em với anh
+      - [tất toán](hoat_dong_phu) [hụi](doi_tuong) [chết](trang_thai) về máy sao vậy hướng dẫn em với anh
+      - hướng dẫn chi tiết cách [tất toán](hoat_dong_phu) [hụi](doi_tuong) [chết](trang_thai)
+      - hướng dẫn chi tiết cách [tất toán](hoat_dong_phu) [hụi](doi_tuong) [chết](trang_thai) trên điện thoại android
+      - chi tiết cách [tất toán](hoat_dong_phu) [hụi](doi_tuong) [chết](trang_thai) trên iphone
+      - làm sao để [tất toán](hoat_dong_phu) [hụi](doi_tuong) [chết](trang_thai) về máy
+      - trên đt iphone làm sao để [tất toán](hoat_dong_phu) [hụi](doi_tuong) [chết](trang_thai)
+      - vui lòng hướng dẫn chi tiết cách để [tất toán](hoat_dong_phu) [hụi](doi_tuong) [chết](trang_thai)
+      - trên đt iphone làm sao để [tất toán](hoat_dong_phu) [hụi](doi_tuong) [chết](trang_thai)
+      - [tất toán](hoat_dong_phu) [hụi](doi_tuong) [chết](trang_thai) về laptop có được không ạ
+      - trên iphone [tất toán](hoat_dong_phu) [hụi](doi_tuong) [chết](trang_thai) về được không ạ
+      - anh ơi, máy iphone của em có thể [tất toán](hoat_dong_phu) [hụi](doi_tuong) [chết](trang_thai) không ạ ?
+      - [tất toán](hoat_dong_phu) [hụi](doi_tuong) [chết](trang_thai) về cái đt của em sao ạ, chỉ em với
+      - cách để [tất toán](hoat_dong_phu) [hụi](doi_tuong) [chết](trang_thai) về điện thoại hệ điều hành iphone
+      - trên đt iphone có [tất toán](hoat_dong_phu) [hụi](doi_tuong) [chết](trang_thai) được không hả anh
+      - anh ơi, có thể [tất toán](hoat_dong_phu) [hụi](doi_tuong) [chết](trang_thai) về điện thoại được không ak
+      - anh có thể hướng dẫn chi tiết cách [tất toán](hoat_dong_phu) [hụi](doi_tuong) [chết](trang_thai) được không
+      - làm sao để [tất toán](hoat_dong_phu) [hụi](doi_tuong) [chết](trang_thai) vậy hả anh
+      - vui lòng hướng dẫn cách để [tất toán](hoat_dong_phu) [hụi](doi_tuong) [chết](trang_thai)
+      - anh ơi [tất toán](hoat_dong_phu) [hụi](doi_tuong) [chết](trang_thai) về máy thì vào đâu anh
+      - [tất toán](hoat_dong_phu) [hụi](doi_tuong) [chết](trang_thai) về điện thoại có được không anh, được thì chỉ em với
+      - [tất toán](hoat_dong_phu) [hụi](doi_tuong) [chết](trang_thai) của anh ở đâu vậy anh, chỉ em tải được không
+      - cách để [tất toán](hoat_dong_phu) [hụi](doi_tuong) [chết](trang_thai) trên laptop
+      - em muốn biết cách để [tất toán](hoat_dong_phu) [hụi](doi_tuong) [chết](trang_thai) trên máy iphone
+      - chi tiết cách để [tất toán](hoat_dong_phu) [hụi](doi_tuong) [chết](trang_thai) về máy tính cá nhân
+      - [in](hoat_dong_chinh) [bill](doi_tuong)
+      - [in](hoat_dong_chinh) [bill](doi_tuong) thì sao
+      - cách [in](hoat_dong_chinh) [bill](doi_tuong)
+      - cách để [in](hoat_dong_chinh) [bill](doi_tuong)
+      - em hãy chị chị cách để [in](hoat_dong_chinh) [bill](doi_tuong)
+      - làm sao để [in](hoat_dong_chinh) [bill](doi_tuong) vậy em
+      - chị không biết cách để [in](hoat_dong_chinh) [bill](doi_tuong) em hướng dẫn cho chị với
+      - bây giờ chị muốn [in](hoat_dong_chinh) [bill](doi_tuong) em chỉ chị với
+      - [in](hoat_dong_chinh) [bill](doi_tuong) như thế nào vậy
+      - [in](hoat_dong_chinh) [bill](doi_tuong) như thế nào vậy em, chỉ chị đi
+      - [in](hoat_dong_chinh) [bill](doi_tuong) trên iphone sao vậy em, chỉ chị với
+      - [in](hoat_dong_chinh) [bill](doi_tuong) ở chỗ nào vậy anh ơi
+      - [in](hoat_dong_chinh) [bill](doi_tuong) chỗ nào vậy, chỉ em với anh
+      - [in](hoat_dong_chinh) [bill](doi_tuong) về máy sao vậy hướng dẫn em với anh
+      - hướng dẫn chi tiết cách [in](hoat_dong_chinh) [bill](doi_tuong)
+      - hướng dẫn chi tiết cách [in](hoat_dong_chinh) [bill](doi_tuong) trên điện thoại android
+      - chi tiết cách [in](hoat_dong_chinh) [bill](doi_tuong) trên iphone
+      - làm sao để [in](hoat_dong_chinh) [bill](doi_tuong) về máy
+      - trên đt iphone làm sao để [in](hoat_dong_chinh) [bill](doi_tuong)
+      - vui lòng hướng dẫn chi tiết cách để [in](hoat_dong_chinh) [bill](doi_tuong)
+      - trên đt iphone làm sao để [in](hoat_dong_chinh) [bill](doi_tuong)
+      - [in](hoat_dong_chinh) [bill](doi_tuong) về laptop có được không ạ
+      - trên iphone [in](hoat_dong_chinh) [bill](doi_tuong) về được không ạ
+      - anh ơi, máy iphone của em có thể [in](hoat_dong_chinh) [bill](doi_tuong) không ạ ?
+      - [in](hoat_dong_chinh) [bill](doi_tuong) về cái đt của em sao ạ, chỉ em với
+      - cách để [in](hoat_dong_chinh) [bill](doi_tuong) về điện thoại hệ điều hành iphone
+      - trên đt iphone có [in](hoat_dong_chinh) [bill](doi_tuong) được không hả anh
+      - anh ơi, có thể [in](hoat_dong_chinh) [bill](doi_tuong) về điện thoại được không ak
+      - anh có thể hướng dẫn chi tiết cách [in](hoat_dong_chinh) [bill](doi_tuong) được không
+      - làm sao để [in](hoat_dong_chinh) [bill](doi_tuong) vậy hả anh
+      - vui lòng hướng dẫn cách để [in](hoat_dong_chinh) [bill](doi_tuong)
+      - anh ơi [in](hoat_dong_chinh) [bill](doi_tuong) về máy thì vào đâu anh
+      - [in](hoat_dong_chinh) [bill](doi_tuong) về điện thoại có được không anh, được thì chỉ em với
+      - [in](hoat_dong_chinh) [bill](doi_tuong) của anh ở đâu vậy anh, chỉ em tải được không
+      - cách để [in](hoat_dong_chinh) [bill](doi_tuong) trên laptop
+      - em muốn biết cách để [in](hoat_dong_chinh) [bill](doi_tuong) trên máy iphone
+      - chi tiết cách để [in](hoat_dong_chinh) [bill](doi_tuong) về máy tính cá nhân
+      - [in](hoat_dong_chinh) [tất cả](tro_tu) [bill](doi_tuong)
+      - [in](hoat_dong_chinh) [tất cả](tro_tu) [bill](doi_tuong) thì sao
+      - [in](hoat_dong_chinh) [tất cả](tro_tu) [bill](doi_tuong)
+      - cách [in](hoat_dong_chinh) [tất cả](tro_tu) [bill](doi_tuong)
+      - cách để [in](hoat_dong_chinh) [tất cả](tro_tu) [bill](doi_tuong)
+      - em hãy chị chị cách để [in](hoat_dong_chinh) [tất cả](tro_tu) [bill](doi_tuong)
+      - làm sao để [in](hoat_dong_chinh) [tất cả](tro_tu) [bill](doi_tuong) vậy em
+      - chị không biết cách để [in](hoat_dong_chinh) [tất cả](tro_tu) [bill](doi_tuong) em hướng dẫn cho chị với
+      - bây giờ chị muốn [in](hoat_dong_chinh) [tất cả](tro_tu) [bill](doi_tuong) em chỉ chị với
+      - [in](hoat_dong_chinh) [tất cả](tro_tu) [bill](doi_tuong) như thế nào vậy
+      - [in](hoat_dong_chinh) [tất cả](tro_tu) [bill](doi_tuong) như thế nào vậy em, chỉ chị đi
+      - [in](hoat_dong_chinh) [tất cả](tro_tu) [bill](doi_tuong) trên iphone sao vậy em, chỉ chị với
+      - [in](hoat_dong_chinh) [tất cả](tro_tu) [bill](doi_tuong) ở chỗ nào vậy anh ơi
+      - [in](hoat_dong_chinh) [tất cả](tro_tu) [bill](doi_tuong) chỗ nào vậy, chỉ em với anh
+      - [in](hoat_dong_chinh) [tất cả](tro_tu) [bill](doi_tuong) về máy sao vậy hướng dẫn em với anh
+      - hướng dẫn chi tiết cách [in](hoat_dong_chinh) [tất cả](tro_tu) [bill](doi_tuong)
+      - hướng dẫn chi tiết cách [in](hoat_dong_chinh) [tất cả](tro_tu) [bill](doi_tuong) trên điện thoại android
+      - chi tiết cách [in](hoat_dong_chinh) [tất cả](tro_tu) [bill](doi_tuong) trên iphone
+      - làm sao để [in](hoat_dong_chinh) [tất cả](tro_tu) [bill](doi_tuong) về máy
+      - trên đt iphone làm sao để [in](hoat_dong_chinh) [tất cả](tro_tu) [bill](doi_tuong)
+      - vui lòng hướng dẫn chi tiết cách để [in](hoat_dong_chinh) [tất cả](tro_tu) [bill](doi_tuong)
+      - trên đt iphone làm sao để [in](hoat_dong_chinh) [tất cả](tro_tu) [bill](doi_tuong)
+      - [in](hoat_dong_chinh) [tất cả](tro_tu) [bill](doi_tuong) về laptop có được không ạ
+      - trên iphone [in](hoat_dong_chinh) [tất cả](tro_tu) [bill](doi_tuong) về được không ạ
+      - anh ơi, máy iphone của em có thể [in](hoat_dong_chinh) [tất cả](tro_tu) [bill](doi_tuong) không ạ ?
+      - [in](hoat_dong_chinh) [tất cả](tro_tu) [bill](doi_tuong) về cái đt của em sao ạ, chỉ em với
+      - cách để [in](hoat_dong_chinh) [tất cả](tro_tu) [bill](doi_tuong) về điện thoại hệ điều hành iphone
+      - trên đt iphone có [in](hoat_dong_chinh) [tất cả](tro_tu) [bill](doi_tuong) được không hả anh
+      - anh ơi, có thể [in](hoat_dong_chinh) [tất cả](tro_tu) [bill](doi_tuong) về điện thoại được không ak
+      - anh có thể hướng dẫn chi tiết cách [in](hoat_dong_chinh) [tất cả](tro_tu) [bill](doi_tuong) được không
+      - làm sao để [in](hoat_dong_chinh) [tất cả](tro_tu) [bill](doi_tuong) vậy hả anh
+      - vui lòng hướng dẫn cách để [in](hoat_dong_chinh) [tất cả](tro_tu) [bill](doi_tuong)
+      - anh ơi [in](hoat_dong_chinh) [tất cả](tro_tu) [bill](doi_tuong) về máy thì vào đâu anh
+      - [in](hoat_dong_chinh) [tất cả](tro_tu) [bill](doi_tuong) về điện thoại có được không anh, được thì chỉ em với
+      - [in](hoat_dong_chinh) [tất cả](tro_tu) [bill](doi_tuong) của anh ở đâu vậy anh, chỉ em tải được không
+      - cách để [in](hoat_dong_chinh) [tất cả](tro_tu) [bill](doi_tuong) trên laptop
+      - em muốn biết cách để [in](hoat_dong_chinh) [tất cả](tro_tu) [bill](doi_tuong) trên máy iphone
+      - chi tiết cách để [in](hoat_dong_chinh) [tất cả](tro_tu) [bill](doi_tuong) về máy tính cá nhân
+      - [in](hoat_dong_chinh) [hóa đơn](doi_tuong)
+      - [in](hoat_dong_chinh) [hóa đơn](doi_tuong) thì sao
+      - cách [in](hoat_dong_chinh) [hóa đơn](doi_tuong)
+      - cách để [in](hoat_dong_chinh) [hóa đơn](doi_tuong)
+      - em hãy chị chị cách để [in](hoat_dong_chinh) [hóa đơn](doi_tuong)
+      - làm sao để [in](hoat_dong_chinh) [hóa đơn](doi_tuong) vậy em
+      - chị không biết cách để [in](hoat_dong_chinh) [hóa đơn](doi_tuong) em hướng dẫn cho chị với
+      - bây giờ chị muốn [in](hoat_dong_chinh) [hóa đơn](doi_tuong) em chỉ chị với
+      - [in](hoat_dong_chinh) [hóa đơn](doi_tuong) như thế nào vậy
+      - [in](hoat_dong_chinh) [hóa đơn](doi_tuong) như thế nào vậy em, chỉ chị đi
+      - [in](hoat_dong_chinh) [hóa đơn](doi_tuong) trên iphone sao vậy em, chỉ chị với
+      - [in](hoat_dong_chinh) [hóa đơn](doi_tuong) ở chỗ nào vậy anh ơi
+      - [in](hoat_dong_chinh) [hóa đơn](doi_tuong) chỗ nào vậy, chỉ em với anh
+      - [in](hoat_dong_chinh) [hóa đơn](doi_tuong) về máy sao vậy hướng dẫn em với anh
+      - hướng dẫn chi tiết cách [in](hoat_dong_chinh) [hóa đơn](doi_tuong)
+      - hướng dẫn chi tiết cách [in](hoat_dong_chinh) [hóa đơn](doi_tuong) trên điện thoại android
+      - chi tiết cách [in](hoat_dong_chinh) [hóa đơn](doi_tuong) trên iphone
+      - làm sao để [in](hoat_dong_chinh) [hóa đơn](doi_tuong) về máy
+      - trên đt iphone làm sao để [in](hoat_dong_chinh) [hóa đơn](doi_tuong)
+      - vui lòng hướng dẫn chi tiết cách để [in](hoat_dong_chinh) [hóa đơn](doi_tuong)
+      - trên đt iphone làm sao để [in](hoat_dong_chinh) [hóa đơn](doi_tuong)
+      - [in](hoat_dong_chinh) [hóa đơn](doi_tuong) về laptop có được không ạ
+      - trên iphone [in](hoat_dong_chinh) [hóa đơn](doi_tuong) về được không ạ
+      - anh ơi, máy iphone của em có thể [in](hoat_dong_chinh) [hóa đơn](doi_tuong) không ạ ?
+      - [in](hoat_dong_chinh) [hóa đơn](doi_tuong) về cái đt của em sao ạ, chỉ em với
+      - cách để [in](hoat_dong_chinh) [hóa đơn](doi_tuong) về điện thoại hệ điều hành iphone
+      - trên đt iphone có [in](hoat_dong_chinh) [hóa đơn](doi_tuong) được không hả anh
+      - anh ơi, có thể [in](hoat_dong_chinh) [hóa đơn](doi_tuong) về điện thoại được không ak
+      - anh có thể hướng dẫn chi tiết cách [in](hoat_dong_chinh) [hóa đơn](doi_tuong) được không
+      - làm sao để [in](hoat_dong_chinh) [hóa đơn](doi_tuong) vậy hả anh
+      - vui lòng hướng dẫn cách để [in](hoat_dong_chinh) [hóa đơn](doi_tuong)
+      - anh ơi [in](hoat_dong_chinh) [hóa đơn](doi_tuong) về máy thì vào đâu anh
+      - [in](hoat_dong_chinh) [hóa đơn](doi_tuong) về điện thoại có được không anh, được thì chỉ em với
+      - [in](hoat_dong_chinh) [hóa đơn](doi_tuong) của anh ở đâu vậy anh, chỉ em tải được không
+      - cách để [in](hoat_dong_chinh) [hóa đơn](doi_tuong) trên laptop
+      - em muốn biết cách để [in](hoat_dong_chinh) [hóa đơn](doi_tuong) trên máy iphone
+      - chi tiết cách để [in](hoat_dong_chinh) [hóa đơn](doi_tuong) về máy tính cá nhân
+      - [in](hoat_dong_chinh) [tất cả](tro_tu) [hóa đơn](doi_tuong)
+      - [in](hoat_dong_chinh) [tất cả](tro_tu) [hóa đơn](doi_tuong) thì sao
+      - [in](hoat_dong_chinh) [tất cả](tro_tu) [hóa đơn](doi_tuong)
+      - cách [in](hoat_dong_chinh) [tất cả](tro_tu) [hóa đơn](doi_tuong)
+      - cách để [in](hoat_dong_chinh) [tất cả](tro_tu) [hóa đơn](doi_tuong)
+      - em hãy chị chị cách để [in](hoat_dong_chinh) [tất cả](tro_tu) [hóa đơn](doi_tuong)
+      - làm sao để [in](hoat_dong_chinh) [tất cả](tro_tu) [hóa đơn](doi_tuong) vậy em
+      - chị không biết cách để [in](hoat_dong_chinh) [tất cả](tro_tu) [hóa đơn](doi_tuong) em hướng dẫn cho chị với
+      - bây giờ chị muốn [in](hoat_dong_chinh) [tất cả](tro_tu) [hóa đơn](doi_tuong) em chỉ chị với
+      - [in](hoat_dong_chinh) [tất cả](tro_tu) [hóa đơn](doi_tuong) như thế nào vậy
+      - [in](hoat_dong_chinh) [tất cả](tro_tu) [hóa đơn](doi_tuong) như thế nào vậy em, chỉ chị đi
+      - [in](hoat_dong_chinh) [tất cả](tro_tu) [hóa đơn](doi_tuong) trên iphone sao vậy em, chỉ chị với
+      - [in](hoat_dong_chinh) [tất cả](tro_tu) [hóa đơn](doi_tuong) ở chỗ nào vậy anh ơi
+      - [in](hoat_dong_chinh) [tất cả](tro_tu) [hóa đơn](doi_tuong) chỗ nào vậy, chỉ em với anh
+      - [in](hoat_dong_chinh) [tất cả](tro_tu) [hóa đơn](doi_tuong) về máy sao vậy hướng dẫn em với anh
+      - hướng dẫn chi tiết cách [in](hoat_dong_chinh) [tất cả](tro_tu) [hóa đơn](doi_tuong)
+      - hướng dẫn chi tiết cách [in](hoat_dong_chinh) [tất cả](tro_tu) [hóa đơn](doi_tuong) trên điện thoại android
+      - chi tiết cách [in](hoat_dong_chinh) [tất cả](tro_tu) [hóa đơn](doi_tuong) trên iphone
+      - làm sao để [in](hoat_dong_chinh) [tất cả](tro_tu) [hóa đơn](doi_tuong) về máy
+      - trên đt iphone làm sao để [in](hoat_dong_chinh) [tất cả](tro_tu) [hóa đơn](doi_tuong)
+      - vui lòng hướng dẫn chi tiết cách để [in](hoat_dong_chinh) [tất cả](tro_tu) [hóa đơn](doi_tuong)
+      - trên đt iphone làm sao để [in](hoat_dong_chinh) [tất cả](tro_tu) [hóa đơn](doi_tuong)
+      - [in](hoat_dong_chinh) [tất cả](tro_tu) [hóa đơn](doi_tuong) về laptop có được không ạ
+      - trên iphone [in](hoat_dong_chinh) [tất cả](tro_tu) [hóa đơn](doi_tuong) về được không ạ
+      - anh ơi, máy iphone của em có thể [in](hoat_dong_chinh) [tất cả](tro_tu) [hóa đơn](doi_tuong) không ạ ?
+      - [in](hoat_dong_chinh) [tất cả](tro_tu) [hóa đơn](doi_tuong) về cái đt của em sao ạ, chỉ em với
+      - cách để [in](hoat_dong_chinh) [tất cả](tro_tu) [hóa đơn](doi_tuong) về điện thoại hệ điều hành iphone
+      - trên đt iphone có [in](hoat_dong_chinh) [tất cả](tro_tu) [hóa đơn](doi_tuong) được không hả anh
+      - anh ơi, có thể [in](hoat_dong_chinh) [tất cả](tro_tu) [hóa đơn](doi_tuong) về điện thoại được không ak
+      - anh có thể hướng dẫn chi tiết cách [in](hoat_dong_chinh) [tất cả](tro_tu) [hóa đơn](doi_tuong) được không
+      - làm sao để [in](hoat_dong_chinh) [tất cả](tro_tu) [hóa đơn](doi_tuong) vậy hả anh
+      - vui lòng hướng dẫn cách để [in](hoat_dong_chinh) [tất cả](tro_tu) [hóa đơn](doi_tuong)
+      - anh ơi [in](hoat_dong_chinh) [tất cả](tro_tu) [hóa đơn](doi_tuong) về máy thì vào đâu anh
+      - [in](hoat_dong_chinh) [tất cả](tro_tu) [hóa đơn](doi_tuong) về điện thoại có được không anh, được thì chỉ em với
+      - [in](hoat_dong_chinh) [tất cả](tro_tu) [hóa đơn](doi_tuong) của anh ở đâu vậy anh, chỉ em tải được không
+      - cách để [in](hoat_dong_chinh) [tất cả](tro_tu) [hóa đơn](doi_tuong) trên laptop
+      - em muốn biết cách để [in](hoat_dong_chinh) [tất cả](tro_tu) [hóa đơn](doi_tuong) trên máy iphone
+      - chi tiết cách để [in](hoat_dong_chinh) [tất cả](tro_tu) [hóa đơn](doi_tuong) về máy tính cá nhân
+      - [xóa](hoat_dong_chinh) [hốt](hoat_dong_phu) [hụi](doi_tuong)
+      - [xóa](hoat_dong_chinh) [hốt](hoat_dong_phu) [hụi](doi_tuong) thì sao
+      - cách [xóa](hoat_dong_chinh) [hốt](hoat_dong_phu) [hụi](doi_tuong)
+      - cách để [xóa](hoat_dong_chinh) [hốt](hoat_dong_phu) [hụi](doi_tuong)
+      - em hãy chị chị cách để [xóa](hoat_dong_chinh) [hốt](hoat_dong_phu) [hụi](doi_tuong)
+      - làm sao để [xóa](hoat_dong_chinh) [hốt](hoat_dong_phu) [hụi](doi_tuong) vậy em
+      - chị không biết cách để [xóa](hoat_dong_chinh) [hốt](hoat_dong_phu) [hụi](doi_tuong) em hướng dẫn cho chị với
+      - bây giờ chị muốn [xóa](hoat_dong_chinh) [hốt](hoat_dong_phu) [hụi](doi_tuong) em chỉ chị với
+      - [xóa](hoat_dong_chinh) [hốt](hoat_dong_phu) [hụi](doi_tuong) như thế nào vậy
+      - [xóa](hoat_dong_chinh) [hốt](hoat_dong_phu) [hụi](doi_tuong) như thế nào vậy em, chỉ chị đi
+      - [xóa](hoat_dong_chinh) [hốt](hoat_dong_phu) [hụi](doi_tuong) trên iphone sao vậy em, chỉ chị với
+      - [xóa](hoat_dong_chinh) [hốt](hoat_dong_phu) [hụi](doi_tuong) ở chỗ nào vậy anh ơi
+      - [xóa](hoat_dong_chinh) [hốt](hoat_dong_phu) [hụi](doi_tuong) chỗ nào vậy, chỉ em với anh
+      - [xóa](hoat_dong_chinh) [hốt](hoat_dong_phu) [hụi](doi_tuong) về máy sao vậy hướng dẫn em với anh
+      - hướng dẫn chi tiết cách [xóa](hoat_dong_chinh) [hốt](hoat_dong_phu) [hụi](doi_tuong)
+      - hướng dẫn chi tiết cách [xóa](hoat_dong_chinh) [hốt](hoat_dong_phu) [hụi](doi_tuong) trên điện thoại android
+      - chi tiết cách [xóa](hoat_dong_chinh) [hốt](hoat_dong_phu) [hụi](doi_tuong) trên iphone
+      - làm sao để [xóa](hoat_dong_chinh) [hốt](hoat_dong_phu) [hụi](doi_tuong) về máy
+      - trên đt iphone làm sao để [xóa](hoat_dong_chinh) [hốt](hoat_dong_phu) [hụi](doi_tuong)
+      - vui lòng hướng dẫn chi tiết cách để [xóa](hoat_dong_chinh) [hốt](hoat_dong_phu) [hụi](doi_tuong)
+      - trên đt iphone làm sao để [xóa](hoat_dong_chinh) [hốt](hoat_dong_phu) [hụi](doi_tuong)
+      - [xóa](hoat_dong_chinh) [hốt](hoat_dong_phu) [hụi](doi_tuong) về laptop có được không ạ
+      - trên iphone [xóa](hoat_dong_chinh) [hốt](hoat_dong_phu) [hụi](doi_tuong) về được không ạ
+      - anh ơi, máy iphone của em có thể [xóa](hoat_dong_chinh) [hốt](hoat_dong_phu) [hụi](doi_tuong) không ạ ?
+      - [xóa](hoat_dong_chinh) [hốt](hoat_dong_phu) [hụi](doi_tuong) về cái đt của em sao ạ, chỉ em với
+      - cách để [xóa](hoat_dong_chinh) [hốt](hoat_dong_phu) [hụi](doi_tuong) về điện thoại hệ điều hành iphone
+      - trên đt iphone có [xóa](hoat_dong_chinh) [hốt](hoat_dong_phu) [hụi](doi_tuong) được không hả anh
+      - anh ơi, có thể [xóa](hoat_dong_chinh) [hốt](hoat_dong_phu) [hụi](doi_tuong) về điện thoại được không ak
+      - anh có thể hướng dẫn chi tiết cách [xóa](hoat_dong_chinh) [hốt](hoat_dong_phu) [hụi](doi_tuong) được không
+      - làm sao để [xóa](hoat_dong_chinh) [hốt](hoat_dong_phu) [hụi](doi_tuong) vậy hả anh
+      - vui lòng hướng dẫn cách để [xóa](hoat_dong_chinh) [hốt](hoat_dong_phu) [hụi](doi_tuong)
+      - anh ơi [xóa](hoat_dong_chinh) [hốt](hoat_dong_phu) [hụi](doi_tuong) về máy thì vào đâu anh
+      - [xóa](hoat_dong_chinh) [hốt](hoat_dong_phu) [hụi](doi_tuong) về điện thoại có được không anh, được thì chỉ em với
+      - [xóa](hoat_dong_chinh) [hốt](hoat_dong_phu) [hụi](doi_tuong) của anh ở đâu vậy anh, chỉ em tải được không
+      - cách để [xóa](hoat_dong_chinh) [hốt](hoat_dong_phu) [hụi](doi_tuong) trên laptop
+      - em muốn biết cách để [xóa](hoat_dong_chinh) [hốt](hoat_dong_phu) [hụi](doi_tuong) trên máy iphone
+      - chi tiết cách để [xóa](hoat_dong_chinh) [hốt](hoat_dong_phu) [hụi](doi_tuong) về máy tính cá nhân
+      - [gom](hoat_dong_chinh) [hụi](doi_tuong) [viên](tro_tu2) [bị trùng](trang_thai)
+      - [gom](hoat_dong_chinh) [hụi](doi_tuong) [viên](tro_tu2) [bị trùng](trang_thai) thì sao
+      - cách [gom](hoat_dong_chinh) [hụi](doi_tuong) [viên](tro_tu2) [bị trùng](trang_thai)
+      - cách để [gom](hoat_dong_chinh) [hụi](doi_tuong) [viên](tro_tu2) [bị trùng](trang_thai)
+      - em hãy chị chị cách để [gom](hoat_dong_chinh) [hụi](doi_tuong) [viên](tro_tu2) [bị trùng](trang_thai)
+      - làm sao để [gom](hoat_dong_chinh) [hụi](doi_tuong) [viên](tro_tu2) [bị trùng](trang_thai) vậy em
+      - chị không biết cách để [gom](hoat_dong_chinh) [hụi](doi_tuong) [viên](tro_tu2) [bị trùng](trang_thai) em hướng dẫn cho chị với
+      - bây giờ chị muốn [gom](hoat_dong_chinh) [hụi](doi_tuong) [viên](tro_tu2) [bị trùng](trang_thai) em chỉ chị với
+      - [gom](hoat_dong_chinh) [hụi](doi_tuong) [viên](tro_tu2) [bị trùng](trang_thai) như thế nào vậy
+      - [gom](hoat_dong_chinh) [hụi](doi_tuong) [viên](tro_tu2) [bị trùng](trang_thai) như thế nào vậy em, chỉ chị đi
+      - [gom](hoat_dong_chinh) [hụi](doi_tuong) [viên](tro_tu2) [bị trùng](trang_thai) trên iphone sao vậy em, chỉ chị với
+      - [gom](hoat_dong_chinh) [hụi](doi_tuong) [viên](tro_tu2) [bị trùng](trang_thai) ở chỗ nào vậy anh ơi
+      - [gom](hoat_dong_chinh) [hụi](doi_tuong) [viên](tro_tu2) [bị trùng](trang_thai) chỗ nào vậy, chỉ em với anh
+      - [gom](hoat_dong_chinh) [hụi](doi_tuong) [viên](tro_tu2) [bị trùng](trang_thai) về máy sao vậy hướng dẫn em với anh
+      - hướng dẫn chi tiết cách [gom](hoat_dong_chinh) [hụi](doi_tuong) [viên](tro_tu2) [bị trùng](trang_thai)
+      - hướng dẫn chi tiết cách [gom](hoat_dong_chinh) [hụi](doi_tuong) [viên](tro_tu2) [bị trùng](trang_thai) trên điện thoại android
+      - chi tiết cách [gom](hoat_dong_chinh) [hụi](doi_tuong) [viên](tro_tu2) [bị trùng](trang_thai) trên iphone
+      - làm sao để [gom](hoat_dong_chinh) [hụi](doi_tuong) [viên](tro_tu2) [bị trùng](trang_thai) về máy
+      - trên đt iphone làm sao để [gom](hoat_dong_chinh) [hụi](doi_tuong) [viên](tro_tu2) [bị trùng](trang_thai)
+      - vui lòng hướng dẫn chi tiết cách để [gom](hoat_dong_chinh) [hụi](doi_tuong) [viên](tro_tu2) [bị trùng](trang_thai)
+      - trên đt iphone làm sao để [gom](hoat_dong_chinh) [hụi](doi_tuong) [viên](tro_tu2) [bị trùng](trang_thai)
+      - [gom](hoat_dong_chinh) [hụi](doi_tuong) [viên](tro_tu2) [bị trùng](trang_thai) về laptop có được không ạ
+      - trên iphone [gom](hoat_dong_chinh) [hụi](doi_tuong) [viên](tro_tu2) [bị trùng](trang_thai) về được không ạ
+      - anh ơi, máy iphone của em có thể [gom](hoat_dong_chinh) [hụi](doi_tuong) [viên](tro_tu2) [bị trùng](trang_thai) không ạ ?
+      - [gom](hoat_dong_chinh) [hụi](doi_tuong) [viên](tro_tu2) [bị trùng](trang_thai) về cái đt của em sao ạ, chỉ em với
+      - cách để [gom](hoat_dong_chinh) [hụi](doi_tuong) [viên](tro_tu2) [bị trùng](trang_thai) về điện thoại hệ điều hành iphone
+      - trên đt iphone có [gom](hoat_dong_chinh) [hụi](doi_tuong) [viên](tro_tu2) [bị trùng](trang_thai) được không hả anh
+      - anh ơi, có thể [gom](hoat_dong_chinh) [hụi](doi_tuong) [viên](tro_tu2) [bị trùng](trang_thai) về điện thoại được không ak
+      - anh có thể hướng dẫn chi tiết cách [gom](hoat_dong_chinh) [hụi](doi_tuong) [viên](tro_tu2) [bị trùng](trang_thai) được không
+      - làm sao để [gom](hoat_dong_chinh) [hụi](doi_tuong) [viên](tro_tu2) [bị trùng](trang_thai) vậy hả anh
+      - vui lòng hướng dẫn cách để [gom](hoat_dong_chinh) [hụi](doi_tuong) [viên](tro_tu2) [bị trùng](trang_thai)
+      - anh ơi [gom](hoat_dong_chinh) [hụi](doi_tuong) [viên](tro_tu2) [bị trùng](trang_thai) về máy thì vào đâu anh
+      - [gom](hoat_dong_chinh) [hụi](doi_tuong) [viên](tro_tu2) [bị trùng](trang_thai) về điện thoại có được không anh, được thì chỉ em với
+      - [gom](hoat_dong_chinh) [hụi](doi_tuong) [viên](tro_tu2) [bị trùng](trang_thai) của anh ở đâu vậy anh, chỉ em tải được không
+      - cách để [gom](hoat_dong_chinh) [hụi](doi_tuong) [viên](tro_tu2) [bị trùng](trang_thai) trên laptop
+      - em muốn biết cách để [gom](hoat_dong_chinh) [hụi](doi_tuong) [viên](tro_tu2) [bị trùng](trang_thai) trên máy iphone
+      - chi tiết cách để [gom](hoat_dong_chinh) [hụi](doi_tuong) [viên](tro_tu2) [bị trùng](trang_thai) về máy tính cá nhân
+      - [thêm](hoat_dong_chinh) [số phần](tro_tu) [hụi](doi_tuong)
+      - [thêm](hoat_dong_chinh) [số phần](tro_tu) [hụi](doi_tuong) thì sao
+      - cách [thêm](hoat_dong_chinh) [số phần](tro_tu) [hụi](doi_tuong)
+      - cách để [thêm](hoat_dong_chinh) [số phần](tro_tu) [hụi](doi_tuong)
+      - em hãy chị chị cách để [thêm](hoat_dong_chinh) [số phần](tro_tu) [hụi](doi_tuong)
+      - làm sao để [thêm](hoat_dong_chinh) [số phần](tro_tu) [hụi](doi_tuong) vậy em
+      - chị không biết cách để [thêm](hoat_dong_chinh) [số phần](tro_tu) [hụi](doi_tuong) em hướng dẫn cho chị với
+      - bây giờ chị muốn [thêm](hoat_dong_chinh) [số phần](tro_tu) [hụi](doi_tuong) em chỉ chị với
+      - [thêm](hoat_dong_chinh) [số phần](tro_tu) [hụi](doi_tuong) như thế nào vậy
+      - [thêm](hoat_dong_chinh) [số phần](tro_tu) [hụi](doi_tuong) như thế nào vậy em, chỉ chị đi
+      - [thêm](hoat_dong_chinh) [số phần](tro_tu) [hụi](doi_tuong) trên iphone sao vậy em, chỉ chị với
+      - [thêm](hoat_dong_chinh) [số phần](tro_tu) [hụi](doi_tuong) ở chỗ nào vậy anh ơi
+      - [thêm](hoat_dong_chinh) [số phần](tro_tu) [hụi](doi_tuong) chỗ nào vậy, chỉ em với anh
+      - [thêm](hoat_dong_chinh) [số phần](tro_tu) [hụi](doi_tuong) về máy sao vậy hướng dẫn em với anh
+      - hướng dẫn chi tiết cách [thêm](hoat_dong_chinh) [số phần](tro_tu) [hụi](doi_tuong)
+      - hướng dẫn chi tiết cách [thêm](hoat_dong_chinh) [số phần](tro_tu) [hụi](doi_tuong) trên điện thoại android
+      - chi tiết cách [thêm](hoat_dong_chinh) [số phần](tro_tu) [hụi](doi_tuong) trên iphone
+      - làm sao để [thêm](hoat_dong_chinh) [số phần](tro_tu) [hụi](doi_tuong) về máy
+      - trên đt iphone làm sao để [thêm](hoat_dong_chinh) [số phần](tro_tu) [hụi](doi_tuong)
+      - vui lòng hướng dẫn chi tiết cách để [thêm](hoat_dong_chinh) [số phần](tro_tu) [hụi](doi_tuong)
+      - trên đt iphone làm sao để [thêm](hoat_dong_chinh) [số phần](tro_tu) [hụi](doi_tuong)
+      - [thêm](hoat_dong_chinh) [số phần](tro_tu) [hụi](doi_tuong) về laptop có được không ạ
+      - trên iphone [thêm](hoat_dong_chinh) [số phần](tro_tu) [hụi](doi_tuong) về được không ạ
+      - anh ơi, máy iphone của em có thể [thêm](hoat_dong_chinh) [số phần](tro_tu) [hụi](doi_tuong) không ạ ?
+      - [thêm](hoat_dong_chinh) [số phần](tro_tu) [hụi](doi_tuong) về cái đt của em sao ạ, chỉ em với
+      - cách để [thêm](hoat_dong_chinh) [số phần](tro_tu) [hụi](doi_tuong) về điện thoại hệ điều hành iphone
+      - trên đt iphone có [thêm](hoat_dong_chinh) [số phần](tro_tu) [hụi](doi_tuong) được không hả anh
+      - anh ơi, có thể [thêm](hoat_dong_chinh) [số phần](tro_tu) [hụi](doi_tuong) về điện thoại được không ak
+      - anh có thể hướng dẫn chi tiết cách [thêm](hoat_dong_chinh) [số phần](tro_tu) [hụi](doi_tuong) được không
+      - làm sao để [thêm](hoat_dong_chinh) [số phần](tro_tu) [hụi](doi_tuong) vậy hả anh
+      - vui lòng hướng dẫn cách để [thêm](hoat_dong_chinh) [số phần](tro_tu) [hụi](doi_tuong)
+      - anh ơi [thêm](hoat_dong_chinh) [số phần](tro_tu) [hụi](doi_tuong) về máy thì vào đâu anh
+      - [thêm](hoat_dong_chinh) [số phần](tro_tu) [hụi](doi_tuong) về điện thoại có được không anh, được thì chỉ em với
+      - [thêm](hoat_dong_chinh) [số phần](tro_tu) [hụi](doi_tuong) của anh ở đâu vậy anh, chỉ em tải được không
+      - cách để [thêm](hoat_dong_chinh) [số phần](tro_tu) [hụi](doi_tuong) trên laptop
+      - em muốn biết cách để [thêm](hoat_dong_chinh) [số phần](tro_tu) [hụi](doi_tuong) trên máy iphone
+      - chi tiết cách để [thêm](hoat_dong_chinh) [số phần](tro_tu) [hụi](doi_tuong) về máy tính cá nhân
+      - [giảm](hoat_dong_chinh) [số phần](tro_tu) [hụi](doi_tuong)
+      - [giảm](hoat_dong_chinh) [số phần](tro_tu) [hụi](doi_tuong) thì sao
+      - cách [giảm](hoat_dong_chinh) [số phần](tro_tu) [hụi](doi_tuong)
+      - cách để [giảm](hoat_dong_chinh) [số phần](tro_tu) [hụi](doi_tuong)
+      - em hãy chị chị cách để [giảm](hoat_dong_chinh) [số phần](tro_tu) [hụi](doi_tuong)
+      - làm sao để [giảm](hoat_dong_chinh) [số phần](tro_tu) [hụi](doi_tuong) vậy em
+      - chị không biết cách để [giảm](hoat_dong_chinh) [số phần](tro_tu) [hụi](doi_tuong) em hướng dẫn cho chị với
+      - bây giờ chị muốn [giảm](hoat_dong_chinh) [số phần](tro_tu) [hụi](doi_tuong) em chỉ chị với
+      - [giảm](hoat_dong_chinh) [số phần](tro_tu) [hụi](doi_tuong) như thế nào vậy
+      - [giảm](hoat_dong_chinh) [số phần](tro_tu) [hụi](doi_tuong) như thế nào vậy em, chỉ chị đi
+      - [giảm](hoat_dong_chinh) [số phần](tro_tu) [hụi](doi_tuong) trên iphone sao vậy em, chỉ chị với
+      - [giảm](hoat_dong_chinh) [số phần](tro_tu) [hụi](doi_tuong) ở chỗ nào vậy anh ơi
+      - [giảm](hoat_dong_chinh) [số phần](tro_tu) [hụi](doi_tuong) chỗ nào vậy, chỉ em với anh
+      - [giảm](hoat_dong_chinh) [số phần](tro_tu) [hụi](doi_tuong) về máy sao vậy hướng dẫn em với anh
+      - hướng dẫn chi tiết cách [giảm](hoat_dong_chinh) [số phần](tro_tu) [hụi](doi_tuong)
+      - hướng dẫn chi tiết cách [giảm](hoat_dong_chinh) [số phần](tro_tu) [hụi](doi_tuong) trên điện thoại android
+      - chi tiết cách [giảm](hoat_dong_chinh) [số phần](tro_tu) [hụi](doi_tuong) trên iphone
+      - làm sao để [giảm](hoat_dong_chinh) [số phần](tro_tu) [hụi](doi_tuong) về máy
+      - trên đt iphone làm sao để [giảm](hoat_dong_chinh) [số phần](tro_tu) [hụi](doi_tuong)
+      - vui lòng hướng dẫn chi tiết cách để [giảm](hoat_dong_chinh) [số phần](tro_tu) [hụi](doi_tuong)
+      - trên đt iphone làm sao để [giảm](hoat_dong_chinh) [số phần](tro_tu) [hụi](doi_tuong)
+      - [giảm](hoat_dong_chinh) [số phần](tro_tu) [hụi](doi_tuong) về laptop có được không ạ
+      - trên iphone [giảm](hoat_dong_chinh) [số phần](tro_tu) [hụi](doi_tuong) về được không ạ
+      - anh ơi, máy iphone của em có thể [giảm](hoat_dong_chinh) [số phần](tro_tu) [hụi](doi_tuong) không ạ ?
+      - [giảm](hoat_dong_chinh) [số phần](tro_tu) [hụi](doi_tuong) về cái đt của em sao ạ, chỉ em với
+      - cách để [giảm](hoat_dong_chinh) [số phần](tro_tu) [hụi](doi_tuong) về điện thoại hệ điều hành iphone
+      - trên đt iphone có [giảm](hoat_dong_chinh) [số phần](tro_tu) [hụi](doi_tuong) được không hả anh
+      - anh ơi, có thể [giảm](hoat_dong_chinh) [số phần](tro_tu) [hụi](doi_tuong) về điện thoại được không ak
+      - anh có thể hướng dẫn chi tiết cách [giảm](hoat_dong_chinh) [số phần](tro_tu) [hụi](doi_tuong) được không
+      - làm sao để [giảm](hoat_dong_chinh) [số phần](tro_tu) [hụi](doi_tuong) vậy hả anh
+      - vui lòng hướng dẫn cách để [giảm](hoat_dong_chinh) [số phần](tro_tu) [hụi](doi_tuong)
+      - anh ơi [giảm](hoat_dong_chinh) [số phần](tro_tu) [hụi](doi_tuong) về máy thì vào đâu anh
+      - [giảm](hoat_dong_chinh) [số phần](tro_tu) [hụi](doi_tuong) về điện thoại có được không anh, được thì chỉ em với
+      - [giảm](hoat_dong_chinh) [số phần](tro_tu) [hụi](doi_tuong) của anh ở đâu vậy anh, chỉ em tải được không
+      - cách để [giảm](hoat_dong_chinh) [số phần](tro_tu) [hụi](doi_tuong) trên laptop
+      - em muốn biết cách để [giảm](hoat_dong_chinh) [số phần](tro_tu) [hụi](doi_tuong) trên máy iphone
+      - chi tiết cách để [giảm](hoat_dong_chinh) [số phần](tro_tu) [hụi](doi_tuong) về máy tính cá nhân
+      - [thay đổi](hoat_dong_chinh) [hụi](doi_tuong) [viên](tro_tu2)
+      - [thay đổi](hoat_dong_chinh) [hụi](doi_tuong) [viên](tro_tu2) thì sao
+      - cách [thay đổi](hoat_dong_chinh) [hụi](doi_tuong) [viên](tro_tu2)
+      - cách để [thay đổi](hoat_dong_chinh) [hụi](doi_tuong) [viên](tro_tu2)
+      - em hãy chị chị cách để [thay đổi](hoat_dong_chinh) [hụi](doi_tuong) [viên](tro_tu2)
+      - làm sao để [thay đổi](hoat_dong_chinh) [hụi](doi_tuong) [viên](tro_tu2) vậy em
+      - chị không biết cách để [thay đổi](hoat_dong_chinh) [hụi](doi_tuong) [viên](tro_tu2) em hướng dẫn cho chị với
+      - bây giờ chị muốn [thay đổi](hoat_dong_chinh) [hụi](doi_tuong) [viên](tro_tu2) em chỉ chị với
+      - [thay đổi](hoat_dong_chinh) [hụi](doi_tuong) [viên](tro_tu2) như thế nào vậy
+      - [thay đổi](hoat_dong_chinh) [hụi](doi_tuong) [viên](tro_tu2) như thế nào vậy em, chỉ chị đi
+      - [thay đổi](hoat_dong_chinh) [hụi](doi_tuong) [viên](tro_tu2) trên iphone sao vậy em, chỉ chị với
+      - [thay đổi](hoat_dong_chinh) [hụi](doi_tuong) [viên](tro_tu2) ở chỗ nào vậy anh ơi
+      - [thay đổi](hoat_dong_chinh) [hụi](doi_tuong) [viên](tro_tu2) chỗ nào vậy, chỉ em với anh
+      - [thay đổi](hoat_dong_chinh) [hụi](doi_tuong) [viên](tro_tu2) về máy sao vậy hướng dẫn em với anh
+      - hướng dẫn chi tiết cách [thay đổi](hoat_dong_chinh) [hụi](doi_tuong) [viên](tro_tu2)
+      - hướng dẫn chi tiết cách [thay đổi](hoat_dong_chinh) [hụi](doi_tuong) [viên](tro_tu2) trên điện thoại android
+      - chi tiết cách [thay đổi](hoat_dong_chinh) [hụi](doi_tuong) [viên](tro_tu2) trên iphone
+      - làm sao để [thay đổi](hoat_dong_chinh) [hụi](doi_tuong) [viên](tro_tu2) về máy
+      - trên đt iphone làm sao để [thay đổi](hoat_dong_chinh) [hụi](doi_tuong) [viên](tro_tu2)
+      - vui lòng hướng dẫn chi tiết cách để [thay đổi](hoat_dong_chinh) [hụi](doi_tuong) [viên](tro_tu2)
+      - trên đt iphone làm sao để [thay đổi](hoat_dong_chinh) [hụi](doi_tuong) [viên](tro_tu2)
+      - [thay đổi](hoat_dong_chinh) [hụi](doi_tuong) [viên](tro_tu2) về laptop có được không ạ
+      - trên iphone [thay đổi](hoat_dong_chinh) [hụi](doi_tuong) [viên](tro_tu2) về được không ạ
+      - anh ơi, máy iphone của em có thể [thay đổi](hoat_dong_chinh) [hụi](doi_tuong) [viên](tro_tu2) không ạ ?
+      - [thay đổi](hoat_dong_chinh) [hụi](doi_tuong) [viên](tro_tu2) về cái đt của em sao ạ, chỉ em với
+      - cách để [thay đổi](hoat_dong_chinh) [hụi](doi_tuong) [viên](tro_tu2) về điện thoại hệ điều hành iphone
+      - trên đt iphone có [thay đổi](hoat_dong_chinh) [hụi](doi_tuong) [viên](tro_tu2) được không hả anh
+      - anh ơi, có thể [thay đổi](hoat_dong_chinh) [hụi](doi_tuong) [viên](tro_tu2) về điện thoại được không ak
+      - anh có thể hướng dẫn chi tiết cách [thay đổi](hoat_dong_chinh) [hụi](doi_tuong) [viên](tro_tu2) được không
+      - làm sao để [thay đổi](hoat_dong_chinh) [hụi](doi_tuong) [viên](tro_tu2) vậy hả anh
+      - vui lòng hướng dẫn cách để [thay đổi](hoat_dong_chinh) [hụi](doi_tuong) [viên](tro_tu2)
+      - anh ơi [thay đổi](hoat_dong_chinh) [hụi](doi_tuong) [viên](tro_tu2) về máy thì vào đâu anh
+      - [thay đổi](hoat_dong_chinh) [hụi](doi_tuong) [viên](tro_tu2) về điện thoại có được không anh, được thì chỉ em với
+      - [thay đổi](hoat_dong_chinh) [hụi](doi_tuong) [viên](tro_tu2) của anh ở đâu vậy anh, chỉ em tải được không
+      - cách để [thay đổi](hoat_dong_chinh) [hụi](doi_tuong) [viên](tro_tu2) trên laptop
+      - em muốn biết cách để [thay đổi](hoat_dong_chinh) [hụi](doi_tuong) [viên](tro_tu2) trên máy iphone
+      - chi tiết cách để [thay đổi](hoat_dong_chinh) [hụi](doi_tuong) [viên](tro_tu2) về máy tính cá nhân
+      - [thay đổi](hoat_dong_chinh) [thông tin](tro_tu) [hụi](doi_tuong) [viên](tro_tu2)
+      - [thay đổi](hoat_dong_chinh) [thông tin](tro_tu) [hụi](doi_tuong) [viên](tro_tu2) thì sao
+      - cách [thay đổi](hoat_dong_chinh) [thông tin](tro_tu) [hụi](doi_tuong) [viên](tro_tu2)
+      - cách để [thay đổi](hoat_dong_chinh) [thông tin](tro_tu) [hụi](doi_tuong) [viên](tro_tu2)
+      - em hãy chị chị cách để [thay đổi](hoat_dong_chinh) [thông tin](tro_tu) [hụi](doi_tuong) [viên](tro_tu2)
+      - làm sao để [thay đổi](hoat_dong_chinh) [thông tin](tro_tu) [hụi](doi_tuong) [viên](tro_tu2) vậy em
+      - chị không biết cách để [thay đổi](hoat_dong_chinh) [thông tin](tro_tu) [hụi](doi_tuong) [viên](tro_tu2) em hướng dẫn cho chị với
+      - bây giờ chị muốn [thay đổi](hoat_dong_chinh) [thông tin](tro_tu) [hụi](doi_tuong) [viên](tro_tu2) em chỉ chị với
+      - [thay đổi](hoat_dong_chinh) [thông tin](tro_tu) [hụi](doi_tuong) [viên](tro_tu2) như thế nào vậy
+      - [thay đổi](hoat_dong_chinh) [thông tin](tro_tu) [hụi](doi_tuong) [viên](tro_tu2) như thế nào vậy em, chỉ chị đi
+      - [thay đổi](hoat_dong_chinh) [thông tin](tro_tu) [hụi](doi_tuong) [viên](tro_tu2) trên iphone sao vậy em, chỉ chị với
+      - [thay đổi](hoat_dong_chinh) [thông tin](tro_tu) [hụi](doi_tuong) [viên](tro_tu2) ở chỗ nào vậy anh ơi
+      - [thay đổi](hoat_dong_chinh) [thông tin](tro_tu) [hụi](doi_tuong) [viên](tro_tu2) chỗ nào vậy, chỉ em với anh
+      - [thay đổi](hoat_dong_chinh) [thông tin](tro_tu) [hụi](doi_tuong) [viên](tro_tu2) về máy sao vậy hướng dẫn em với anh
+      - hướng dẫn chi tiết cách [thay đổi](hoat_dong_chinh) [thông tin](tro_tu) [hụi](doi_tuong) [viên](tro_tu2)
+      - hướng dẫn chi tiết cách [thay đổi](hoat_dong_chinh) [thông tin](tro_tu) [hụi](doi_tuong) [viên](tro_tu2) trên điện thoại android
+      - chi tiết cách [thay đổi](hoat_dong_chinh) [thông tin](tro_tu) [hụi](doi_tuong) [viên](tro_tu2) trên iphone
+      - làm sao để [thay đổi](hoat_dong_chinh) [thông tin](tro_tu) [hụi](doi_tuong) [viên](tro_tu2) về máy
+      - trên đt iphone làm sao để [thay đổi](hoat_dong_chinh) [thông tin](tro_tu) [hụi](doi_tuong) [viên](tro_tu2)
+      - vui lòng hướng dẫn chi tiết cách để [thay đổi](hoat_dong_chinh) [thông tin](tro_tu) [hụi](doi_tuong) [viên](tro_tu2)
+      - trên đt iphone làm sao để [thay đổi](hoat_dong_chinh) [thông tin](tro_tu) [hụi](doi_tuong) [viên](tro_tu2)
+      - [thay đổi](hoat_dong_chinh) [thông tin](tro_tu) [hụi](doi_tuong) [viên](tro_tu2) về laptop có được không ạ
+      - trên iphone [thay đổi](hoat_dong_chinh) [thông tin](tro_tu) [hụi](doi_tuong) [viên](tro_tu2) về được không ạ
+      - anh ơi, máy iphone của em có thể [thay đổi](hoat_dong_chinh) [thông tin](tro_tu) [hụi](doi_tuong) [viên](tro_tu2) không ạ ?
+      - [thay đổi](hoat_dong_chinh) [thông tin](tro_tu) [hụi](doi_tuong) [viên](tro_tu2) về cái đt của em sao ạ, chỉ em với
+      - cách để [thay đổi](hoat_dong_chinh) [thông tin](tro_tu) [hụi](doi_tuong) [viên](tro_tu2) về điện thoại hệ điều hành iphone
+      - trên đt iphone có [thay đổi](hoat_dong_chinh) [thông tin](tro_tu) [hụi](doi_tuong) [viên](tro_tu2) được không hả anh
+      - anh ơi, có thể [thay đổi](hoat_dong_chinh) [thông tin](tro_tu) [hụi](doi_tuong) [viên](tro_tu2) về điện thoại được không ak
+      - anh có thể hướng dẫn chi tiết cách [thay đổi](hoat_dong_chinh) [thông tin](tro_tu) [hụi](doi_tuong) [viên](tro_tu2) được không
+      - làm sao để [thay đổi](hoat_dong_chinh) [thông tin](tro_tu) [hụi](doi_tuong) [viên](tro_tu2) vậy hả anh
+      - vui lòng hướng dẫn cách để [thay đổi](hoat_dong_chinh) [thông tin](tro_tu) [hụi](doi_tuong) [viên](tro_tu2)
+      - anh ơi [thay đổi](hoat_dong_chinh) [thông tin](tro_tu) [hụi](doi_tuong) [viên](tro_tu2) về máy thì vào đâu anh
+      - [thay đổi](hoat_dong_chinh) [thông tin](tro_tu) [hụi](doi_tuong) [viên](tro_tu2) về điện thoại có được không anh, được thì chỉ em với
+      - [thay đổi](hoat_dong_chinh) [thông tin](tro_tu) [hụi](doi_tuong) [viên](tro_tu2) của anh ở đâu vậy anh, chỉ em tải được không
+      - cách để [thay đổi](hoat_dong_chinh) [thông tin](tro_tu) [hụi](doi_tuong) [viên](tro_tu2) trên laptop
+      - em muốn biết cách để [thay đổi](hoat_dong_chinh) [thông tin](tro_tu) [hụi](doi_tuong) [viên](tro_tu2) trên máy iphone
+      - chi tiết cách để [thay đổi](hoat_dong_chinh) [thông tin](tro_tu) [hụi](doi_tuong) [viên](tro_tu2) về máy tính cá nhân
+      - [hốt](hoat_dong_phu) [hụi](doi_tuong) [nhiều người](tro_tu)
+      - [hốt](hoat_dong_phu) [hụi](doi_tuong) [nhiều người](tro_tu) thì sao
+      - cách [hốt](hoat_dong_phu) [hụi](doi_tuong) [nhiều người](tro_tu)
+      - cách để [hốt](hoat_dong_phu) [hụi](doi_tuong) [nhiều người](tro_tu)
+      - em hãy chị chị cách để [hốt](hoat_dong_phu) [hụi](doi_tuong) [nhiều người](tro_tu)
+      - làm sao để [hốt](hoat_dong_phu) [hụi](doi_tuong) [nhiều người](tro_tu) vậy em
+      - chị không biết cách để [hốt](hoat_dong_phu) [hụi](doi_tuong) [nhiều người](tro_tu) em hướng dẫn cho chị với
+      - bây giờ chị muốn [hốt](hoat_dong_phu) [hụi](doi_tuong) [nhiều người](tro_tu) em chỉ chị với
+      - [hốt](hoat_dong_phu) [hụi](doi_tuong) [nhiều người](tro_tu) như thế nào vậy
+      - [hốt](hoat_dong_phu) [hụi](doi_tuong) [nhiều người](tro_tu) như thế nào vậy em, chỉ chị đi
+      - [hốt](hoat_dong_phu) [hụi](doi_tuong) [nhiều người](tro_tu) trên iphone sao vậy em, chỉ chị với
+      - [hốt](hoat_dong_phu) [hụi](doi_tuong) [nhiều người](tro_tu) ở chỗ nào vậy anh ơi
+      - [hốt](hoat_dong_phu) [hụi](doi_tuong) [nhiều người](tro_tu) chỗ nào vậy, chỉ em với anh
+      - [hốt](hoat_dong_phu) [hụi](doi_tuong) [nhiều người](tro_tu) về máy sao vậy hướng dẫn em với anh
+      - hướng dẫn chi tiết cách [hốt](hoat_dong_phu) [hụi](doi_tuong) [nhiều người](tro_tu)
+      - hướng dẫn chi tiết cách [hốt](hoat_dong_phu) [hụi](doi_tuong) [nhiều người](tro_tu) trên điện thoại android
+      - chi tiết cách [hốt](hoat_dong_phu) [hụi](doi_tuong) [nhiều người](tro_tu) trên iphone
+      - làm sao để [hốt](hoat_dong_phu) [hụi](doi_tuong) [nhiều người](tro_tu) về máy
+      - trên đt iphone làm sao để [hốt](hoat_dong_phu) [hụi](doi_tuong) [nhiều người](tro_tu)
+      - vui lòng hướng dẫn chi tiết cách để [hốt](hoat_dong_phu) [hụi](doi_tuong) [nhiều người](tro_tu)
+      - trên đt iphone làm sao để [hốt](hoat_dong_phu) [hụi](doi_tuong) [nhiều người](tro_tu)
+      - [hốt](hoat_dong_phu) [hụi](doi_tuong) [nhiều người](tro_tu) về laptop có được không ạ
+      - trên iphone [hốt](hoat_dong_phu) [hụi](doi_tuong) [nhiều người](tro_tu) về được không ạ
+      - anh ơi, máy iphone của em có thể [hốt](hoat_dong_phu) [hụi](doi_tuong) [nhiều người](tro_tu) không ạ ?
+      - [hốt](hoat_dong_phu) [hụi](doi_tuong) [nhiều người](tro_tu) về cái đt của em sao ạ, chỉ em với
+      - cách để [hốt](hoat_dong_phu) [hụi](doi_tuong) [nhiều người](tro_tu) về điện thoại hệ điều hành iphone
+      - trên đt iphone có [hốt](hoat_dong_phu) [hụi](doi_tuong) [nhiều người](tro_tu) được không hả anh
+      - anh ơi, có thể [hốt](hoat_dong_phu) [hụi](doi_tuong) [nhiều người](tro_tu) về điện thoại được không ak
+      - anh có thể hướng dẫn chi tiết cách [hốt](hoat_dong_phu) [hụi](doi_tuong) [nhiều người](tro_tu) được không
+      - làm sao để [hốt](hoat_dong_phu) [hụi](doi_tuong) [nhiều người](tro_tu) vậy hả anh
+      - vui lòng hướng dẫn cách để [hốt](hoat_dong_phu) [hụi](doi_tuong) [nhiều người](tro_tu)
+      - anh ơi [hốt](hoat_dong_phu) [hụi](doi_tuong) [nhiều người](tro_tu) về máy thì vào đâu anh
+      - [hốt](hoat_dong_phu) [hụi](doi_tuong) [nhiều người](tro_tu) về điện thoại có được không anh, được thì chỉ em với
+      - [hốt](hoat_dong_phu) [hụi](doi_tuong) [nhiều người](tro_tu) của anh ở đâu vậy anh, chỉ em tải được không
+      - cách để [hốt](hoat_dong_phu) [hụi](doi_tuong) [nhiều người](tro_tu) trên laptop
+      - em muốn biết cách để [hốt](hoat_dong_phu) [hụi](doi_tuong) [nhiều người](tro_tu) trên máy iphone
+      - chi tiết cách để [hốt](hoat_dong_phu) [hụi](doi_tuong) [nhiều người](tro_tu) về máy tính cá nhân
+      - [xóa](hoat_dong_chinh) [tất toán](hoat_dong_phu) [hụi](doi_tuong) [chết](trang_thai)
+      - [xóa](hoat_dong_chinh) [tất toán](hoat_dong_phu) [hụi](doi_tuong) [chết](trang_thai) thì sao
+      - cách [xóa](hoat_dong_chinh) [tất toán](hoat_dong_phu) [hụi](doi_tuong) [chết](trang_thai)
+      - cách để [xóa](hoat_dong_chinh) [tất toán](hoat_dong_phu) [hụi](doi_tuong) [chết](trang_thai)
+      - em hãy chị chị cách để [xóa](hoat_dong_chinh) [tất toán](hoat_dong_phu) [hụi](doi_tuong) [chết](trang_thai)
+      - làm sao để [xóa](hoat_dong_chinh) [tất toán](hoat_dong_phu) [hụi](doi_tuong) [chết](trang_thai) vậy em
+      - chị không biết cách để [xóa](hoat_dong_chinh) [tất toán](hoat_dong_phu) [hụi](doi_tuong) [chết](trang_thai) em hướng dẫn cho chị với
+      - bây giờ chị muốn [xóa](hoat_dong_chinh) [tất toán](hoat_dong_phu) [hụi](doi_tuong) [chết](trang_thai) em chỉ chị với
+      - [xóa](hoat_dong_chinh) [tất toán](hoat_dong_phu) [hụi](doi_tuong) [chết](trang_thai) như thế nào vậy
+      - [xóa](hoat_dong_chinh) [tất toán](hoat_dong_phu) [hụi](doi_tuong) [chết](trang_thai) như thế nào vậy em, chỉ chị đi
+      - [xóa](hoat_dong_chinh) [tất toán](hoat_dong_phu) [hụi](doi_tuong) [chết](trang_thai) trên iphone sao vậy em, chỉ chị với
+      - [xóa](hoat_dong_chinh) [tất toán](hoat_dong_phu) [hụi](doi_tuong) [chết](trang_thai) ở chỗ nào vậy anh ơi
+      - [xóa](hoat_dong_chinh) [tất toán](hoat_dong_phu) [hụi](doi_tuong) [chết](trang_thai) chỗ nào vậy, chỉ em với anh
+      - [xóa](hoat_dong_chinh) [tất toán](hoat_dong_phu) [hụi](doi_tuong) [chết](trang_thai) về máy sao vậy hướng dẫn em với anh
+      - hướng dẫn chi tiết cách [xóa](hoat_dong_chinh) [tất toán](hoat_dong_phu) [hụi](doi_tuong) [chết](trang_thai)
+      - hướng dẫn chi tiết cách [xóa](hoat_dong_chinh) [tất toán](hoat_dong_phu) [hụi](doi_tuong) [chết](trang_thai) trên điện thoại android
+      - chi tiết cách [xóa](hoat_dong_chinh) [tất toán](hoat_dong_phu) [hụi](doi_tuong) [chết](trang_thai) trên iphone
+      - làm sao để [xóa](hoat_dong_chinh) [tất toán](hoat_dong_phu) [hụi](doi_tuong) [chết](trang_thai) về máy
+      - trên đt iphone làm sao để [xóa](hoat_dong_chinh) [tất toán](hoat_dong_phu) [hụi](doi_tuong) [chết](trang_thai)
+      - vui lòng hướng dẫn chi tiết cách để [xóa](hoat_dong_chinh) [tất toán](hoat_dong_phu) [hụi](doi_tuong) [chết](trang_thai)
+      - trên đt iphone làm sao để [xóa](hoat_dong_chinh) [tất toán](hoat_dong_phu) [hụi](doi_tuong) [chết](trang_thai)
+      - [xóa](hoat_dong_chinh) [tất toán](hoat_dong_phu) [hụi](doi_tuong) [chết](trang_thai) về laptop có được không ạ
+      - trên iphone [xóa](hoat_dong_chinh) [tất toán](hoat_dong_phu) [hụi](doi_tuong) [chết](trang_thai) về được không ạ
+      - anh ơi, máy iphone của em có thể [xóa](hoat_dong_chinh) [tất toán](hoat_dong_phu) [hụi](doi_tuong) [chết](trang_thai) không ạ ?
+      - [xóa](hoat_dong_chinh) [tất toán](hoat_dong_phu) [hụi](doi_tuong) [chết](trang_thai) về cái đt của em sao ạ, chỉ em với
+      - cách để [xóa](hoat_dong_chinh) [tất toán](hoat_dong_phu) [hụi](doi_tuong) [chết](trang_thai) về điện thoại hệ điều hành iphone
+      - trên đt iphone có [xóa](hoat_dong_chinh) [tất toán](hoat_dong_phu) [hụi](doi_tuong) [chết](trang_thai) được không hả anh
+      - anh ơi, có thể [xóa](hoat_dong_chinh) [tất toán](hoat_dong_phu) [hụi](doi_tuong) [chết](trang_thai) về điện thoại được không ak
+      - anh có thể hướng dẫn chi tiết cách [xóa](hoat_dong_chinh) [tất toán](hoat_dong_phu) [hụi](doi_tuong) [chết](trang_thai) được không
+      - làm sao để [xóa](hoat_dong_chinh) [tất toán](hoat_dong_phu) [hụi](doi_tuong) [chết](trang_thai) vậy hả anh
+      - vui lòng hướng dẫn cách để [xóa](hoat_dong_chinh) [tất toán](hoat_dong_phu) [hụi](doi_tuong) [chết](trang_thai)
+      - anh ơi [xóa](hoat_dong_chinh) [tất toán](hoat_dong_phu) [hụi](doi_tuong) [chết](trang_thai) về máy thì vào đâu anh
+      - [xóa](hoat_dong_chinh) [tất toán](hoat_dong_phu) [hụi](doi_tuong) [chết](trang_thai) về điện thoại có được không anh, được thì chỉ em với
+      - [xóa](hoat_dong_chinh) [tất toán](hoat_dong_phu) [hụi](doi_tuong) [chết](trang_thai) của anh ở đâu vậy anh, chỉ em tải được không
+      - cách để [xóa](hoat_dong_chinh) [tất toán](hoat_dong_phu) [hụi](doi_tuong) [chết](trang_thai) trên laptop
+      - em muốn biết cách để [xóa](hoat_dong_chinh) [tất toán](hoat_dong_phu) [hụi](doi_tuong) [chết](trang_thai) trên máy iphone
+      - chi tiết cách để [xóa](hoat_dong_chinh) [tất toán](hoat_dong_phu) [hụi](doi_tuong) [chết](trang_thai) về máy tính cá nhân
+      - [tất toán](hoat_dong_phu) [hụi](doi_tuong) [sống](trang_thai)
+      - [tất toán](hoat_dong_phu) [hụi](doi_tuong) [sống](trang_thai) thì sao
+      - cách [tất toán](hoat_dong_phu) [hụi](doi_tuong) [sống](trang_thai)
+      - cách để [tất toán](hoat_dong_phu) [hụi](doi_tuong) [sống](trang_thai)
+      - em hãy chị chị cách để [tất toán](hoat_dong_phu) [hụi](doi_tuong) [sống](trang_thai)
+      - làm sao để [tất toán](hoat_dong_phu) [hụi](doi_tuong) [sống](trang_thai) vậy em
+      - chị không biết cách để [tất toán](hoat_dong_phu) [hụi](doi_tuong) [sống](trang_thai) em hướng dẫn cho chị với
+      - bây giờ chị muốn [tất toán](hoat_dong_phu) [hụi](doi_tuong) [sống](trang_thai) em chỉ chị với
+      - [tất toán](hoat_dong_phu) [hụi](doi_tuong) [sống](trang_thai) như thế nào vậy
+      - [tất toán](hoat_dong_phu) [hụi](doi_tuong) [sống](trang_thai) như thế nào vậy em, chỉ chị đi
+      - [tất toán](hoat_dong_phu) [hụi](doi_tuong) [sống](trang_thai) trên iphone sao vậy em, chỉ chị với
+      - [tất toán](hoat_dong_phu) [hụi](doi_tuong) [sống](trang_thai) ở chỗ nào vậy anh ơi
+      - [tất toán](hoat_dong_phu) [hụi](doi_tuong) [sống](trang_thai) chỗ nào vậy, chỉ em với anh
+      - [tất toán](hoat_dong_phu) [hụi](doi_tuong) [sống](trang_thai) về máy sao vậy hướng dẫn em với anh
+      - [tải](hoat_dong_chinh) [phần mềm](doi_tuong) về máy thì lam sao ạ
+      - anh ơi chỉ em [tải](hoat_dong_chinh) [phần mềm](doi_tuong) đi anh ơi
+      - anh ơi, anh hưỡng dẫn em cách [tải](hoat_dong_chinh) [phần mềm](doi_tuong) với ạ, em chưa rõ vụ này
+      - hướng dẫn chi tiết cách [tất toán](hoat_dong_phu) [hụi](doi_tuong) [sống](trang_thai)
+      - hướng dẫn chi tiết cách [tất toán](hoat_dong_phu) [hụi](doi_tuong) [sống](trang_thai) trên điện thoại android
+      - chi tiết cách [tất toán](hoat_dong_phu) [hụi](doi_tuong) [sống](trang_thai) trên iphone
+      - làm sao để [tất toán](hoat_dong_phu) [hụi](doi_tuong) [sống](trang_thai) về máy
+      - trên đt iphone làm sao để [tất toán](hoat_dong_phu) [hụi](doi_tuong) [sống](trang_thai)
+      - vui lòng hướng dẫn chi tiết cách để [tất toán](hoat_dong_phu) [hụi](doi_tuong) [sống](trang_thai)
+      - trên đt iphone làm sao để [tất toán](hoat_dong_phu) [hụi](doi_tuong) [sống](trang_thai)
+      - [tất toán](hoat_dong_phu) [hụi](doi_tuong) [sống](trang_thai) về laptop có được không ạ
+      - trên iphone [tất toán](hoat_dong_phu) [hụi](doi_tuong) [sống](trang_thai) về được không ạ
+      - anh ơi, máy iphone của em có thể [tất toán](hoat_dong_phu) [hụi](doi_tuong) [sống](trang_thai) không ạ ?
+      - [tất toán](hoat_dong_phu) [hụi](doi_tuong) [sống](trang_thai) về cái đt của em sao ạ, chỉ em với
+      - cách để [tất toán](hoat_dong_phu) [hụi](doi_tuong) [sống](trang_thai) về điện thoại hệ điều hành iphone
+      - trên đt iphone có [tất toán](hoat_dong_phu) [hụi](doi_tuong) [sống](trang_thai) được không hả anh
+      - anh ơi, có thể [tất toán](hoat_dong_phu) [hụi](doi_tuong) [sống](trang_thai) về điện thoại được không ak
+      - anh có thể hướng dẫn chi tiết cách [tất toán](hoat_dong_phu) [hụi](doi_tuong) [sống](trang_thai) được không
+      - làm sao để [tất toán](hoat_dong_phu) [hụi](doi_tuong) [sống](trang_thai) vậy hả anh
+      - làm sao để [tải](hoat_dong_chinh) [phần mềm](doi_tuong) này về đt vậy ạ
+      - vui lòng hướng dẫn cách để [tất toán](hoat_dong_phu) [hụi](doi_tuong) [sống](trang_thai)
+      - anh ơi [tất toán](hoat_dong_phu) [hụi](doi_tuong) [sống](trang_thai) về máy thì vào đâu anh
+      - [tất toán](hoat_dong_phu) [hụi](doi_tuong) [sống](trang_thai) về điện thoại có được không anh, được thì chỉ em với
+      - [tất toán](hoat_dong_phu) [hụi](doi_tuong) [sống](trang_thai) của anh ở đâu vậy anh, chỉ em tải được không
+      - cách để [tất toán](hoat_dong_phu) [hụi](doi_tuong) [sống](trang_thai) trên laptop
+      - em muốn biết cách để [tất toán](hoat_dong_phu) [hụi](doi_tuong) [sống](trang_thai) trên máy iphone
+      - chi tiết cách để [tất toán](hoat_dong_phu) [hụi](doi_tuong) [sống](trang_thai) về máy tính cá nhân
+      - [tạo](hoat_dong_chinh) [dây](tro_tu) [hụi](doi_tuong) [góp](trang_thai)
+      - [tạo](hoat_dong_chinh) [dây](tro_tu) [hụi](doi_tuong) [góp](trang_thai) thì sao
+      - cách [tạo](hoat_dong_chinh) [dây](tro_tu) [hụi](doi_tuong) [góp](trang_thai)
+      - cách để [tạo](hoat_dong_chinh) [dây](tro_tu) [hụi](doi_tuong) [góp](trang_thai)
+      - em hãy chị chị cách để [tạo](hoat_dong_chinh) [dây](tro_tu) [hụi](doi_tuong) [góp](trang_thai)
+      - làm sao để [tạo](hoat_dong_chinh) [dây](tro_tu) [hụi](doi_tuong) [góp](trang_thai) vậy em
+      - chị không biết cách để [tạo](hoat_dong_chinh) [dây](tro_tu) [hụi](doi_tuong) [góp](trang_thai) em hướng dẫn cho chị với
+      - bây giờ chị muốn [tạo](hoat_dong_chinh) [dây](tro_tu) [hụi](doi_tuong) [góp](trang_thai) em chỉ chị với
+      - [tạo](hoat_dong_chinh) [dây](tro_tu) [hụi](doi_tuong) [góp](trang_thai) như thế nào vậy
+      - [tạo](hoat_dong_chinh) [dây](tro_tu) [hụi](doi_tuong) [góp](trang_thai) như thế nào vậy em, chỉ chị đi
+      - [tạo](hoat_dong_chinh) [dây](tro_tu) [hụi](doi_tuong) [góp](trang_thai) trên iphone sao vậy em, chỉ chị với
+      - [tạo](hoat_dong_chinh) [dây](tro_tu) [hụi](doi_tuong) [góp](trang_thai) ở chỗ nào vậy anh ơi
+      - [tạo](hoat_dong_chinh) [dây](tro_tu) [hụi](doi_tuong) [góp](trang_thai) chỗ nào vậy, chỉ em với anh
+      - [tạo](hoat_dong_chinh) [dây](tro_tu) [hụi](doi_tuong) [góp](trang_thai) về máy sao vậy hướng dẫn em với anh
+      - [tải](hoat_dong_chinh) [phần mềm](doi_tuong) về máy thì lam sao ạ
+      - anh ơi chỉ em [tải](hoat_dong_chinh) [phần mềm](doi_tuong) đi anh ơi
+      - anh ơi, anh hưỡng dẫn em cách [tải](hoat_dong_chinh) [phần mềm](doi_tuong) với ạ, em chưa rõ vụ này
+      - hướng dẫn chi tiết cách [tạo](hoat_dong_chinh) [dây](tro_tu) [hụi](doi_tuong) [góp](trang_thai)
+      - hướng dẫn chi tiết cách [tạo](hoat_dong_chinh) [dây](tro_tu) [hụi](doi_tuong) [góp](trang_thai) trên điện thoại android
+      - chi tiết cách [tạo](hoat_dong_chinh) [dây](tro_tu) [hụi](doi_tuong) [góp](trang_thai) trên iphone
+      - làm sao để [tạo](hoat_dong_chinh) [dây](tro_tu) [hụi](doi_tuong) [góp](trang_thai) về máy
+      - trên đt iphone làm sao để [tạo](hoat_dong_chinh) [dây](tro_tu) [hụi](doi_tuong) [góp](trang_thai)
+      - vui lòng hướng dẫn chi tiết cách để [tạo](hoat_dong_chinh) [dây](tro_tu) [hụi](doi_tuong) [góp](trang_thai)
+      - trên đt iphone làm sao để [tạo](hoat_dong_chinh) [dây](tro_tu) [hụi](doi_tuong) [góp](trang_thai)
+      - [tạo](hoat_dong_chinh) [dây](tro_tu) [hụi](doi_tuong) [góp](trang_thai) về laptop có được không ạ
+      - trên iphone [tạo](hoat_dong_chinh) [dây](tro_tu) [hụi](doi_tuong) [góp](trang_thai) về được không ạ
+      - anh ơi, máy iphone của em có thể [tạo](hoat_dong_chinh) [dây](tro_tu) [hụi](doi_tuong) [góp](trang_thai) không ạ ?
+      - [tạo](hoat_dong_chinh) [dây](tro_tu) [hụi](doi_tuong) [góp](trang_thai) về cái đt của em sao ạ, chỉ em với
+      - cách để [tạo](hoat_dong_chinh) [dây](tro_tu) [hụi](doi_tuong) [góp](trang_thai) về điện thoại hệ điều hành iphone
+      - trên đt iphone có [tạo](hoat_dong_chinh) [dây](tro_tu) [hụi](doi_tuong) [góp](trang_thai) được không hả anh
+      - anh ơi, có thể [tạo](hoat_dong_chinh) [dây](tro_tu) [hụi](doi_tuong) [góp](trang_thai) về điện thoại được không ak
+      - anh có thể hướng dẫn chi tiết cách [tạo](hoat_dong_chinh) [dây](tro_tu) [hụi](doi_tuong) [góp](trang_thai) được không
+      - làm sao để [tạo](hoat_dong_chinh) [dây](tro_tu) [hụi](doi_tuong) [góp](trang_thai) vậy hả anh
+      - làm sao để [tải](hoat_dong_chinh) [phần mềm](doi_tuong) này về đt vậy ạ
+      - vui lòng hướng dẫn cách để [tạo](hoat_dong_chinh) [dây](tro_tu) [hụi](doi_tuong) [góp](trang_thai)
+      - anh ơi [tạo](hoat_dong_chinh) [dây](tro_tu) [hụi](doi_tuong) [góp](trang_thai) về máy thì vào đâu anh
+      - [tạo](hoat_dong_chinh) [dây](tro_tu) [hụi](doi_tuong) [góp](trang_thai) về điện thoại có được không anh, được thì chỉ em với
+      - [tạo](hoat_dong_chinh) [dây](tro_tu) [hụi](doi_tuong) [góp](trang_thai) của anh ở đâu vậy anh, chỉ em tải được không
+      - cách để [tạo](hoat_dong_chinh) [dây](tro_tu) [hụi](doi_tuong) [góp](trang_thai) trên laptop
+      - em muốn biết cách để [tạo](hoat_dong_chinh) [dây](tro_tu) [hụi](doi_tuong) [góp](trang_thai) trên máy iphone
+      - chi tiết cách để [tạo](hoat_dong_chinh) [dây](tro_tu) [hụi](doi_tuong) [góp](trang_thai) về máy tính cá nhân
+      - [mở](hoat_dong_chinh) [dây](tro_tu) [hụi](doi_tuong) [mãn](trang_thai)
+      - [mở](hoat_dong_chinh) [dây](tro_tu) [hụi](doi_tuong) [mãn](trang_thai) thì sao
+      - cách [mở](hoat_dong_chinh) [dây](tro_tu) [hụi](doi_tuong) [mãn](trang_thai)
+      - cách để [mở](hoat_dong_chinh) [dây](tro_tu) [hụi](doi_tuong) [mãn](trang_thai)
+      - em hãy chị chị cách để [mở](hoat_dong_chinh) [dây](tro_tu) [hụi](doi_tuong) [mãn](trang_thai)
+      - làm sao để [mở](hoat_dong_chinh) [dây](tro_tu) [hụi](doi_tuong) [mãn](trang_thai) vậy em
+      - chị không biết cách để [mở](hoat_dong_chinh) [dây](tro_tu) [hụi](doi_tuong) [mãn](trang_thai) em hướng dẫn cho chị với
+      - bây giờ chị muốn [mở](hoat_dong_chinh) [dây](tro_tu) [hụi](doi_tuong) [mãn](trang_thai) em chỉ chị với
+      - [mở](hoat_dong_chinh) [dây](tro_tu) [hụi](doi_tuong) [mãn](trang_thai) như thế nào vậy
+      - [mở](hoat_dong_chinh) [dây](tro_tu) [hụi](doi_tuong) [mãn](trang_thai) như thế nào vậy em, chỉ chị đi
+      - [mở](hoat_dong_chinh) [dây](tro_tu) [hụi](doi_tuong) [mãn](trang_thai) trên iphone sao vậy em, chỉ chị với
+      - [mở](hoat_dong_chinh) [dây](tro_tu) [hụi](doi_tuong) [mãn](trang_thai) ở chỗ nào vậy anh ơi
+      - [mở](hoat_dong_chinh) [dây](tro_tu) [hụi](doi_tuong) [mãn](trang_thai) chỗ nào vậy, chỉ em với anh
+      - [mở](hoat_dong_chinh) [dây](tro_tu) [hụi](doi_tuong) [mãn](trang_thai) về máy sao vậy hướng dẫn em với anh
+      - [tải](hoat_dong_chinh) [phần mềm](doi_tuong) về máy thì lam sao ạ
+      - anh ơi chỉ em [tải](hoat_dong_chinh) [phần mềm](doi_tuong) đi anh ơi
+      - anh ơi, anh hưỡng dẫn em cách [tải](hoat_dong_chinh) [phần mềm](doi_tuong) với ạ, em chưa rõ vụ này
+      - hướng dẫn chi tiết cách [mở](hoat_dong_chinh) [dây](tro_tu) [hụi](doi_tuong) [mãn](trang_thai)
+      - hướng dẫn chi tiết cách [mở](hoat_dong_chinh) [dây](tro_tu) [hụi](doi_tuong) [mãn](trang_thai) trên điện thoại android
+      - chi tiết cách [mở](hoat_dong_chinh) [dây](tro_tu) [hụi](doi_tuong) [mãn](trang_thai) trên iphone
+      - làm sao để [mở](hoat_dong_chinh) [dây](tro_tu) [hụi](doi_tuong) [mãn](trang_thai) về máy
+      - trên đt iphone làm sao để [mở](hoat_dong_chinh) [dây](tro_tu) [hụi](doi_tuong) [mãn](trang_thai)
+      - vui lòng hướng dẫn chi tiết cách để [mở](hoat_dong_chinh) [dây](tro_tu) [hụi](doi_tuong) [mãn](trang_thai)
+      - trên đt iphone làm sao để [mở](hoat_dong_chinh) [dây](tro_tu) [hụi](doi_tuong) [mãn](trang_thai)
+      - [mở](hoat_dong_chinh) [dây](tro_tu) [hụi](doi_tuong) [mãn](trang_thai) về laptop có được không ạ
+      - trên iphone [mở](hoat_dong_chinh) [dây](tro_tu) [hụi](doi_tuong) [mãn](trang_thai) về được không ạ
+      - anh ơi, máy iphone của em có thể [mở](hoat_dong_chinh) [dây](tro_tu) [hụi](doi_tuong) [mãn](trang_thai) không ạ ?
+      - [mở](hoat_dong_chinh) [dây](tro_tu) [hụi](doi_tuong) [mãn](trang_thai) về cái đt của em sao ạ, chỉ em với
+      - cách để [mở](hoat_dong_chinh) [dây](tro_tu) [hụi](doi_tuong) [mãn](trang_thai) về điện thoại hệ điều hành iphone
+      - trên đt iphone có [mở](hoat_dong_chinh) [dây](tro_tu) [hụi](doi_tuong) [mãn](trang_thai) được không hả anh
+      - anh ơi, có thể [mở](hoat_dong_chinh) [dây](tro_tu) [hụi](doi_tuong) [mãn](trang_thai) về điện thoại được không ak
+      - anh có thể hướng dẫn chi tiết cách [mở](hoat_dong_chinh) [dây](tro_tu) [hụi](doi_tuong) [mãn](trang_thai) được không
+      - làm sao để [mở](hoat_dong_chinh) [dây](tro_tu) [hụi](doi_tuong) [mãn](trang_thai) vậy hả anh
+      - làm sao để [tải](hoat_dong_chinh) [phần mềm](doi_tuong) này về đt vậy ạ
+      - vui lòng hướng dẫn cách để [mở](hoat_dong_chinh) [dây](tro_tu) [hụi](doi_tuong) [mãn](trang_thai)
+      - anh ơi [mở](hoat_dong_chinh) [dây](tro_tu) [hụi](doi_tuong) [mãn](trang_thai) về máy thì vào đâu anh
+      - [mở](hoat_dong_chinh) [dây](tro_tu) [hụi](doi_tuong) [mãn](trang_thai) về điện thoại có được không anh, được thì chỉ em với
+      - [mở](hoat_dong_chinh) [dây](tro_tu) [hụi](doi_tuong) [mãn](trang_thai) của anh ở đâu vậy anh, chỉ em tải được không
+      - cách để [mở](hoat_dong_chinh) [dây](tro_tu) [hụi](doi_tuong) [mãn](trang_thai) trên laptop
+      - em muốn biết cách để [mở](hoat_dong_chinh) [dây](tro_tu) [hụi](doi_tuong) [mãn](trang_thai) trên máy iphone
+      - chi tiết cách để [mở](hoat_dong_chinh) [dây](tro_tu) [hụi](doi_tuong) [mãn](trang_thai) về máy tính cá nhân
+      - [mãn](trang_thai) [dây](tro_tu) [hụi](doi_tuong)
+      - [mãn](trang_thai) [dây](tro_tu) [hụi](doi_tuong) thì sao
+      - cách [mãn](trang_thai) [dây](tro_tu) [hụi](doi_tuong)
+      - cách để [mãn](trang_thai) [dây](tro_tu) [hụi](doi_tuong)
+      - em hãy chị chị cách để [mãn](trang_thai) [dây](tro_tu) [hụi](doi_tuong)
+      - làm sao để [mãn](trang_thai) [dây](tro_tu) [hụi](doi_tuong) vậy em
+      - chị không biết cách để [mãn](trang_thai) [dây](tro_tu) [hụi](doi_tuong) em hướng dẫn cho chị với
+      - bây giờ chị muốn [mãn](trang_thai) [dây](tro_tu) [hụi](doi_tuong) em chỉ chị với
+      - [mãn](trang_thai) [dây](tro_tu) [hụi](doi_tuong) như thế nào vậy
+      - [mãn](trang_thai) [dây](tro_tu) [hụi](doi_tuong) như thế nào vậy em, chỉ chị đi
+      - [mãn](trang_thai) [dây](tro_tu) [hụi](doi_tuong) trên iphone sao vậy em, chỉ chị với
+      - [mãn](trang_thai) [dây](tro_tu) [hụi](doi_tuong) ở chỗ nào vậy anh ơi
+      - [mãn](trang_thai) [dây](tro_tu) [hụi](doi_tuong) chỗ nào vậy, chỉ em với anh
+      - [mãn](trang_thai) [dây](tro_tu) [hụi](doi_tuong) về máy sao vậy hướng dẫn em với anh
+      - [tải](hoat_dong_chinh) [phần mềm](doi_tuong) về máy thì lam sao ạ
+      - anh ơi chỉ em [tải](hoat_dong_chinh) [phần mềm](doi_tuong) đi anh ơi
+      - anh ơi, anh hưỡng dẫn em cách [tải](hoat_dong_chinh) [phần mềm](doi_tuong) với ạ, em chưa rõ vụ này
+      - hướng dẫn chi tiết cách [mãn](trang_thai) [dây](tro_tu) [hụi](doi_tuong)
+      - hướng dẫn chi tiết cách [mãn](trang_thai) [dây](tro_tu) [hụi](doi_tuong) trên điện thoại android
+      - chi tiết cách [mãn](trang_thai) [dây](tro_tu) [hụi](doi_tuong) trên iphone
+      - làm sao để [mãn](trang_thai) [dây](tro_tu) [hụi](doi_tuong) về máy
+      - trên đt iphone làm sao để [mãn](trang_thai) [dây](tro_tu) [hụi](doi_tuong)
+      - vui lòng hướng dẫn chi tiết cách để [mãn](trang_thai) [dây](tro_tu) [hụi](doi_tuong)
+      - trên đt iphone làm sao để [mãn](trang_thai) [dây](tro_tu) [hụi](doi_tuong)
+      - [mãn](trang_thai) [dây](tro_tu) [hụi](doi_tuong) về laptop có được không ạ
+      - trên iphone [mãn](trang_thai) [dây](tro_tu) [hụi](doi_tuong) về được không ạ
+      - anh ơi, máy iphone của em có thể [mãn](trang_thai) [dây](tro_tu) [hụi](doi_tuong) không ạ ?
+      - [mãn](trang_thai) [dây](tro_tu) [hụi](doi_tuong) về cái đt của em sao ạ, chỉ em với
+      - cách để [mãn](trang_thai) [dây](tro_tu) [hụi](doi_tuong) về điện thoại hệ điều hành iphone
+      - trên đt iphone có [mãn](trang_thai) [dây](tro_tu) [hụi](doi_tuong) được không hả anh
+      - anh ơi, có thể [mãn](trang_thai) [dây](tro_tu) [hụi](doi_tuong) về điện thoại được không ak
+      - anh có thể hướng dẫn chi tiết cách [mãn](trang_thai) [dây](tro_tu) [hụi](doi_tuong) được không
+      - làm sao để [mãn](trang_thai) [dây](tro_tu) [hụi](doi_tuong) vậy hả anh
+      - làm sao để [tải](hoat_dong_chinh) [phần mềm](doi_tuong) này về đt vậy ạ
+      - vui lòng hướng dẫn cách để [mãn](trang_thai) [dây](tro_tu) [hụi](doi_tuong)
+      - anh ơi [mãn](trang_thai) [dây](tro_tu) [hụi](doi_tuong) về máy thì vào đâu anh
+      - [mãn](trang_thai) [dây](tro_tu) [hụi](doi_tuong) về điện thoại có được không anh, được thì chỉ em với
+      - [mãn](trang_thai) [dây](tro_tu) [hụi](doi_tuong) của anh ở đâu vậy anh, chỉ em tải được không
+      - cách để [mãn](trang_thai) [dây](tro_tu) [hụi](doi_tuong) trên laptop
+      - em muốn biết cách để [mãn](trang_thai) [dây](tro_tu) [hụi](doi_tuong) trên máy iphone
+      - chi tiết cách để [mãn](trang_thai) [dây](tro_tu) [hụi](doi_tuong) về máy tính cá nhân
+      - [đóng](hoat_dong_phu) [hụi](doi_tuong) [cũ](trang_thai)
+      - [đóng](hoat_dong_phu) [hụi](doi_tuong) [cũ](trang_thai) thì sao
+      - cách [đóng](hoat_dong_phu) [hụi](doi_tuong) [cũ](trang_thai)
+      - cách để [đóng](hoat_dong_phu) [hụi](doi_tuong) [cũ](trang_thai)
+      - em hãy chị chị cách để [đóng](hoat_dong_phu) [hụi](doi_tuong) [cũ](trang_thai)
+      - làm sao để [đóng](hoat_dong_phu) [hụi](doi_tuong) [cũ](trang_thai) vậy em
+      - chị không biết cách để [đóng](hoat_dong_phu) [hụi](doi_tuong) [cũ](trang_thai) em hướng dẫn cho chị với
+      - bây giờ chị muốn [đóng](hoat_dong_phu) [hụi](doi_tuong) [cũ](trang_thai) em chỉ chị với
+      - [đóng](hoat_dong_phu) [hụi](doi_tuong) [cũ](trang_thai) như thế nào vậy
+      - [đóng](hoat_dong_phu) [hụi](doi_tuong) [cũ](trang_thai) như thế nào vậy em, chỉ chị đi
+      - [đóng](hoat_dong_phu) [hụi](doi_tuong) [cũ](trang_thai) trên iphone sao vậy em, chỉ chị với
+      - [đóng](hoat_dong_phu) [hụi](doi_tuong) [cũ](trang_thai) ở chỗ nào vậy anh ơi
+      - [đóng](hoat_dong_phu) [hụi](doi_tuong) [cũ](trang_thai) chỗ nào vậy, chỉ em với anh
+      - [đóng](hoat_dong_phu) [hụi](doi_tuong) [cũ](trang_thai) về máy sao vậy hướng dẫn em với anh
+      - [tải](hoat_dong_chinh) [phần mềm](doi_tuong) về máy thì lam sao ạ
+      - anh ơi chỉ em [tải](hoat_dong_chinh) [phần mềm](doi_tuong) đi anh ơi
+      - anh ơi, anh hưỡng dẫn em cách [tải](hoat_dong_chinh) [phần mềm](doi_tuong) với ạ, em chưa rõ vụ này
+      - hướng dẫn chi tiết cách [đóng](hoat_dong_phu) [hụi](doi_tuong) [cũ](trang_thai)
+      - hướng dẫn chi tiết cách [đóng](hoat_dong_phu) [hụi](doi_tuong) [cũ](trang_thai) trên điện thoại android
+      - chi tiết cách [đóng](hoat_dong_phu) [hụi](doi_tuong) [cũ](trang_thai) trên iphone
+      - làm sao để [đóng](hoat_dong_phu) [hụi](doi_tuong) [cũ](trang_thai) về máy
+      - trên đt iphone làm sao để [đóng](hoat_dong_phu) [hụi](doi_tuong) [cũ](trang_thai)
+      - vui lòng hướng dẫn chi tiết cách để [đóng](hoat_dong_phu) [hụi](doi_tuong) [cũ](trang_thai)
+      - trên đt iphone làm sao để [đóng](hoat_dong_phu) [hụi](doi_tuong) [cũ](trang_thai)
+      - [đóng](hoat_dong_phu) [hụi](doi_tuong) [cũ](trang_thai) về laptop có được không ạ
+      - trên iphone [đóng](hoat_dong_phu) [hụi](doi_tuong) [cũ](trang_thai) về được không ạ
+      - anh ơi, máy iphone của em có thể [đóng](hoat_dong_phu) [hụi](doi_tuong) [cũ](trang_thai) không ạ ?
+      - [đóng](hoat_dong_phu) [hụi](doi_tuong) [cũ](trang_thai) về cái đt của em sao ạ, chỉ em với
+      - cách để [đóng](hoat_dong_phu) [hụi](doi_tuong) [cũ](trang_thai) về điện thoại hệ điều hành iphone
+      - trên đt iphone có [đóng](hoat_dong_phu) [hụi](doi_tuong) [cũ](trang_thai) được không hả anh
+      - anh ơi, có thể [đóng](hoat_dong_phu) [hụi](doi_tuong) [cũ](trang_thai) về điện thoại được không ak
+      - anh có thể hướng dẫn chi tiết cách [đóng](hoat_dong_phu) [hụi](doi_tuong) [cũ](trang_thai) được không
+      - làm sao để [đóng](hoat_dong_phu) [hụi](doi_tuong) [cũ](trang_thai) vậy hả anh
+      - làm sao để [tải](hoat_dong_chinh) [phần mềm](doi_tuong) này về đt vậy ạ
+      - vui lòng hướng dẫn cách để [đóng](hoat_dong_phu) [hụi](doi_tuong) [cũ](trang_thai)
+      - anh ơi [đóng](hoat_dong_phu) [hụi](doi_tuong) [cũ](trang_thai) về máy thì vào đâu anh
+      - [đóng](hoat_dong_phu) [hụi](doi_tuong) [cũ](trang_thai) về điện thoại có được không anh, được thì chỉ em với
+      - [đóng](hoat_dong_phu) [hụi](doi_tuong) [cũ](trang_thai) của anh ở đâu vậy anh, chỉ em tải được không
+      - cách để [đóng](hoat_dong_phu) [hụi](doi_tuong) [cũ](trang_thai) trên laptop
+      - em muốn biết cách để [đóng](hoat_dong_phu) [hụi](doi_tuong) [cũ](trang_thai) trên máy iphone
+      - chi tiết cách để [đóng](hoat_dong_phu) [hụi](doi_tuong) [cũ](trang_thai) về máy tính cá nhân
+      - [tất toán](hoat_dong_phu) [hụi](doi_tuong) [chết](trang_thai)
+      - [tất toán](hoat_dong_phu) [hụi](doi_tuong) [chết](trang_thai) thì sao
+      - cách [tất toán](hoat_dong_phu) [hụi](doi_tuong) [chết](trang_thai)
+      - cách để [tất toán](hoat_dong_phu) [hụi](doi_tuong) [chết](trang_thai)
+      - em hãy chị chị cách để [tất toán](hoat_dong_phu) [hụi](doi_tuong) [chết](trang_thai)
+      - làm sao để [tất toán](hoat_dong_phu) [hụi](doi_tuong) [chết](trang_thai) vậy em
+      - chị không biết cách để [tất toán](hoat_dong_phu) [hụi](doi_tuong) [chết](trang_thai) em hướng dẫn cho chị với
+      - bây giờ chị muốn [tất toán](hoat_dong_phu) [hụi](doi_tuong) [chết](trang_thai) em chỉ chị với
+      - [tất toán](hoat_dong_phu) [hụi](doi_tuong) [chết](trang_thai) như thế nào vậy
+      - [tất toán](hoat_dong_phu) [hụi](doi_tuong) [chết](trang_thai) như thế nào vậy em, chỉ chị đi
+      - [tất toán](hoat_dong_phu) [hụi](doi_tuong) [chết](trang_thai) trên iphone sao vậy em, chỉ chị với
+      - [tất toán](hoat_dong_phu) [hụi](doi_tuong) [chết](trang_thai) ở chỗ nào vậy anh ơi
+      - [tất toán](hoat_dong_phu) [hụi](doi_tuong) [chết](trang_thai) chỗ nào vậy, chỉ em với anh
+      - [tất toán](hoat_dong_phu) [hụi](doi_tuong) [chết](trang_thai) về máy sao vậy hướng dẫn em với anh
+      - [tải](hoat_dong_chinh) [phần mềm](doi_tuong) về máy thì lam sao ạ
+      - anh ơi chỉ em [tải](hoat_dong_chinh) [phần mềm](doi_tuong) đi anh ơi
+      - anh ơi, anh hưỡng dẫn em cách [tải](hoat_dong_chinh) [phần mềm](doi_tuong) với ạ, em chưa rõ vụ này
+      - hướng dẫn chi tiết cách [tất toán](hoat_dong_phu) [hụi](doi_tuong) [chết](trang_thai)
+      - hướng dẫn chi tiết cách [tất toán](hoat_dong_phu) [hụi](doi_tuong) [chết](trang_thai) trên điện thoại android
+      - chi tiết cách [tất toán](hoat_dong_phu) [hụi](doi_tuong) [chết](trang_thai) trên iphone
+      - làm sao để [tất toán](hoat_dong_phu) [hụi](doi_tuong) [chết](trang_thai) về máy
+      - trên đt iphone làm sao để [tất toán](hoat_dong_phu) [hụi](doi_tuong) [chết](trang_thai)
+      - vui lòng hướng dẫn chi tiết cách để [tất toán](hoat_dong_phu) [hụi](doi_tuong) [chết](trang_thai)
+      - trên đt iphone làm sao để [tất toán](hoat_dong_phu) [hụi](doi_tuong) [chết](trang_thai)
+      - [tất toán](hoat_dong_phu) [hụi](doi_tuong) [chết](trang_thai) về laptop có được không ạ
+      - trên iphone [tất toán](hoat_dong_phu) [hụi](doi_tuong) [chết](trang_thai) về được không ạ
+      - anh ơi, máy iphone của em có thể [tất toán](hoat_dong_phu) [hụi](doi_tuong) [chết](trang_thai) không ạ ?
+      - [tất toán](hoat_dong_phu) [hụi](doi_tuong) [chết](trang_thai) về cái đt của em sao ạ, chỉ em với
+      - cách để [tất toán](hoat_dong_phu) [hụi](doi_tuong) [chết](trang_thai) về điện thoại hệ điều hành iphone
+      - trên đt iphone có [tất toán](hoat_dong_phu) [hụi](doi_tuong) [chết](trang_thai) được không hả anh
+      - anh ơi, có thể [tất toán](hoat_dong_phu) [hụi](doi_tuong) [chết](trang_thai) về điện thoại được không ak
+      - anh có thể hướng dẫn chi tiết cách [tất toán](hoat_dong_phu) [hụi](doi_tuong) [chết](trang_thai) được không
+      - làm sao để [tất toán](hoat_dong_phu) [hụi](doi_tuong) [chết](trang_thai) vậy hả anh
+      - làm sao để [tải](hoat_dong_chinh) [phần mềm](doi_tuong) này về đt vậy ạ
+      - vui lòng hướng dẫn cách để [tất toán](hoat_dong_phu) [hụi](doi_tuong) [chết](trang_thai)
+      - anh ơi [tất toán](hoat_dong_phu) [hụi](doi_tuong) [chết](trang_thai) về máy thì vào đâu anh
+      - [tất toán](hoat_dong_phu) [hụi](doi_tuong) [chết](trang_thai) về điện thoại có được không anh, được thì chỉ em với
+      - [tất toán](hoat_dong_phu) [hụi](doi_tuong) [chết](trang_thai) của anh ở đâu vậy anh, chỉ em tải được không
+      - cách để [tất toán](hoat_dong_phu) [hụi](doi_tuong) [chết](trang_thai) trên laptop
+      - em muốn biết cách để [tất toán](hoat_dong_phu) [hụi](doi_tuong) [chết](trang_thai) trên máy iphone
+      - chi tiết cách để [tất toán](hoat_dong_phu) [hụi](doi_tuong) [chết](trang_thai) về máy tính cá nhân
+      - [xóa](hoat_dong_chinh) [kỳ](doi_tuong_phu) [hốt](hoat_dong_phu) [bị lỗi](trang_thai)
+      - [xóa](hoat_dong_chinh) [kỳ](doi_tuong_phu) [hốt](hoat_dong_phu) [bị lỗi](trang_thai) thì sao
+      - cách [xóa](hoat_dong_chinh) [kỳ](doi_tuong_phu) [hốt](hoat_dong_phu) [bị lỗi](trang_thai)
+      - cách để [xóa](hoat_dong_chinh) [kỳ](doi_tuong_phu) [hốt](hoat_dong_phu) [bị lỗi](trang_thai)
+      - em hãy chị chị cách để [xóa](hoat_dong_chinh) [kỳ](doi_tuong_phu) [hốt](hoat_dong_phu) [bị lỗi](trang_thai)
+      - làm sao để [xóa](hoat_dong_chinh) [kỳ](doi_tuong_phu) [hốt](hoat_dong_phu) [bị lỗi](trang_thai) vậy em
+      - chị không biết cách để [xóa](hoat_dong_chinh) [kỳ](doi_tuong_phu) [hốt](hoat_dong_phu) [bị lỗi](trang_thai) em hướng dẫn cho chị với
+      - bây giờ chị muốn [xóa](hoat_dong_chinh) [kỳ](doi_tuong_phu) [hốt](hoat_dong_phu) [bị lỗi](trang_thai) em chỉ chị với
+      - [xóa](hoat_dong_chinh) [kỳ](doi_tuong_phu) [hốt](hoat_dong_phu) [bị lỗi](trang_thai) như thế nào vậy
+      - [xóa](hoat_dong_chinh) [kỳ](doi_tuong_phu) [hốt](hoat_dong_phu) [bị lỗi](trang_thai) như thế nào vậy em, chỉ chị đi
+      - [xóa](hoat_dong_chinh) [kỳ](doi_tuong_phu) [hốt](hoat_dong_phu) [bị lỗi](trang_thai) trên iphone sao vậy em, chỉ chị với
+      - [xóa](hoat_dong_chinh) [kỳ](doi_tuong_phu) [hốt](hoat_dong_phu) [bị lỗi](trang_thai) ở chỗ nào vậy anh ơi
+      - [xóa](hoat_dong_chinh) [kỳ](doi_tuong_phu) [hốt](hoat_dong_phu) [bị lỗi](trang_thai) chỗ nào vậy, chỉ em với anh
+      - [xóa](hoat_dong_chinh) [kỳ](doi_tuong_phu) [hốt](hoat_dong_phu) [bị lỗi](trang_thai) về máy sao vậy hướng dẫn em với anh
+      - [tải](hoat_dong_chinh) [phần mềm](doi_tuong) về máy thì lam sao ạ
+      - anh ơi chỉ em [tải](hoat_dong_chinh) [phần mềm](doi_tuong) đi anh ơi
+      - anh ơi, anh hưỡng dẫn em cách [tải](hoat_dong_chinh) [phần mềm](doi_tuong) với ạ, em chưa rõ vụ này
+      - hướng dẫn chi tiết cách [xóa](hoat_dong_chinh) [kỳ](doi_tuong_phu) [hốt](hoat_dong_phu) [bị lỗi](trang_thai)
+      - hướng dẫn chi tiết cách [xóa](hoat_dong_chinh) [kỳ](doi_tuong_phu) [hốt](hoat_dong_phu) [bị lỗi](trang_thai) trên điện thoại android
+      - chi tiết cách [xóa](hoat_dong_chinh) [kỳ](doi_tuong_phu) [hốt](hoat_dong_phu) [bị lỗi](trang_thai) trên iphone
+      - làm sao để [xóa](hoat_dong_chinh) [kỳ](doi_tuong_phu) [hốt](hoat_dong_phu) [bị lỗi](trang_thai) về máy
+      - trên đt iphone làm sao để [xóa](hoat_dong_chinh) [kỳ](doi_tuong_phu) [hốt](hoat_dong_phu) [bị lỗi](trang_thai)
+      - vui lòng hướng dẫn chi tiết cách để [xóa](hoat_dong_chinh) [kỳ](doi_tuong_phu) [hốt](hoat_dong_phu) [bị lỗi](trang_thai)
+      - trên đt iphone làm sao để [xóa](hoat_dong_chinh) [kỳ](doi_tuong_phu) [hốt](hoat_dong_phu) [bị lỗi](trang_thai)
+      - [xóa](hoat_dong_chinh) [kỳ](doi_tuong_phu) [hốt](hoat_dong_phu) [bị lỗi](trang_thai) về laptop có được không ạ
+      - trên iphone [xóa](hoat_dong_chinh) [kỳ](doi_tuong_phu) [hốt](hoat_dong_phu) [bị lỗi](trang_thai) về được không ạ
+      - anh ơi, máy iphone của em có thể [xóa](hoat_dong_chinh) [kỳ](doi_tuong_phu) [hốt](hoat_dong_phu) [bị lỗi](trang_thai) không ạ ?
+      - [xóa](hoat_dong_chinh) [kỳ](doi_tuong_phu) [hốt](hoat_dong_phu) [bị lỗi](trang_thai) về cái đt của em sao ạ, chỉ em với
+      - cách để [xóa](hoat_dong_chinh) [kỳ](doi_tuong_phu) [hốt](hoat_dong_phu) [bị lỗi](trang_thai) về điện thoại hệ điều hành iphone
+      - trên đt iphone có [xóa](hoat_dong_chinh) [kỳ](doi_tuong_phu) [hốt](hoat_dong_phu) [bị lỗi](trang_thai) được không hả anh
+      - anh ơi, có thể [xóa](hoat_dong_chinh) [kỳ](doi_tuong_phu) [hốt](hoat_dong_phu) [bị lỗi](trang_thai) về điện thoại được không ak
+      - anh có thể hướng dẫn chi tiết cách [xóa](hoat_dong_chinh) [kỳ](doi_tuong_phu) [hốt](hoat_dong_phu) [bị lỗi](trang_thai) được không
+      - làm sao để [xóa](hoat_dong_chinh) [kỳ](doi_tuong_phu) [hốt](hoat_dong_phu) [bị lỗi](trang_thai) vậy hả anh
+      - làm sao để [tải](hoat_dong_chinh) [phần mềm](doi_tuong) này về đt vậy ạ
+      - vui lòng hướng dẫn cách để [xóa](hoat_dong_chinh) [kỳ](doi_tuong_phu) [hốt](hoat_dong_phu) [bị lỗi](trang_thai)
+      - anh ơi [xóa](hoat_dong_chinh) [kỳ](doi_tuong_phu) [hốt](hoat_dong_phu) [bị lỗi](trang_thai) về máy thì vào đâu anh
+      - [xóa](hoat_dong_chinh) [kỳ](doi_tuong_phu) [hốt](hoat_dong_phu) [bị lỗi](trang_thai) về điện thoại có được không anh, được thì chỉ em với
+      - [xóa](hoat_dong_chinh) [kỳ](doi_tuong_phu) [hốt](hoat_dong_phu) [bị lỗi](trang_thai) của anh ở đâu vậy anh, chỉ em tải được không
+      - cách để [xóa](hoat_dong_chinh) [kỳ](doi_tuong_phu) [hốt](hoat_dong_phu) [bị lỗi](trang_thai) trên laptop
+      - em muốn biết cách để [xóa](hoat_dong_chinh) [kỳ](doi_tuong_phu) [hốt](hoat_dong_phu) [bị lỗi](trang_thai) trên máy iphone
+      - chi tiết cách để [xóa](hoat_dong_chinh) [kỳ](doi_tuong_phu) [hốt](hoat_dong_phu) [bị lỗi](trang_thai) về máy tính cá nhân
+      - [xóa](hoat_dong_chinh) [kỳ](doi_tuong_phu) [đóng](hoat_dong_phu) [bị lỗi](trang_thai)
+      - [xóa](hoat_dong_chinh) [kỳ](doi_tuong_phu) [đóng](hoat_dong_phu) [bị lỗi](trang_thai) thì sao
+      - cách [xóa](hoat_dong_chinh) [kỳ](doi_tuong_phu) [đóng](hoat_dong_phu) [bị lỗi](trang_thai)
+      - cách để [xóa](hoat_dong_chinh) [kỳ](doi_tuong_phu) [đóng](hoat_dong_phu) [bị lỗi](trang_thai)
+      - em hãy chị chị cách để [xóa](hoat_dong_chinh) [kỳ](doi_tuong_phu) [đóng](hoat_dong_phu) [bị lỗi](trang_thai)
+      - làm sao để [xóa](hoat_dong_chinh) [kỳ](doi_tuong_phu) [đóng](hoat_dong_phu) [bị lỗi](trang_thai) vậy em
+      - chị không biết cách để [xóa](hoat_dong_chinh) [kỳ](doi_tuong_phu) [đóng](hoat_dong_phu) [bị lỗi](trang_thai) em hướng dẫn cho chị với
+      - bây giờ chị muốn [xóa](hoat_dong_chinh) [kỳ](doi_tuong_phu) [đóng](hoat_dong_phu) [bị lỗi](trang_thai) em chỉ chị với
+      - [xóa](hoat_dong_chinh) [kỳ](doi_tuong_phu) [đóng](hoat_dong_phu) [bị lỗi](trang_thai) như thế nào vậy
+      - [xóa](hoat_dong_chinh) [kỳ](doi_tuong_phu) [đóng](hoat_dong_phu) [bị lỗi](trang_thai) như thế nào vậy em, chỉ chị đi
+      - [xóa](hoat_dong_chinh) [kỳ](doi_tuong_phu) [đóng](hoat_dong_phu) [bị lỗi](trang_thai) trên iphone sao vậy em, chỉ chị với
+      - [xóa](hoat_dong_chinh) [kỳ](doi_tuong_phu) [đóng](hoat_dong_phu) [bị lỗi](trang_thai) ở chỗ nào vậy anh ơi
+      - [xóa](hoat_dong_chinh) [kỳ](doi_tuong_phu) [đóng](hoat_dong_phu) [bị lỗi](trang_thai) chỗ nào vậy, chỉ em với anh
+      - [xóa](hoat_dong_chinh) [kỳ](doi_tuong_phu) [đóng](hoat_dong_phu) [bị lỗi](trang_thai) về máy sao vậy hướng dẫn em với anh
+      - [tải](hoat_dong_chinh) [phần mềm](doi_tuong) về máy thì lam sao ạ
+      - anh ơi chỉ em [tải](hoat_dong_chinh) [phần mềm](doi_tuong) đi anh ơi
+      - anh ơi, anh hưỡng dẫn em cách [tải](hoat_dong_chinh) [phần mềm](doi_tuong) với ạ, em chưa rõ vụ này
+      - hướng dẫn chi tiết cách [xóa](hoat_dong_chinh) [kỳ](doi_tuong_phu) [đóng](hoat_dong_phu) [bị lỗi](trang_thai)
+      - hướng dẫn chi tiết cách [xóa](hoat_dong_chinh) [kỳ](doi_tuong_phu) [đóng](hoat_dong_phu) [bị lỗi](trang_thai) trên điện thoại android
+      - chi tiết cách [xóa](hoat_dong_chinh) [kỳ](doi_tuong_phu) [đóng](hoat_dong_phu) [bị lỗi](trang_thai) trên iphone
+      - làm sao để [xóa](hoat_dong_chinh) [kỳ](doi_tuong_phu) [đóng](hoat_dong_phu) [bị lỗi](trang_thai) về máy
+      - trên đt iphone làm sao để [xóa](hoat_dong_chinh) [kỳ](doi_tuong_phu) [đóng](hoat_dong_phu) [bị lỗi](trang_thai)
+      - vui lòng hướng dẫn chi tiết cách để [xóa](hoat_dong_chinh) [kỳ](doi_tuong_phu) [đóng](hoat_dong_phu) [bị lỗi](trang_thai)
+      - trên đt iphone làm sao để [xóa](hoat_dong_chinh) [kỳ](doi_tuong_phu) [đóng](hoat_dong_phu) [bị lỗi](trang_thai)
+      - [xóa](hoat_dong_chinh) [kỳ](doi_tuong_phu) [đóng](hoat_dong_phu) [bị lỗi](trang_thai) về laptop có được không ạ
+      - trên iphone [xóa](hoat_dong_chinh) [kỳ](doi_tuong_phu) [đóng](hoat_dong_phu) [bị lỗi](trang_thai) về được không ạ
+      - anh ơi, máy iphone của em có thể [xóa](hoat_dong_chinh) [kỳ](doi_tuong_phu) [đóng](hoat_dong_phu) [bị lỗi](trang_thai) không ạ ?
+      - [xóa](hoat_dong_chinh) [kỳ](doi_tuong_phu) [đóng](hoat_dong_phu) [bị lỗi](trang_thai) về cái đt của em sao ạ, chỉ em với
+      - cách để [xóa](hoat_dong_chinh) [kỳ](doi_tuong_phu) [đóng](hoat_dong_phu) [bị lỗi](trang_thai) về điện thoại hệ điều hành iphone
+      - trên đt iphone có [xóa](hoat_dong_chinh) [kỳ](doi_tuong_phu) [đóng](hoat_dong_phu) [bị lỗi](trang_thai) được không hả anh
+      - anh ơi, có thể [xóa](hoat_dong_chinh) [kỳ](doi_tuong_phu) [đóng](hoat_dong_phu) [bị lỗi](trang_thai) về điện thoại được không ak
+      - anh có thể hướng dẫn chi tiết cách [xóa](hoat_dong_chinh) [kỳ](doi_tuong_phu) [đóng](hoat_dong_phu) [bị lỗi](trang_thai) được không
+      - làm sao để [xóa](hoat_dong_chinh) [kỳ](doi_tuong_phu) [đóng](hoat_dong_phu) [bị lỗi](trang_thai) vậy hả anh
+      - làm sao để [tải](hoat_dong_chinh) [phần mềm](doi_tuong) này về đt vậy ạ
+      - vui lòng hướng dẫn cách để [xóa](hoat_dong_chinh) [kỳ](doi_tuong_phu) [đóng](hoat_dong_phu) [bị lỗi](trang_thai)
+      - anh ơi [xóa](hoat_dong_chinh) [kỳ](doi_tuong_phu) [đóng](hoat_dong_phu) [bị lỗi](trang_thai) về máy thì vào đâu anh
+      - [xóa](hoat_dong_chinh) [kỳ](doi_tuong_phu) [đóng](hoat_dong_phu) [bị lỗi](trang_thai) về điện thoại có được không anh, được thì chỉ em với
+      - [xóa](hoat_dong_chinh) [kỳ](doi_tuong_phu) [đóng](hoat_dong_phu) [bị lỗi](trang_thai) của anh ở đâu vậy anh, chỉ em tải được không
+      - cách để [xóa](hoat_dong_chinh) [kỳ](doi_tuong_phu) [đóng](hoat_dong_phu) [bị lỗi](trang_thai) trên laptop
+      - em muốn biết cách để [xóa](hoat_dong_chinh) [kỳ](doi_tuong_phu) [đóng](hoat_dong_phu) [bị lỗi](trang_thai) trên máy iphone
+      - chi tiết cách để [xóa](hoat_dong_chinh) [kỳ](doi_tuong_phu) [đóng](hoat_dong_phu) [bị lỗi](trang_thai) về máy tính cá nhân
+      - [xác nhận](hoat_dong_chinh) [đóng](hoat_dong_phu) [tất cả](tro_tu)  [hụi](doi_tuong)
+      - [xác nhận](hoat_dong_chinh) [đóng](hoat_dong_phu) [tất cả](tro_tu)  [hụi](doi_tuong) thì sao
+      - cách [xác nhận](hoat_dong_chinh) [đóng](hoat_dong_phu) [tất cả](tro_tu)  [hụi](doi_tuong)
+      - cách để [xác nhận](hoat_dong_chinh) [đóng](hoat_dong_phu) [tất cả](tro_tu)  [hụi](doi_tuong)
+      - em hãy chị chị cách để [xác nhận](hoat_dong_chinh) [đóng](hoat_dong_phu) [tất cả](tro_tu)  [hụi](doi_tuong)
+      - làm sao để [xác nhận](hoat_dong_chinh) [đóng](hoat_dong_phu) [tất cả](tro_tu)  [hụi](doi_tuong) vậy em
+      - chị không biết cách để [xác nhận](hoat_dong_chinh) [đóng](hoat_dong_phu) [tất cả](tro_tu)  [hụi](doi_tuong) em hướng dẫn cho chị với
+      - bây giờ chị muốn [xác nhận](hoat_dong_chinh) [đóng](hoat_dong_phu) [tất cả](tro_tu)  [hụi](doi_tuong) em chỉ chị với
+      - [xác nhận](hoat_dong_chinh) [đóng](hoat_dong_phu) [tất cả](tro_tu)  [hụi](doi_tuong) như thế nào vậy
+      - [xác nhận](hoat_dong_chinh) [đóng](hoat_dong_phu) [tất cả](tro_tu)  [hụi](doi_tuong) như thế nào vậy em, chỉ chị đi
+      - [xác nhận](hoat_dong_chinh) [đóng](hoat_dong_phu) [tất cả](tro_tu)  [hụi](doi_tuong) trên iphone sao vậy em, chỉ chị với
+      - [xác nhận](hoat_dong_chinh) [đóng](hoat_dong_phu) [tất cả](tro_tu)  [hụi](doi_tuong) ở chỗ nào vậy anh ơi
+      - [xác nhận](hoat_dong_chinh) [đóng](hoat_dong_phu) [tất cả](tro_tu)  [hụi](doi_tuong) chỗ nào vậy, chỉ em với anh
+      - [xác nhận](hoat_dong_chinh) [đóng](hoat_dong_phu) [tất cả](tro_tu)  [hụi](doi_tuong) về máy sao vậy hướng dẫn em với anh
+      - [tải](hoat_dong_chinh) [phần mềm](doi_tuong) về máy thì lam sao ạ
+      - anh ơi chỉ em [tải](hoat_dong_chinh) [phần mềm](doi_tuong) đi anh ơi
+      - anh ơi, anh hưỡng dẫn em cách [tải](hoat_dong_chinh) [phần mềm](doi_tuong) với ạ, em chưa rõ vụ này
+      - hướng dẫn chi tiết cách [xác nhận](hoat_dong_chinh) [đóng](hoat_dong_phu) [tất cả](tro_tu)  [hụi](doi_tuong)
+      - hướng dẫn chi tiết cách [xác nhận](hoat_dong_chinh) [đóng](hoat_dong_phu) [tất cả](tro_tu)  [hụi](doi_tuong) trên điện thoại android
+      - chi tiết cách [xác nhận](hoat_dong_chinh) [đóng](hoat_dong_phu) [tất cả](tro_tu)  [hụi](doi_tuong) trên iphone
+      - làm sao để [xác nhận](hoat_dong_chinh) [đóng](hoat_dong_phu) [tất cả](tro_tu)  [hụi](doi_tuong) về máy
+      - trên đt iphone làm sao để [xác nhận](hoat_dong_chinh) [đóng](hoat_dong_phu) [tất cả](tro_tu)  [hụi](doi_tuong)
+      - vui lòng hướng dẫn chi tiết cách để [xác nhận](hoat_dong_chinh) [đóng](hoat_dong_phu) [tất cả](tro_tu)  [hụi](doi_tuong)
+      - trên đt iphone làm sao để [xác nhận](hoat_dong_chinh) [đóng](hoat_dong_phu) [tất cả](tro_tu)  [hụi](doi_tuong)
+      - [xác nhận](hoat_dong_chinh) [đóng](hoat_dong_phu) [tất cả](tro_tu)  [hụi](doi_tuong) về laptop có được không ạ
+      - trên iphone [xác nhận](hoat_dong_chinh) [đóng](hoat_dong_phu) [tất cả](tro_tu)  [hụi](doi_tuong) về được không ạ
+      - anh ơi, máy iphone của em có thể [xác nhận](hoat_dong_chinh) [đóng](hoat_dong_phu) [tất cả](tro_tu)  [hụi](doi_tuong) không ạ ?
+      - [xác nhận](hoat_dong_chinh) [đóng](hoat_dong_phu) [tất cả](tro_tu)  [hụi](doi_tuong) về cái đt của em sao ạ, chỉ em với
+      - cách để [xác nhận](hoat_dong_chinh) [đóng](hoat_dong_phu) [tất cả](tro_tu)  [hụi](doi_tuong) về điện thoại hệ điều hành iphone
+      - trên đt iphone có [xác nhận](hoat_dong_chinh) [đóng](hoat_dong_phu) [tất cả](tro_tu)  [hụi](doi_tuong) được không hả anh
+      - anh ơi, có thể [xác nhận](hoat_dong_chinh) [đóng](hoat_dong_phu) [tất cả](tro_tu)  [hụi](doi_tuong) về điện thoại được không ak
+      - anh có thể hướng dẫn chi tiết cách [xác nhận](hoat_dong_chinh) [đóng](hoat_dong_phu) [tất cả](tro_tu)  [hụi](doi_tuong) được không
+      - làm sao để [xác nhận](hoat_dong_chinh) [đóng](hoat_dong_phu) [tất cả](tro_tu)  [hụi](doi_tuong) vậy hả anh
+      - làm sao để [tải](hoat_dong_chinh) [phần mềm](doi_tuong) này về đt vậy ạ
+      - vui lòng hướng dẫn cách để [xác nhận](hoat_dong_chinh) [đóng](hoat_dong_phu) [tất cả](tro_tu)  [hụi](doi_tuong)
+      - anh ơi [xác nhận](hoat_dong_chinh) [đóng](hoat_dong_phu) [tất cả](tro_tu)  [hụi](doi_tuong) về máy thì vào đâu anh
+      - [xác nhận](hoat_dong_chinh) [đóng](hoat_dong_phu) [tất cả](tro_tu)  [hụi](doi_tuong) về điện thoại có được không anh, được thì chỉ em với
+      - [xác nhận](hoat_dong_chinh) [đóng](hoat_dong_phu) [tất cả](tro_tu)  [hụi](doi_tuong) của anh ở đâu vậy anh, chỉ em tải được không
+      - cách để [xác nhận](hoat_dong_chinh) [đóng](hoat_dong_phu) [tất cả](tro_tu)  [hụi](doi_tuong) trên laptop
+      - em muốn biết cách để [xác nhận](hoat_dong_chinh) [đóng](hoat_dong_phu) [tất cả](tro_tu)  [hụi](doi_tuong) trên máy iphone
+      - chi tiết cách để [xác nhận](hoat_dong_chinh) [đóng](hoat_dong_phu) [tất cả](tro_tu)  [hụi](doi_tuong) về máy tính cá nhân
+      - [cân bằng](hoat_dong_chinh) [âm dương](doi_tuong)
+      - [cân bằng](hoat_dong_chinh) [âm dương](doi_tuong) thì sao
+      - cách [cân bằng](hoat_dong_chinh) [âm dương](doi_tuong)
+      - cách để [cân bằng](hoat_dong_chinh) [âm dương](doi_tuong)
+      - em hãy chị chị cách để [cân bằng](hoat_dong_chinh) [âm dương](doi_tuong)
+      - làm sao để [cân bằng](hoat_dong_chinh) [âm dương](doi_tuong) vậy em
+      - chị không biết cách để [cân bằng](hoat_dong_chinh) [âm dương](doi_tuong) em hướng dẫn cho chị với
+      - bây giờ chị muốn [cân bằng](hoat_dong_chinh) [âm dương](doi_tuong) em chỉ chị với
+      - [cân bằng](hoat_dong_chinh) [âm dương](doi_tuong) như thế nào vậy
+      - [cân bằng](hoat_dong_chinh) [âm dương](doi_tuong) như thế nào vậy em, chỉ chị đi
+      - [cân bằng](hoat_dong_chinh) [âm dương](doi_tuong) trên iphone sao vậy em, chỉ chị với
+      - [cân bằng](hoat_dong_chinh) [âm dương](doi_tuong) ở chỗ nào vậy anh ơi
+      - [cân bằng](hoat_dong_chinh) [âm dương](doi_tuong) chỗ nào vậy, chỉ em với anh
+      - [cân bằng](hoat_dong_chinh) [âm dương](doi_tuong) về máy sao vậy hướng dẫn em với anh
+      - [tải](hoat_dong_chinh) [phần mềm](doi_tuong) về máy thì lam sao ạ
+      - anh ơi chỉ em [tải](hoat_dong_chinh) [phần mềm](doi_tuong) đi anh ơi
+      - anh ơi, anh hưỡng dẫn em cách [tải](hoat_dong_chinh) [phần mềm](doi_tuong) với ạ, em chưa rõ vụ này
+      - hướng dẫn chi tiết cách [cân bằng](hoat_dong_chinh) [âm dương](doi_tuong)
+      - hướng dẫn chi tiết cách [cân bằng](hoat_dong_chinh) [âm dương](doi_tuong) trên điện thoại android
+      - chi tiết cách [cân bằng](hoat_dong_chinh) [âm dương](doi_tuong) trên iphone
+      - làm sao để [cân bằng](hoat_dong_chinh) [âm dương](doi_tuong) về máy
+      - trên đt iphone làm sao để [cân bằng](hoat_dong_chinh) [âm dương](doi_tuong)
+      - vui lòng hướng dẫn chi tiết cách để [cân bằng](hoat_dong_chinh) [âm dương](doi_tuong)
+      - trên đt iphone làm sao để [cân bằng](hoat_dong_chinh) [âm dương](doi_tuong)
+      - [cân bằng](hoat_dong_chinh) [âm dương](doi_tuong) về laptop có được không ạ
+      - trên iphone [cân bằng](hoat_dong_chinh) [âm dương](doi_tuong) về được không ạ
+      - anh ơi, máy iphone của em có thể [cân bằng](hoat_dong_chinh) [âm dương](doi_tuong) không ạ ?
+      - [cân bằng](hoat_dong_chinh) [âm dương](doi_tuong) về cái đt của em sao ạ, chỉ em với
+      - cách để [cân bằng](hoat_dong_chinh) [âm dương](doi_tuong) về điện thoại hệ điều hành iphone
+      - trên đt iphone có [cân bằng](hoat_dong_chinh) [âm dương](doi_tuong) được không hả anh
+      - anh ơi, có thể [cân bằng](hoat_dong_chinh) [âm dương](doi_tuong) về điện thoại được không ak
+      - anh có thể hướng dẫn chi tiết cách [cân bằng](hoat_dong_chinh) [âm dương](doi_tuong) được không
+      - làm sao để [cân bằng](hoat_dong_chinh) [âm dương](doi_tuong) vậy hả anh
+      - làm sao để [tải](hoat_dong_chinh) [phần mềm](doi_tuong) này về đt vậy ạ
+      - vui lòng hướng dẫn cách để [cân bằng](hoat_dong_chinh) [âm dương](doi_tuong)
+      - anh ơi [cân bằng](hoat_dong_chinh) [âm dương](doi_tuong) về máy thì vào đâu anh
+      - [cân bằng](hoat_dong_chinh) [âm dương](doi_tuong) về điện thoại có được không anh, được thì chỉ em với
+      - [cân bằng](hoat_dong_chinh) [âm dương](doi_tuong) của anh ở đâu vậy anh, chỉ em tải được không
+      - cách để [cân bằng](hoat_dong_chinh) [âm dương](doi_tuong) trên laptop
+      - em muốn biết cách để [cân bằng](hoat_dong_chinh) [âm dương](doi_tuong) trên máy iphone
+      - chi tiết cách để [cân bằng](hoat_dong_chinh) [âm dương](doi_tuong) về máy tính cá nhân
+      - [thay đổi](hoat_dong_chinh) [hội](doi_tuong) [viên](tro_tu2) [kỳ](doi_tuong_phu) [hốt](hoat_dong_phu)
+      - [thay đổi](hoat_dong_chinh) [hội](doi_tuong) [viên](tro_tu2) [kỳ](doi_tuong_phu) [hốt](hoat_dong_phu) thì sao
+      - cách [thay đổi](hoat_dong_chinh) [hội](doi_tuong) [viên](tro_tu2) [kỳ](doi_tuong_phu) [hốt](hoat_dong_phu)
+      - cách để [thay đổi](hoat_dong_chinh) [hội](doi_tuong) [viên](tro_tu2) [kỳ](doi_tuong_phu) [hốt](hoat_dong_phu)
+      - em hãy chị chị cách để [thay đổi](hoat_dong_chinh) [hội](doi_tuong) [viên](tro_tu2) [kỳ](doi_tuong_phu) [hốt](hoat_dong_phu)
+      - làm sao để [thay đổi](hoat_dong_chinh) [hội](doi_tuong) [viên](tro_tu2) [kỳ](doi_tuong_phu) [hốt](hoat_dong_phu) vậy em
+      - chị không biết cách để [thay đổi](hoat_dong_chinh) [hội](doi_tuong) [viên](tro_tu2) [kỳ](doi_tuong_phu) [hốt](hoat_dong_phu) em hướng dẫn cho chị với
+      - bây giờ chị muốn [thay đổi](hoat_dong_chinh) [hội](doi_tuong) [viên](tro_tu2) [kỳ](doi_tuong_phu) [hốt](hoat_dong_phu) em chỉ chị với
+      - [thay đổi](hoat_dong_chinh) [hội](doi_tuong) [viên](tro_tu2) [kỳ](doi_tuong_phu) [hốt](hoat_dong_phu) như thế nào vậy
+      - [thay đổi](hoat_dong_chinh) [hội](doi_tuong) [viên](tro_tu2) [kỳ](doi_tuong_phu) [hốt](hoat_dong_phu) như thế nào vậy em, chỉ chị đi
+      - [thay đổi](hoat_dong_chinh) [hội](doi_tuong) [viên](tro_tu2) [kỳ](doi_tuong_phu) [hốt](hoat_dong_phu) trên iphone sao vậy em, chỉ chị với
+      - [thay đổi](hoat_dong_chinh) [hội](doi_tuong) [viên](tro_tu2) [kỳ](doi_tuong_phu) [hốt](hoat_dong_phu) ở chỗ nào vậy anh ơi
+      - [thay đổi](hoat_dong_chinh) [hội](doi_tuong) [viên](tro_tu2) [kỳ](doi_tuong_phu) [hốt](hoat_dong_phu) chỗ nào vậy, chỉ em với anh
+      - [thay đổi](hoat_dong_chinh) [hội](doi_tuong) [viên](tro_tu2) [kỳ](doi_tuong_phu) [hốt](hoat_dong_phu) về máy sao vậy hướng dẫn em với anh
+      - [tải](hoat_dong_chinh) [phần mềm](doi_tuong) về máy thì lam sao ạ
+      - anh ơi chỉ em [tải](hoat_dong_chinh) [phần mềm](doi_tuong) đi anh ơi
+      - anh ơi, anh hưỡng dẫn em cách [tải](hoat_dong_chinh) [phần mềm](doi_tuong) với ạ, em chưa rõ vụ này
+      - hướng dẫn chi tiết cách [thay đổi](hoat_dong_chinh) [hội](doi_tuong) [viên](tro_tu2) [kỳ](doi_tuong_phu) [hốt](hoat_dong_phu)
+      - hướng dẫn chi tiết cách [thay đổi](hoat_dong_chinh) [hội](doi_tuong) [viên](tro_tu2) [kỳ](doi_tuong_phu) [hốt](hoat_dong_phu) trên điện thoại android
+      - chi tiết cách [thay đổi](hoat_dong_chinh) [hội](doi_tuong) [viên](tro_tu2) [kỳ](doi_tuong_phu) [hốt](hoat_dong_phu) trên iphone
+      - làm sao để [thay đổi](hoat_dong_chinh) [hội](doi_tuong) [viên](tro_tu2) [kỳ](doi_tuong_phu) [hốt](hoat_dong_phu) về máy
+      - trên đt iphone làm sao để [thay đổi](hoat_dong_chinh) [hội](doi_tuong) [viên](tro_tu2) [kỳ](doi_tuong_phu) [hốt](hoat_dong_phu)
+      - vui lòng hướng dẫn chi tiết cách để [thay đổi](hoat_dong_chinh) [hội](doi_tuong) [viên](tro_tu2) [kỳ](doi_tuong_phu) [hốt](hoat_dong_phu)
+      - trên đt iphone làm sao để [thay đổi](hoat_dong_chinh) [hội](doi_tuong) [viên](tro_tu2) [kỳ](doi_tuong_phu) [hốt](hoat_dong_phu)
+      - [thay đổi](hoat_dong_chinh) [hội](doi_tuong) [viên](tro_tu2) [kỳ](doi_tuong_phu) [hốt](hoat_dong_phu) về laptop có được không ạ
+      - trên iphone [thay đổi](hoat_dong_chinh) [hội](doi_tuong) [viên](tro_tu2) [kỳ](doi_tuong_phu) [hốt](hoat_dong_phu) về được không ạ
+      - anh ơi, máy iphone của em có thể [thay đổi](hoat_dong_chinh) [hội](doi_tuong) [viên](tro_tu2) [kỳ](doi_tuong_phu) [hốt](hoat_dong_phu) không ạ ?
+      - [thay đổi](hoat_dong_chinh) [hội](doi_tuong) [viên](tro_tu2) [kỳ](doi_tuong_phu) [hốt](hoat_dong_phu) về cái đt của em sao ạ, chỉ em với
+      - cách để [thay đổi](hoat_dong_chinh) [hội](doi_tuong) [viên](tro_tu2) [kỳ](doi_tuong_phu) [hốt](hoat_dong_phu) về điện thoại hệ điều hành iphone
+      - trên đt iphone có [thay đổi](hoat_dong_chinh) [hội](doi_tuong) [viên](tro_tu2) [kỳ](doi_tuong_phu) [hốt](hoat_dong_phu) được không hả anh
+      - anh ơi, có thể [thay đổi](hoat_dong_chinh) [hội](doi_tuong) [viên](tro_tu2) [kỳ](doi_tuong_phu) [hốt](hoat_dong_phu) về điện thoại được không ak
+      - anh có thể hướng dẫn chi tiết cách [thay đổi](hoat_dong_chinh) [hội](doi_tuong) [viên](tro_tu2) [kỳ](doi_tuong_phu) [hốt](hoat_dong_phu) được không
+      - làm sao để [thay đổi](hoat_dong_chinh) [hội](doi_tuong) [viên](tro_tu2) [kỳ](doi_tuong_phu) [hốt](hoat_dong_phu) vậy hả anh
+      - làm sao để [tải](hoat_dong_chinh) [phần mềm](doi_tuong) này về đt vậy ạ
+      - vui lòng hướng dẫn cách để [thay đổi](hoat_dong_chinh) [hội](doi_tuong) [viên](tro_tu2) [kỳ](doi_tuong_phu) [hốt](hoat_dong_phu)
+      - anh ơi [thay đổi](hoat_dong_chinh) [hội](doi_tuong) [viên](tro_tu2) [kỳ](doi_tuong_phu) [hốt](hoat_dong_phu) về máy thì vào đâu anh
+      - [thay đổi](hoat_dong_chinh) [hội](doi_tuong) [viên](tro_tu2) [kỳ](doi_tuong_phu) [hốt](hoat_dong_phu) về điện thoại có được không anh, được thì chỉ em với
+      - [thay đổi](hoat_dong_chinh) [hội](doi_tuong) [viên](tro_tu2) [kỳ](doi_tuong_phu) [hốt](hoat_dong_phu) của anh ở đâu vậy anh, chỉ em tải được không
+      - cách để [thay đổi](hoat_dong_chinh) [hội](doi_tuong) [viên](tro_tu2) [kỳ](doi_tuong_phu) [hốt](hoat_dong_phu) trên laptop
+      - em muốn biết cách để [thay đổi](hoat_dong_chinh) [hội](doi_tuong) [viên](tro_tu2) [kỳ](doi_tuong_phu) [hốt](hoat_dong_phu) trên máy iphone
+      - chi tiết cách để [thay đổi](hoat_dong_chinh) [hội](doi_tuong) [viên](tro_tu2) [kỳ](doi_tuong_phu) [hốt](hoat_dong_phu) về máy tính cá nhân
+      - [thay đổi](hoat_dong_chinh) [thông tin](tro_tu) [hội](doi_tuong) [viên](tro_tu2) [kỳ](doi_tuong_phu) [hốt](hoat_dong_phu)
+      - [thay đổi](hoat_dong_chinh) [thông tin](tro_tu) [hội](doi_tuong) [viên](tro_tu2) [kỳ](doi_tuong_phu) [hốt](hoat_dong_phu) thì sao
+      - cách [thay đổi](hoat_dong_chinh) [thông tin](tro_tu) [hội](doi_tuong) [viên](tro_tu2) [kỳ](doi_tuong_phu) [hốt](hoat_dong_phu)
+      - cách để [thay đổi](hoat_dong_chinh) [thông tin](tro_tu) [hội](doi_tuong) [viên](tro_tu2) [kỳ](doi_tuong_phu) [hốt](hoat_dong_phu)
+      - em hãy chị chị cách để [thay đổi](hoat_dong_chinh) [thông tin](tro_tu) [hội](doi_tuong) [viên](tro_tu2) [kỳ](doi_tuong_phu) [hốt](hoat_dong_phu)
+      - làm sao để [thay đổi](hoat_dong_chinh) [thông tin](tro_tu) [hội](doi_tuong) [viên](tro_tu2) [kỳ](doi_tuong_phu) [hốt](hoat_dong_phu) vậy em
+      - chị không biết cách để [thay đổi](hoat_dong_chinh) [thông tin](tro_tu) [hội](doi_tuong) [viên](tro_tu2) [kỳ](doi_tuong_phu) [hốt](hoat_dong_phu) em hướng dẫn cho chị với
+      - bây giờ chị muốn [thay đổi](hoat_dong_chinh) [thông tin](tro_tu) [hội](doi_tuong) [viên](tro_tu2) [kỳ](doi_tuong_phu) [hốt](hoat_dong_phu) em chỉ chị với
+      - [thay đổi](hoat_dong_chinh) [thông tin](tro_tu) [hội](doi_tuong) [viên](tro_tu2) [kỳ](doi_tuong_phu) [hốt](hoat_dong_phu) như thế nào vậy
+      - [thay đổi](hoat_dong_chinh) [thông tin](tro_tu) [hội](doi_tuong) [viên](tro_tu2) [kỳ](doi_tuong_phu) [hốt](hoat_dong_phu) như thế nào vậy em, chỉ chị đi
+      - [thay đổi](hoat_dong_chinh) [thông tin](tro_tu) [hội](doi_tuong) [viên](tro_tu2) [kỳ](doi_tuong_phu) [hốt](hoat_dong_phu) trên iphone sao vậy em, chỉ chị với
+      - [thay đổi](hoat_dong_chinh) [thông tin](tro_tu) [hội](doi_tuong) [viên](tro_tu2) [kỳ](doi_tuong_phu) [hốt](hoat_dong_phu) ở chỗ nào vậy anh ơi
+      - [thay đổi](hoat_dong_chinh) [thông tin](tro_tu) [hội](doi_tuong) [viên](tro_tu2) [kỳ](doi_tuong_phu) [hốt](hoat_dong_phu) chỗ nào vậy, chỉ em với anh
+      - [thay đổi](hoat_dong_chinh) [thông tin](tro_tu) [hội](doi_tuong) [viên](tro_tu2) [kỳ](doi_tuong_phu) [hốt](hoat_dong_phu) về máy sao vậy hướng dẫn em với anh
+      - [tải](hoat_dong_chinh) [phần mềm](doi_tuong) về máy thì lam sao ạ
+      - anh ơi chỉ em [tải](hoat_dong_chinh) [phần mềm](doi_tuong) đi anh ơi
+      - anh ơi, anh hưỡng dẫn em cách [tải](hoat_dong_chinh) [phần mềm](doi_tuong) với ạ, em chưa rõ vụ này
+      - hướng dẫn chi tiết cách [thay đổi](hoat_dong_chinh) [thông tin](tro_tu) [hội](doi_tuong) [viên](tro_tu2) [kỳ](doi_tuong_phu) [hốt](hoat_dong_phu)
+      - hướng dẫn chi tiết cách [thay đổi](hoat_dong_chinh) [thông tin](tro_tu) [hội](doi_tuong) [viên](tro_tu2) [kỳ](doi_tuong_phu) [hốt](hoat_dong_phu) trên điện thoại android
+      - chi tiết cách [thay đổi](hoat_dong_chinh) [thông tin](tro_tu) [hội](doi_tuong) [viên](tro_tu2) [kỳ](doi_tuong_phu) [hốt](hoat_dong_phu) trên iphone
+      - làm sao để [thay đổi](hoat_dong_chinh) [thông tin](tro_tu) [hội](doi_tuong) [viên](tro_tu2) [kỳ](doi_tuong_phu) [hốt](hoat_dong_phu) về máy
+      - trên đt iphone làm sao để [thay đổi](hoat_dong_chinh) [thông tin](tro_tu) [hội](doi_tuong) [viên](tro_tu2) [kỳ](doi_tuong_phu) [hốt](hoat_dong_phu)
+      - vui lòng hướng dẫn chi tiết cách để [thay đổi](hoat_dong_chinh) [thông tin](tro_tu) [hội](doi_tuong) [viên](tro_tu2) [kỳ](doi_tuong_phu) [hốt](hoat_dong_phu)
+      - trên đt iphone làm sao để [thay đổi](hoat_dong_chinh) [thông tin](tro_tu) [hội](doi_tuong) [viên](tro_tu2) [kỳ](doi_tuong_phu) [hốt](hoat_dong_phu)
+      - [thay đổi](hoat_dong_chinh) [thông tin](tro_tu) [hội](doi_tuong) [viên](tro_tu2) [kỳ](doi_tuong_phu) [hốt](hoat_dong_phu) về laptop có được không ạ
+      - trên iphone [thay đổi](hoat_dong_chinh) [thông tin](tro_tu) [hội](doi_tuong) [viên](tro_tu2) [kỳ](doi_tuong_phu) [hốt](hoat_dong_phu) về được không ạ
+      - anh ơi, máy iphone của em có thể [thay đổi](hoat_dong_chinh) [thông tin](tro_tu) [hội](doi_tuong) [viên](tro_tu2) [kỳ](doi_tuong_phu) [hốt](hoat_dong_phu) không ạ ?
+      - [thay đổi](hoat_dong_chinh) [thông tin](tro_tu) [hội](doi_tuong) [viên](tro_tu2) [kỳ](doi_tuong_phu) [hốt](hoat_dong_phu) về cái đt của em sao ạ, chỉ em với
+      - cách để [thay đổi](hoat_dong_chinh) [thông tin](tro_tu) [hội](doi_tuong) [viên](tro_tu2) [kỳ](doi_tuong_phu) [hốt](hoat_dong_phu) về điện thoại hệ điều hành iphone
+      - trên đt iphone có [thay đổi](hoat_dong_chinh) [thông tin](tro_tu) [hội](doi_tuong) [viên](tro_tu2) [kỳ](doi_tuong_phu) [hốt](hoat_dong_phu) được không hả anh
+      - anh ơi, có thể [thay đổi](hoat_dong_chinh) [thông tin](tro_tu) [hội](doi_tuong) [viên](tro_tu2) [kỳ](doi_tuong_phu) [hốt](hoat_dong_phu) về điện thoại được không ak
+      - anh có thể hướng dẫn chi tiết cách [thay đổi](hoat_dong_chinh) [thông tin](tro_tu) [hội](doi_tuong) [viên](tro_tu2) [kỳ](doi_tuong_phu) [hốt](hoat_dong_phu) được không
+      - làm sao để [thay đổi](hoat_dong_chinh) [thông tin](tro_tu) [hội](doi_tuong) [viên](tro_tu2) [kỳ](doi_tuong_phu) [hốt](hoat_dong_phu) vậy hả anh
+      - làm sao để [tải](hoat_dong_chinh) [phần mềm](doi_tuong) này về đt vậy ạ
+      - vui lòng hướng dẫn cách để [thay đổi](hoat_dong_chinh) [thông tin](tro_tu) [hội](doi_tuong) [viên](tro_tu2) [kỳ](doi_tuong_phu) [hốt](hoat_dong_phu)
+      - anh ơi [thay đổi](hoat_dong_chinh) [thông tin](tro_tu) [hội](doi_tuong) [viên](tro_tu2) [kỳ](doi_tuong_phu) [hốt](hoat_dong_phu) về máy thì vào đâu anh
+      - [thay đổi](hoat_dong_chinh) [thông tin](tro_tu) [hội](doi_tuong) [viên](tro_tu2) [kỳ](doi_tuong_phu) [hốt](hoat_dong_phu) về điện thoại có được không anh, được thì chỉ em với
+      - [thay đổi](hoat_dong_chinh) [thông tin](tro_tu) [hội](doi_tuong) [viên](tro_tu2) [kỳ](doi_tuong_phu) [hốt](hoat_dong_phu) của anh ở đâu vậy anh, chỉ em tải được không
+      - cách để [thay đổi](hoat_dong_chinh) [thông tin](tro_tu) [hội](doi_tuong) [viên](tro_tu2) [kỳ](doi_tuong_phu) [hốt](hoat_dong_phu) trên laptop
+      - em muốn biết cách để [thay đổi](hoat_dong_chinh) [thông tin](tro_tu) [hội](doi_tuong) [viên](tro_tu2) [kỳ](doi_tuong_phu) [hốt](hoat_dong_phu) trên máy iphone
+      - chi tiết cách để [thay đổi](hoat_dong_chinh) [thông tin](tro_tu) [hội](doi_tuong) [viên](tro_tu2) [kỳ](doi_tuong_phu) [hốt](hoat_dong_phu) về máy tính cá nhân
+      - [phục hồi](hoat_dong_chinh) [tất toán](hoat_dong_phu) [hụi](doi_tuong) [chết](trang_thai)
+      - [phục hồi](hoat_dong_chinh) [tất toán](hoat_dong_phu) [hụi](doi_tuong) [chết](trang_thai) thì sao
+      - cách [phục hồi](hoat_dong_chinh) [tất toán](hoat_dong_phu) [hụi](doi_tuong) [chết](trang_thai)
+      - cách để [phục hồi](hoat_dong_chinh) [tất toán](hoat_dong_phu) [hụi](doi_tuong) [chết](trang_thai)
+      - em hãy chị chị cách để [phục hồi](hoat_dong_chinh) [tất toán](hoat_dong_phu) [hụi](doi_tuong) [chết](trang_thai)
+      - làm sao để [phục hồi](hoat_dong_chinh) [tất toán](hoat_dong_phu) [hụi](doi_tuong) [chết](trang_thai) vậy em
+      - chị không biết cách để [phục hồi](hoat_dong_chinh) [tất toán](hoat_dong_phu) [hụi](doi_tuong) [chết](trang_thai) em hướng dẫn cho chị với
+      - bây giờ chị muốn [phục hồi](hoat_dong_chinh) [tất toán](hoat_dong_phu) [hụi](doi_tuong) [chết](trang_thai) em chỉ chị với
+      - [phục hồi](hoat_dong_chinh) [tất toán](hoat_dong_phu) [hụi](doi_tuong) [chết](trang_thai) như thế nào vậy
+      - [phục hồi](hoat_dong_chinh) [tất toán](hoat_dong_phu) [hụi](doi_tuong) [chết](trang_thai) như thế nào vậy em, chỉ chị đi
+      - [phục hồi](hoat_dong_chinh) [tất toán](hoat_dong_phu) [hụi](doi_tuong) [chết](trang_thai) trên iphone sao vậy em, chỉ chị với
+      - [phục hồi](hoat_dong_chinh) [tất toán](hoat_dong_phu) [hụi](doi_tuong) [chết](trang_thai) ở chỗ nào vậy anh ơi
+      - [phục hồi](hoat_dong_chinh) [tất toán](hoat_dong_phu) [hụi](doi_tuong) [chết](trang_thai) chỗ nào vậy, chỉ em với anh
+      - [phục hồi](hoat_dong_chinh) [tất toán](hoat_dong_phu) [hụi](doi_tuong) [chết](trang_thai) về máy sao vậy hướng dẫn em với anh
+      - [tải](hoat_dong_chinh) [phần mềm](doi_tuong) về máy thì lam sao ạ
+      - anh ơi chỉ em [tải](hoat_dong_chinh) [phần mềm](doi_tuong) đi anh ơi
+      - anh ơi, anh hưỡng dẫn em cách [tải](hoat_dong_chinh) [phần mềm](doi_tuong) với ạ, em chưa rõ vụ này
+      - hướng dẫn chi tiết cách [phục hồi](hoat_dong_chinh) [tất toán](hoat_dong_phu) [hụi](doi_tuong) [chết](trang_thai)
+      - hướng dẫn chi tiết cách [phục hồi](hoat_dong_chinh) [tất toán](hoat_dong_phu) [hụi](doi_tuong) [chết](trang_thai) trên điện thoại android
+      - chi tiết cách [phục hồi](hoat_dong_chinh) [tất toán](hoat_dong_phu) [hụi](doi_tuong) [chết](trang_thai) trên iphone
+      - làm sao để [phục hồi](hoat_dong_chinh) [tất toán](hoat_dong_phu) [hụi](doi_tuong) [chết](trang_thai) về máy
+      - trên đt iphone làm sao để [phục hồi](hoat_dong_chinh) [tất toán](hoat_dong_phu) [hụi](doi_tuong) [chết](trang_thai)
+      - vui lòng hướng dẫn chi tiết cách để [phục hồi](hoat_dong_chinh) [tất toán](hoat_dong_phu) [hụi](doi_tuong) [chết](trang_thai)
+      - trên đt iphone làm sao để [phục hồi](hoat_dong_chinh) [tất toán](hoat_dong_phu) [hụi](doi_tuong) [chết](trang_thai)
+      - [phục hồi](hoat_dong_chinh) [tất toán](hoat_dong_phu) [hụi](doi_tuong) [chết](trang_thai) về laptop có được không ạ
+      - trên iphone [phục hồi](hoat_dong_chinh) [tất toán](hoat_dong_phu) [hụi](doi_tuong) [chết](trang_thai) về được không ạ
+      - anh ơi, máy iphone của em có thể [phục hồi](hoat_dong_chinh) [tất toán](hoat_dong_phu) [hụi](doi_tuong) [chết](trang_thai) không ạ ?
+      - [phục hồi](hoat_dong_chinh) [tất toán](hoat_dong_phu) [hụi](doi_tuong) [chết](trang_thai) về cái đt của em sao ạ, chỉ em với
+      - cách để [phục hồi](hoat_dong_chinh) [tất toán](hoat_dong_phu) [hụi](doi_tuong) [chết](trang_thai) về điện thoại hệ điều hành iphone
+      - trên đt iphone có [phục hồi](hoat_dong_chinh) [tất toán](hoat_dong_phu) [hụi](doi_tuong) [chết](trang_thai) được không hả anh
+      - anh ơi, có thể [phục hồi](hoat_dong_chinh) [tất toán](hoat_dong_phu) [hụi](doi_tuong) [chết](trang_thai) về điện thoại được không ak
+      - anh có thể hướng dẫn chi tiết cách [phục hồi](hoat_dong_chinh) [tất toán](hoat_dong_phu) [hụi](doi_tuong) [chết](trang_thai) được không
+      - làm sao để [phục hồi](hoat_dong_chinh) [tất toán](hoat_dong_phu) [hụi](doi_tuong) [chết](trang_thai) vậy hả anh
+      - làm sao để [tải](hoat_dong_chinh) [phần mềm](doi_tuong) này về đt vậy ạ
+      - vui lòng hướng dẫn cách để [phục hồi](hoat_dong_chinh) [tất toán](hoat_dong_phu) [hụi](doi_tuong) [chết](trang_thai)
+      - anh ơi [phục hồi](hoat_dong_chinh) [tất toán](hoat_dong_phu) [hụi](doi_tuong) [chết](trang_thai) về máy thì vào đâu anh
+      - [phục hồi](hoat_dong_chinh) [tất toán](hoat_dong_phu) [hụi](doi_tuong) [chết](trang_thai) về điện thoại có được không anh, được thì chỉ em với
+      - [phục hồi](hoat_dong_chinh) [tất toán](hoat_dong_phu) [hụi](doi_tuong) [chết](trang_thai) của anh ở đâu vậy anh, chỉ em tải được không
+      - cách để [phục hồi](hoat_dong_chinh) [tất toán](hoat_dong_phu) [hụi](doi_tuong) [chết](trang_thai) trên laptop
+      - em muốn biết cách để [phục hồi](hoat_dong_chinh) [tất toán](hoat_dong_phu) [hụi](doi_tuong) [chết](trang_thai) trên máy iphone
+      - chi tiết cách để [phục hồi](hoat_dong_chinh) [tất toán](hoat_dong_phu) [hụi](doi_tuong) [chết](trang_thai) về máy tính cá nhân
+      - [đúp](hoat_dong_phu) [hụi](doi_tuong) [sống](trang_thai)
+      - [đúp](hoat_dong_phu) [hụi](doi_tuong) [sống](trang_thai) thì sao
+      - cách [đúp](hoat_dong_phu) [hụi](doi_tuong) [sống](trang_thai)
+      - cách để [đúp](hoat_dong_phu) [hụi](doi_tuong) [sống](trang_thai)
+      - em hãy chị chị cách để [đúp](hoat_dong_phu) [hụi](doi_tuong) [sống](trang_thai)
+      - làm sao để [đúp](hoat_dong_phu) [hụi](doi_tuong) [sống](trang_thai) vậy em
+      - chị không biết cách để [đúp](hoat_dong_phu) [hụi](doi_tuong) [sống](trang_thai) em hướng dẫn cho chị với
+      - bây giờ chị muốn [đúp](hoat_dong_phu) [hụi](doi_tuong) [sống](trang_thai) em chỉ chị với
+      - [đúp](hoat_dong_phu) [hụi](doi_tuong) [sống](trang_thai) như thế nào vậy
+      - [đúp](hoat_dong_phu) [hụi](doi_tuong) [sống](trang_thai) như thế nào vậy em, chỉ chị đi
+      - [đúp](hoat_dong_phu) [hụi](doi_tuong) [sống](trang_thai) trên iphone sao vậy em, chỉ chị với
+      - [đúp](hoat_dong_phu) [hụi](doi_tuong) [sống](trang_thai) ở chỗ nào vậy anh ơi
+      - [đúp](hoat_dong_phu) [hụi](doi_tuong) [sống](trang_thai) chỗ nào vậy, chỉ em với anh
+      - [đúp](hoat_dong_phu) [hụi](doi_tuong) [sống](trang_thai) về máy sao vậy hướng dẫn em với anh
+      - [tải](hoat_dong_chinh) [phần mềm](doi_tuong) về máy thì lam sao ạ
+      - anh ơi chỉ em [tải](hoat_dong_chinh) [phần mềm](doi_tuong) đi anh ơi
+      - anh ơi, anh hưỡng dẫn em cách [tải](hoat_dong_chinh) [phần mềm](doi_tuong) với ạ, em chưa rõ vụ này
+      - hướng dẫn chi tiết cách [đúp](hoat_dong_phu) [hụi](doi_tuong) [sống](trang_thai)
+      - hướng dẫn chi tiết cách [đúp](hoat_dong_phu) [hụi](doi_tuong) [sống](trang_thai) trên điện thoại android
+      - chi tiết cách [đúp](hoat_dong_phu) [hụi](doi_tuong) [sống](trang_thai) trên iphone
+      - làm sao để [đúp](hoat_dong_phu) [hụi](doi_tuong) [sống](trang_thai) về máy
+      - trên đt iphone làm sao để [đúp](hoat_dong_phu) [hụi](doi_tuong) [sống](trang_thai)
+      - vui lòng hướng dẫn chi tiết cách để [đúp](hoat_dong_phu) [hụi](doi_tuong) [sống](trang_thai)
+      - trên đt iphone làm sao để [đúp](hoat_dong_phu) [hụi](doi_tuong) [sống](trang_thai)
+      - [đúp](hoat_dong_phu) [hụi](doi_tuong) [sống](trang_thai) về laptop có được không ạ
+      - trên iphone [đúp](hoat_dong_phu) [hụi](doi_tuong) [sống](trang_thai) về được không ạ
+      - anh ơi, máy iphone của em có thể [đúp](hoat_dong_phu) [hụi](doi_tuong) [sống](trang_thai) không ạ ?
+      - [đúp](hoat_dong_phu) [hụi](doi_tuong) [sống](trang_thai) về cái đt của em sao ạ, chỉ em với
+      - cách để [đúp](hoat_dong_phu) [hụi](doi_tuong) [sống](trang_thai) về điện thoại hệ điều hành iphone
+      - trên đt iphone có [đúp](hoat_dong_phu) [hụi](doi_tuong) [sống](trang_thai) được không hả anh
+      - anh ơi, có thể [đúp](hoat_dong_phu) [hụi](doi_tuong) [sống](trang_thai) về điện thoại được không ak
+      - anh có thể hướng dẫn chi tiết cách [đúp](hoat_dong_phu) [hụi](doi_tuong) [sống](trang_thai) được không
+      - làm sao để [đúp](hoat_dong_phu) [hụi](doi_tuong) [sống](trang_thai) vậy hả anh
+      - làm sao để [tải](hoat_dong_chinh) [phần mềm](doi_tuong) này về đt vậy ạ
+      - vui lòng hướng dẫn cách để [đúp](hoat_dong_phu) [hụi](doi_tuong) [sống](trang_thai)
+      - anh ơi [đúp](hoat_dong_phu) [hụi](doi_tuong) [sống](trang_thai) về máy thì vào đâu anh
+      - [đúp](hoat_dong_phu) [hụi](doi_tuong) [sống](trang_thai) về điện thoại có được không anh, được thì chỉ em với
+      - [đúp](hoat_dong_phu) [hụi](doi_tuong) [sống](trang_thai) của anh ở đâu vậy anh, chỉ em tải được không
+      - cách để [đúp](hoat_dong_phu) [hụi](doi_tuong) [sống](trang_thai) trên laptop
+      - em muốn biết cách để [đúp](hoat_dong_phu) [hụi](doi_tuong) [sống](trang_thai) trên máy iphone
+      - chi tiết cách để [đúp](hoat_dong_phu) [hụi](doi_tuong) [sống](trang_thai) về máy tính cá nhân
+
+  - intent: ask_extend_duration
+    examples: |
+      - gian hạn
+      - gia hạn thêm
+      - mua thêm
+      - mua thêm 1 tuần
+      - mua thêm 2 tuần
+      - mua thêm 1 tháng
+      - có thể mua thêm 1 tuần không em
+      - có thể mua thêm 1 tuần được không em
+      - cho chị mua thêm 1 tuần đi em
+      - anh mua thêm 1 tuần được không em
+      - có thể mua thêm 2 tuần không em
+      - có thể mua thêm 2 tuần được không em
+      - cho chị mua thêm 2 tuần đi em
+      - anh mua thêm 2 tuần được không em
+      - có thể mua thêm 1 tháng không em
+      - có thể mua thêm 1 tháng được không em
+      - cho chị mua thêm 1 tháng đi em
+      - anh mua thêm 1 tháng được không em
+      - em ơi chị muốn gia hạn 1 tuần
+      - cho em gia hạn thêm 1 tuần
+      - chị muốn gia hạn thêm 1 tuần
+      - gia hạn thêm 1 tuần
+      - gia hạn thêm 1 tuần được không
+      - có thể gia hạn thêm 1 tuần không
+      - có gói gia hạn 1 tuần không em
+      - bên anh có cho gia hạn 1 tuần không
+      - em có cho gia hạn 1 tuần không
+      - chị muốn gia hạn 1 tuần
+      - em ơi chị muốn gia hạn 2 tuần
+      - cho em gia hạn thêm 2 tuần
+      - chị muốn gia hạn thêm 2 tuần
+      - gia hạn thêm 2 tuần
+      - gia hạn thêm 2 tuần được không
+      - có thể gia hạn thêm 2 tuần không
+      - có gói gia hạn 2 tuần không em
+      - bên anh có cho gia hạn 2 tuần không
+      - em có cho gia hạn 2 tuần không
+      - chị muốn gia hạn 2 tuần
+      - em ơi chị muốn gia hạn 1 tháng
+      - cho em gia hạn thêm 1 tháng
+      - chị muốn gia hạn thêm 1 tháng
+      - gia hạn thêm 1 tháng
+      - gia hạn thêm 1 tháng được không
+      - có thể gia hạn thêm 1 tháng không
+      - có gói gia hạn 1 tháng không em
+      - bên anh có cho gia hạn 1 tháng không
+      - em có cho gia hạn 1 tháng không
+      - chị muốn gia hạn 1 tháng
+      - em ơi chị muốn gia hạn 2 tháng
+      - cho em gia hạn thêm 2 tháng
+      - chị muốn gia hạn thêm 2 tháng
+      - gia hạn thêm 2 tháng
+      - gia hạn thêm 2 tháng được không
+      - có thể gia hạn thêm 2 tháng không
+      - có gói gia hạn 2 tháng không em
+      - bên anh có cho gia hạn 2 tháng không
+      - em có cho gia hạn 2 tháng không
+      - chị muốn gia hạn 2 tháng
+
+  - lookup: hoat_dong_chinh
+    examples: |
+      - tải
+      - cài đặt
+      - cài
+      - down
+      - download
+      - truy cập
+      - vào
+      - zô
+      - vô
+      - install
+      - sử dụng
+      - dùng
+      - sài
+      - xài
+      - tạo
+      - tổ chức
+      - xây dựng
+      - hình thành
+      - in
+      - xuất
+      - sao kê
+      - chia sẽ
+      - xóa
+      - hủy
+      - bỏ
+      - gom
+      - gọp
+      - xác nhập
+      - thêm
+      - tăng
+      - cộng
+      - bổ xung
+      - giảm
+      - bớt
+      - rút
+      - cắt
+      - trừ
+      - thay đổi
+      - chỉnh
+      - chuyển
+      - sửa
+      - mở
+      - xác nhận
+      - chấp nhận
+      - đồng ý
+      - cân bằng
+      - phục hồi
+      - hồi phục
+      - khôi phục
+      - quay lại
+      - hồi lại
+      - hoàn tác
+      - quay trở lại
+
+  - lookup: hoat_dong_phu
+    examples: |
+      - hốt
+      - bóc
+      - khui
+      - lấy
+      - đóng
+      - trả
+      - thanh toán
+      - gửi
+      - tham gia
+      - tính tiền
+      - tất toán
+      - kết thúc
+      - giải quyết
+      - thanh lý
+      - kết toán
+      - đóng vĩnh viễn
+      - đúp
+      - bán
+      - san
+      - sang
+
+  - lookup: doi_tuong
+    examples: |
+      - phần mềm
+      - app
+      - ứng dụng
+      - web
+      - website
+      - hụi
+      - qũy
+      - bát
+      - bill
+      - bil
+      - biên lai
+      - báo cáo
+      - hóa đơn
+      - âm dương
+      - hội
+
+  - lookup: doi_tuong_phu
+    examples: |
+      - kỳ
+      - kì
+
+  - lookup: trang_thai
+    examples: |
+      - sống
+      - chết
+      - bị trùng
+      - lặp
+      - dư
+      - giống
+      - nhân đôi
+      - trùng lặp
+      - thừa
+      - bị lỗi
+      - sai
+      - lỗi
+      - chưa đúng
+      - góp
+      - cũ
+      - xưa
+      - trước đó
+      - hôm trước
+      - hôm qua
+      - tháng rồi
+      - tháng trước
+      - ngày hôm qua
+      - ngày hôm trước
+      - mãn
+      - tạm dừng
+      - tạm đóng
+      - tạm ẩn
+      - ngưng
+
+  - lookup: tro_tu
+    examples: |
+      - dây
+      - nhiều người
+      - số phần
+      - tất cả
+      - toàn bộ
+      - thông tin
+
+  - lookup: tro_tu2
+    examples: |
+      - viên
+
+  - regex: hoat_dong_chinh
+    examples: |
+      - \b(tải|cài|down|truy cập|vào|zô|vô|install|sử dụng|dùng|sài|xài|tạo|tổ chức|xây dựng|hình thành|in|xuất|sao kê|chia sẽ|xóa|hủy|bỏ|gom|gọp|xác nhập|thêm|tăng|cộng|bổ xung|giảm|bớt|rút|cắt|trừ|thay đổi|chỉnh|chuyển|sửa|mở|xác nhận|chấp nhận|đồng ý|cân bằng|phục hồi|hồi phục|khôi phục|quay lại|hồi lại|hoàn tác|quay trở lại)\b
+
+  - regex: hoat_dong_phu
+    examples: |
+      - \b(hốt|bóc|khui|lấy|đóng|trả|thanh toán|gửi|tham gia|tính tiền|tất toán|kết thúc|giải quyết|thanh lý|kết toán|đóng vĩnh viễn|đúp|bán|san|sang)\b
+
+  - regex: doi_tuong
+    examples: |
+      - \b(phần mềm|app|application|ứng dụng|web|website|hụi|qũy|bát|bill|bil|biên lai|báo cáo|hóa đơn|âm dương|hội)\b
+
+  - regex: doi_tuong_phu
+    examples: |
+      - \b(kỳ|kì)\b
+
+  - regex: trang_thai
+    examples: |
+      - \b(sống|chết|bị trùng|lặp|dư|giống|nhân đôi|trùng lặp|thừa|bị lỗi|sai|lỗi|chưa đúng|góp|cũ|xưa|trước đó|hôm trước|hôm qua|tháng rồi|tháng trước|ngày hôm qua|ngày hôm trước|mãn|tạm dừng|tạm đóng|tạm ẩn|ngưng)\b
+
+  - regex: tro_tu
+    examples: |
+      - \b(dây|nhiều người|số phần|tất cả|toàn bộ|thông tin)\b
+
+  - regex: tro_tu2
+    examples: |
+      - \b(viên)\b

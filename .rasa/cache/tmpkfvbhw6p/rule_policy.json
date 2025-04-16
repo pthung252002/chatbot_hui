@@ -1,0 +1,42 @@
+{
+  "lookup": {
+    "rules": {
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"bye\"}}]": "action_reset_slots",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"bye\"}}, {\"prev_action\": {\"action_name\": \"action_reset_slots\"}, \"user\": {\"intent\": \"bye\"}}]": "utter_Bye",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"bye\"}}, {\"prev_action\": {\"action_name\": \"action_reset_slots\"}, \"user\": {\"intent\": \"bye\"}}, {\"prev_action\": {\"action_name\": \"utter_Bye\"}, \"user\": {\"intent\": \"bye\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"ask_extend_duration\"}}]": "action_reset_slots",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"ask_extend_duration\"}}, {\"prev_action\": {\"action_name\": \"action_reset_slots\"}, \"user\": {\"intent\": \"ask_extend_duration\"}}]": "action_answer_duration",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"ask_extend_duration\"}}, {\"prev_action\": {\"action_name\": \"action_reset_slots\"}, \"user\": {\"intent\": \"ask_extend_duration\"}}, {\"prev_action\": {\"action_name\": \"action_answer_duration\"}, \"user\": {\"intent\": \"ask_extend_duration\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"greeting\"}}]": "action_reset_slots",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"greeting\"}}, {\"prev_action\": {\"action_name\": \"action_reset_slots\"}, \"user\": {\"intent\": \"greeting\"}}]": "utter_ChaoHoi",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"greeting\"}}, {\"prev_action\": {\"action_name\": \"action_reset_slots\"}, \"user\": {\"intent\": \"greeting\"}}, {\"prev_action\": {\"action_name\": \"utter_ChaoHoi\"}, \"user\": {\"intent\": \"greeting\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"nlu_fallback\"}}]": "action_reset_slots",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"nlu_fallback\"}}, {\"prev_action\": {\"action_name\": \"action_reset_slots\"}, \"user\": {\"intent\": \"nlu_fallback\"}}]": "action_handle_unknown_question",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"nlu_fallback\"}}, {\"prev_action\": {\"action_name\": \"action_reset_slots\"}, \"user\": {\"intent\": \"nlu_fallback\"}}, {\"prev_action\": {\"action_name\": \"action_handle_unknown_question\"}, \"user\": {\"intent\": \"nlu_fallback\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"ask_actions\"}}]": "action_provide_guide",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"ask_actions\"}}, {\"prev_action\": {\"action_name\": \"action_provide_guide\"}, \"user\": {\"intent\": \"ask_actions\"}}]": "action_listen"
+    },
+    "rule_only_slots": [],
+    "rule_only_loops": [],
+    "rules_for_loop_unhappy_path": {},
+    "rules_not_in_stories": [
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"greeting\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"ask_actions\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"greeting\"}}, {\"prev_action\": {\"action_name\": \"action_reset_slots\"}, \"user\": {\"intent\": \"greeting\"}}]",
+      "predicting default action with intent session_start",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"ask_extend_duration\"}}, {\"prev_action\": {\"action_name\": \"action_reset_slots\"}, \"user\": {\"intent\": \"ask_extend_duration\"}}, {\"prev_action\": {\"action_name\": \"action_answer_duration\"}, \"user\": {\"intent\": \"ask_extend_duration\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"nlu_fallback\"}}, {\"prev_action\": {\"action_name\": \"action_reset_slots\"}, \"user\": {\"intent\": \"nlu_fallback\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"nlu_fallback\"}}, {\"prev_action\": {\"action_name\": \"action_reset_slots\"}, \"user\": {\"intent\": \"nlu_fallback\"}}, {\"prev_action\": {\"action_name\": \"action_handle_unknown_question\"}, \"user\": {\"intent\": \"nlu_fallback\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"greeting\"}}, {\"prev_action\": {\"action_name\": \"action_reset_slots\"}, \"user\": {\"intent\": \"greeting\"}}, {\"prev_action\": {\"action_name\": \"utter_ChaoHoi\"}, \"user\": {\"intent\": \"greeting\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"ask_actions\"}}, {\"prev_action\": {\"action_name\": \"action_provide_guide\"}, \"user\": {\"intent\": \"ask_actions\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"bye\"}}, {\"prev_action\": {\"action_name\": \"action_reset_slots\"}, \"user\": {\"intent\": \"bye\"}}, {\"prev_action\": {\"action_name\": \"utter_Bye\"}, \"user\": {\"intent\": \"bye\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"bye\"}}]",
+      "predicting default action with intent restart",
+      "predicting default action with intent back",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"nlu_fallback\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"ask_extend_duration\"}}, {\"prev_action\": {\"action_name\": \"action_reset_slots\"}, \"user\": {\"intent\": \"ask_extend_duration\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"ask_extend_duration\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"bye\"}}, {\"prev_action\": {\"action_name\": \"action_reset_slots\"}, \"user\": {\"intent\": \"bye\"}}]"
+    ]
+  }
+}

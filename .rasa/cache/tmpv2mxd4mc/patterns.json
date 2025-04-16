@@ -1,0 +1,10 @@
+[
+  {
+    "name": "ở đâu",
+    "pattern": "nằm ở đâu|ở chỗ nào|chỗ nào"
+  },
+  {
+    "name": "action",
+    "pattern": "(\\btải\\ phần\\ mềm\\b|\\bsử\\ dụng\\ phần\\ mềm\\b|\\bhốt\\ hụi\\b|\\btạo\\ dây\\ hụi\\b|\\bđóng\\ hụi\\b|\\btất\\ toán\\ hụi\\ chết\\b|\\bin\\ tất\\ cả\\ bill\\ đóng\\ trong\\ ngày\\b|\\bxóa\\ hốt\\ hụi\\b|\\bgom\\ hụi\\ viên\\ bị\\ trùng\\b|\\bthêm\\ số\\ phần\\ hụi\\ trong\\ dây\\ hụi\\b|\\bgiảm\\ số\\ phần\\ hụi\\ trong\\ dây\\ hụi\\b|\\bthay\\ đổi\\ hụi\\ viên\\ trong\\ dây\\ hụi\\b|\\bhốt\\ hụi\\ nhiều\\ người\\ cùng\\ kỳ\\b|\\bxóa\\ tất\\ toán\\ hụi\\ chết\\b|\\btất\\ toán\\ hụi\\ sống\\b|\\btạo\\ dây\\ hụi\\ góp\\b|\\bmở\\ dây\\ hụi\\ mãn\\ trở\\ lại\\ đang\\ hoạt\\ động\\b|\\bmãn\\ dây\\ hụi\\b|\\bđóng\\ lại\\ hụi\\ cũ\\ để\\ tính\\ cân\\ bằng\\ hụi\\ chính\\ xác\\b|\\bxóa\\ kỳ\\ hốt\\b|\\bxóa\\ kỳ\\ đóng\\ bị\\ lỗi\\b|\\bxác\\ nhận\\ đóng\\ tất\\ cả\\ hụi\\b|\\bcân\\ bằng\\ âm\\ dương\\b)"
+  }
+]

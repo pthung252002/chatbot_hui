@@ -1,0 +1,84 @@
+version: "3.1"
+
+intents:
+  - ask_actions
+  - ask_extend_duration
+  - greeting
+  - bye
+
+responses:
+  utter_ChaoHoi:
+    - text: "Chào bạn!"
+    - text: "Chào bạn, bạn cần giúp gì ?"
+
+  utter_Bye:
+    - text: "Tạm biệt bạn nhé!"
+
+entities:
+  - hoat_dong_chinh
+  - hoat_dong_phu
+  - doi_tuong
+  - doi_tuong_phu
+  - trang_thai
+  - tro_tu
+  - tro_tu2
+
+slots:
+  hoat_dong_chinh:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_entity
+        entity: hoat_dong_chinh
+
+  hoat_dong_phu:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_entity
+        entity: hoat_dong_phu
+
+  doi_tuong:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_entity
+        entity: doi_tuong
+
+  doi_tuong_phu:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_entity
+        entity: doi_tuong_phu
+
+  trang_thai:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_entity
+        entity: trang_thai
+
+  tro_tu:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_entity
+        entity: tro_tu
+
+  tro_tu2:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_entity
+        entity: tro_tu2
+
+actions:
+  - action_provide_guide
+  - action_answer_duration
+  - action_reset_slots
+  - action_handle_unknown_question
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

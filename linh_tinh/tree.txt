@@ -1,0 +1,58 @@
+  - lookup: hoat_dong_chinh
+    examples: |
+      - tải
+      - sử dụng
+      - tạo
+      - in
+      - xóa
+      - gom
+      - thêm
+      - giảm
+      - thay đổi
+      - mở
+      - xác nhận
+      - cân bằng
+      - phục hồi
+
+  - lookup: hoat_dong_phu
+    examples: |
+      - hốt
+      - đóng
+      - tất toán
+      - đúp
+      - bán
+
+  - lookup: doi_tuong
+    examples: |
+      - phần mềm
+      - hụi
+      - bill
+      - hóa đơn
+      - âm dương
+      - hội
+
+  - lookup: doi_tuong_phu
+    examples: |
+      - kỳ
+
+  - lookup: trang_thai
+    examples: |
+      - sống
+      - chết
+      - bị trùng
+      - bị lỗi
+      - góp
+      - cũ
+      - mãn
+
+  - lookup: tro_tu
+    examples: |
+      - dây
+      - nhiều người
+      - số phần
+      - tất cả
+      - thông tin
+
+  - lookup: tro_tu2
+    examples: |
+      - viên
