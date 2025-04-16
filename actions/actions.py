@@ -12,6 +12,10 @@ import traceback
 
 # Danh sách API key từ OpenRouter để thay khi hết token
 API_KEYS = [
+<<<<<<< HEAD
+=======
+
+>>>>>>> a6812d46e693127782f9c9a70bb26cb92ae60e10
 ]
 
 # Khai báo chung
