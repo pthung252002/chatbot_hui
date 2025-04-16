@@ -1,0 +1,26 @@
+[
+  {
+    "name": "doi_tuong",
+    "pattern": "\\b(phần mềm|hụi|dây hụi|bill|hụi viên|số phần hụi|kỳ đóng|kỳ hốt|âm dương)\\b"
+  },
+  {
+    "name": "hoat_dong",
+    "pattern": "\\b(tải|sử dụng|hốt|tạo|đóng|tất toán|in|xóa|gom|thêm|giảm|thay đổi|mở|mãn dây hụi|đóng lại|xác nhận|cân bằng)\\b"
+  },
+  {
+    "name": "trang_thai",
+    "pattern": "\\b(sống|chết|nhiều người|cùng kỳ|bị trùng|bị lỗi|góp|trở lại|hoạt động|mãn|cũ|chính xác)\\b"
+  },
+  {
+    "name": "hoat_dong",
+    "pattern": "(\\btải\\b|\\bsử\\ dụng\\b|\\bhốt\\b|\\btạo\\b|\\bđóng\\b|\\btất\\ toán\\b|\\bin\\b|\\bxóa\\b|\\bgom\\b|\\bthêm\\b|\\bgiảm\\b|\\bthay\\ đổi\\b|\\bmở\\b|\\bmãn\\ dây\\ hụi\\b|\\bđóng\\ lại\\b|\\bxác\\ nhận\\b|\\bcân\\ bằng\\b)"
+  },
+  {
+    "name": "doi_tuong",
+    "pattern": "(\\bphần\\ mềm\\b|\\bhụi\\b|\\bdây\\ hụi\\b|\\bbill\\b|\\bhụi\\ viên\\b|\\bsố\\ phần\\ hụi\\b|\\bkỳ\\ đóng\\b|\\bkỳ\\ hốt\\b|\\btất\\ cả\\ hụi\\b|\\bâm\\ dương\\b)"
+  },
+  {
+    "name": "trang_thai",
+    "pattern": "(\\bsống\\b|\\bchết\\b|\\bnhiều\\ người\\b|\\bcùng\\ kỳ\\b|\\bbị\\ trùng\\b|\\bbị\\ lỗi\\b|\\bgóp\\b|\\btrở\\ lại\\b|\\bhoạt\\ động\\b|\\bmãn\\b|\\bcũ\\b|\\bchính\\ xác\\b)"
+  }
+]

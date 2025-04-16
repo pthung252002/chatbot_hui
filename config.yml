@@ -1,0 +1,64 @@
+language: vi
+
+pipeline:
+  - name: "WhitespaceTokenizer" # Tokenizer để tách từ
+  - name: "LanguageModelFeaturizer" # Dùng PhoBERT để hiểu tiếng Việt tốt hơn
+    model_name: "bert"
+    model_weights: "vinai/phobert-base"
+    cache_dir: "RasaModelCache"
+  - name: "RegexFeaturizer" # Nhận diện mẫu regex trong câu
+  - name: "LexicalSyntacticFeaturizer" # Trích xuất đặc trưng ngữ pháp
+  - name: "CountVectorsFeaturizer" # Vector hóa từ
+  - name: "CountVectorsFeaturizer" # Vector hóa ký tự (ngram)
+    analyzer: "char_wb"
+    lowercase: true
+    min_ngram: 1
+    max_ngram: 5
+  - name: "RegexEntityExtractor"
+    case_sensitive: false
+    use_lookup_tables: true
+    use_regexes: true # Kích hoạt regex để nhận diện entity
+    use_word_boundaries: true # Giúp bắt chính xác từ khóa
+    use_only_defined_regexes: true # 🔹 Chỉ bắt entity đúng với regex, không bắt các entity khác
+    entities: # 🔹 Chỉ cho phép bắt các entity này
+      - hoat_dong_chinh
+      - hoat_dong_phu
+      - doi_tuong
+      - doi_tuong_phu
+      - trang_thai
+      - tro_tu
+      - tro_tu2
+
+  - name: "DIETClassifier" # Nhận diện intent & entity
+    epochs: 120
+    learning_rate: 0.0005
+    tensorboard_log_directory: "./tb_logs"
+    checkpoint_model: true
+    evaluate_every_number_of_epochs: 5
+    drop_rate: 0.3
+    weight_sparsity: 0.5
+    min_ngram: 1
+    max_ngram: 5
+    constrain_similarities: true
+    intent_classification: true # 🔹 Giữ nhận diện intent
+    entity_recognition: false # 🔹 BẬT nhận diện entity để synonym có thể hoạt động
+
+  - name: "EntitySynonymMapper" # Xử lý từ đồng nghĩa
+    constrain_similarities: true # 🔹 Ngăn synonym ghi đè nhiều lần
+  - name: "ResponseSelector" # Chọn phản hồi phù hợp
+    epochs: 100
+
+  - name: "FallbackClassifier" # Xử lý khi chatbot không chắc chắn
+    threshold: 0.3
+    ambiguity_threshold: 0.1
+
+policies:
+  - name: "MemoizationPolicy"
+  - name: "RulePolicy"
+  - name: "TEDPolicy"
+    max_history: 5
+    epochs: 50
+    checkpoint_model: true
+    evaluate_every_number_of_epochs: 10
+    tensorboard_log_directory: "./tb_logs"
+assistant_id: 20250303-041938-current-forest

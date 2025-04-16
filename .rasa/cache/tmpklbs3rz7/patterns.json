@@ -1,0 +1,30 @@
+[
+  {
+    "name": "cách",
+    "pattern": "cách (để|thức|thức để)"
+  },
+  {
+    "name": "không",
+    "pattern": "không (ko|0|khôg|khog|khg|kg|khong|kôg|kog)"
+  },
+  {
+    "name": "thành một",
+    "pattern": "thành một (thành 1|về một|về 1)"
+  },
+  {
+    "name": "vậy",
+    "pattern": "vậy (zậy|vâị|dị|dâị)"
+  },
+  {
+    "name": "được",
+    "pattern": "được (đc|dc|duoc)"
+  },
+  {
+    "name": "ở đâu",
+    "pattern": "cách (nằm ở đâu|ở chỗ nào|chỗ nào)"
+  },
+  {
+    "name": "action",
+    "pattern": "(\\btải\\ phần\\ mềm\\b|\\bsử\\ dụng\\b|\\bhốt\\ hụi\\b|\\btạo\\ dây\\ hụi\\b|\\bđóng\\ hụi\\b|\\btất\\ toán\\ hụi\\ chết\\b|\\bin\\ tất\\ cả\\ bill\\b|\\bxóa\\ hốt\\ hụi\\b|\\bgom\\ hụi\\ viên\\ bị\\ trùng\\b|\\bthêm\\ số\\ phần\\ hụi\\b|\\bgiảm\\ số\\ phần\\ hụi\\b|\\bthay\\ đổi\\ hụi\\ viên\\b|\\bhốt\\ hụi\\ nhiều\\ người\\b|\\bxóa\\ tất\\ toán\\ hụi\\ chết\\b|\\btất\\ toán\\ hụi\\ sống\\b|\\btạo\\ dây\\ hụi\\ góp\\b|\\bmở\\ dây\\ hụi\\ mãn\\b|\\bmãn\\ dây\\ hụi\\b|\\bđóng\\ lại\\ hụi\\ cũ\\b|\\bxóa\\ kỳ\\ hốt\\b|\\bxóa\\ kỳ\\ đóng\\ bị\\ lỗi\\b|\\bđóng\\ tất\\ cả\\ hụi\\b|\\bcân\\ bằng\\ âm\\ dương\\b)"
+  }
+]

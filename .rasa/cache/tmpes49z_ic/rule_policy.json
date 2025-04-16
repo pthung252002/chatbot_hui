@@ -1,0 +1,26 @@
+{
+  "lookup": {
+    "rules": {
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"greeting\"}}]": "utter_ChaoHoi",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"greeting\"}}, {\"prev_action\": {\"action_name\": \"utter_ChaoHoi\"}, \"user\": {\"intent\": \"greeting\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"ask_actions\"}}]": "action_provide_guide",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"ask_actions\"}}, {\"prev_action\": {\"action_name\": \"action_provide_guide\"}, \"user\": {\"intent\": \"ask_actions\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"bying\"}}]": "utter_Bye",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"bying\"}}, {\"prev_action\": {\"action_name\": \"utter_Bye\"}, \"user\": {\"intent\": \"bying\"}}]": "action_listen"
+    },
+    "rule_only_slots": [],
+    "rule_only_loops": [],
+    "rules_for_loop_unhappy_path": {},
+    "rules_not_in_stories": [
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"bying\"}}, {\"prev_action\": {\"action_name\": \"utter_Bye\"}, \"user\": {\"intent\": \"bying\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"bying\"}}]",
+      "predicting default action with intent back",
+      "predicting default action with intent session_start",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"ask_actions\"}}, {\"prev_action\": {\"action_name\": \"action_provide_guide\"}, \"user\": {\"intent\": \"ask_actions\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"ask_actions\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"greeting\"}}]",
+      "predicting default action with intent restart",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"greeting\"}}, {\"prev_action\": {\"action_name\": \"utter_ChaoHoi\"}, \"user\": {\"intent\": \"greeting\"}}]"
+    ]
+  }
+}

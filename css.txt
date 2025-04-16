@@ -1,0 +1,50 @@
+<style>
+        /* menu list các lựa chọn */
+        .menu-button {
+            display: block;
+            width: 100%;
+            margin: 5px 0;
+            padding: 8px;
+            background: #ffffff;
+            border: 1px solid #007bff;
+            border-radius: 5px;
+            cursor: pointer;
+            text-align: left;
+        }
+        .menu-message {
+            align-self: flex-start;
+            background: #e0e0e0;
+            color: black;
+            text-align: left;
+        }
+        .menu-button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 250px;
+            min-height: 40px;    
+            margin: 5px 0;
+            padding: 10px 15px;
+            background: #007bff;
+            border: 1px solid #007bff;
+            border-radius: 5px;
+            cursor: pointer;
+            color: white;
+            text-align: center;
+            font-size: 16px;
+            box-sizing: border-box;
+        }
+
+        .menu-button:hover {
+            background: #0056b3;
+        }
+
+        .back-button {
+            background: #6c757d;
+            border: 1px solid #6c757d;
+        }
+
+        .back-button:hover {
+            background: #5a6268;
+        }
+</style>

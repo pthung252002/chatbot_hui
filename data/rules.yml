@@ -1,0 +1,32 @@
+version: "3.1"
+
+rules:
+- rule: provide_guide
+  steps:
+  - intent: ask_actions
+  - action: action_provide_guide
+
+- rule: answer_duration
+  steps:
+  - intent: ask_extend_duration
+  - action: action_reset_slots
+  - action: action_answer_duration
+
+- rule: rep_greeting
+  steps:
+  - intent: greeting
+  - action: action_reset_slots
+  - action: utter_ChaoHoi
+
+- rule: rep bye
+  steps:
+  - intent: bye
+  - action: action_reset_slots
+  - action: utter_Bye
+
+- rule: fall_back_intent
+  steps:
+  - intent: nlu_fallback
+  - action: action_reset_slots
+  - action: action_handle_unknown_question
+

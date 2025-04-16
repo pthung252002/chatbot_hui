@@ -1,0 +1,10 @@
+[
+  {
+    "name": "action",
+    "pattern": ".*\\b(tải phần mềm|sử dụng|hốt hụi|tạo dây hụi|đóng hụi|tất toán hụi chết|in tất cả bill|xóa hốt hụi|gom hụi viên bị trùng|thêm số phần hụi|giảm số phần hụi|thay đổi hụi viên|thay đổi hụi viên|xóa tất toán hụi chết|tất toán hụi sống|tạo dây hụi góp|mở dây hụi mãn|mãn dây hụi|đóng lại hụi cũ|xóa kỳ hốt|xóa kỳ đóng bị lỗi|đóng tất cả hụi|cân bằng âm dương)\\b.*"
+  },
+  {
+    "name": "action",
+    "pattern": "(\\btải\\ phần\\ mềm\\b|\\bsử\\ dụng\\b|\\bhốt\\ hụi\\b|\\btạo\\ dây\\ hụi\\b|\\bđóng\\ hụi\\b|\\btất\\ toán\\ hụi\\ chết\\b|\\bin\\ tất\\ cả\\ bill\\b|\\bxóa\\ hốt\\ hụi\\b|\\bgom\\ hụi\\ viên\\ bị\\ trùng\\b|\\bthêm\\ số\\ phần\\ hụi\\b|\\bgiảm\\ số\\ phần\\ hụi\\b|\\bthay\\ đổi\\ hụi\\ viên\\b|\\bhốt\\ hụi\\ nhiều\\ người\\b|\\bxóa\\ tất\\ toán\\ hụi\\ chết\\b|\\btất\\ toán\\ hụi\\ sống\\b|\\btạo\\ dây\\ hụi\\ góp\\b|\\bmở\\ dây\\ hụi\\ mãn\\b|\\bmãn\\ dây\\ hụi\\b|\\bđóng\\ lại\\ hụi\\ cũ\\b|\\bxóa\\ kỳ\\ hốt\\b|\\bxóa\\ kỳ\\ đóng\\ bị\\ lỗi\\b|\\bđóng\\ tất\\ cả\\ hụi\\b|\\bcân\\ bằng\\ âm\\ dương\\b)"
+  }
+]

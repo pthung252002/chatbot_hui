@@ -1,0 +1,33 @@
+/usr/local/lib/python3.9/site-packages/rasa/core/tracker_store.py:1044: MovedIn20Warning: Deprecated API features detected! These feature(s) are not compatible with SQLAlchemy 2.0. To prevent incompatible upgrades prior to updating applications, ensure requirements files are pinned to "sqlalchemy<2.0". Set environment variable SQLALCHEMY_WARN_20=1 to show all deprecation warnings.  Set environment variable SQLALCHEMY_SILENCE_UBER_WARNING=1 to silence this message. (Background on SQLAlchemy 2.0 at: https://sqlalche.me/e/b8d9)
+  Base: DeclarativeMeta = declarative_base()
+/usr/local/lib/python3.9/site-packages/rasa/shared/utils/validation.py:134: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  import pkg_resources
+/usr/local/lib/python3.9/site-packages/pkg_resources/__init__.py:3117: DeprecationWarning: Deprecated call to `pkg_resources.declare_namespace('mpl_toolkits')`.
+Implementing implicit namespace packages (as specified in PEP 420) is preferred to `pkg_resources.declare_namespace`. See https://setuptools.pypa.io/en/latest/references/keywords.html#keyword-namespace-packages
+  declare_namespace(pkg)
+/usr/local/lib/python3.9/site-packages/pkg_resources/__init__.py:3117: DeprecationWarning: Deprecated call to `pkg_resources.declare_namespace('ruamel')`.
+Implementing implicit namespace packages (as specified in PEP 420) is preferred to `pkg_resources.declare_namespace`. See https://setuptools.pypa.io/en/latest/references/keywords.html#keyword-namespace-packages
+  declare_namespace(pkg)
+/usr/local/lib/python3.9/site-packages/pkg_resources/__init__.py:3117: DeprecationWarning: Deprecated call to `pkg_resources.declare_namespace('ruamel.yaml')`.
+Implementing implicit namespace packages (as specified in PEP 420) is preferred to `pkg_resources.declare_namespace`. See https://setuptools.pypa.io/en/latest/references/keywords.html#keyword-namespace-packages
+  declare_namespace(pkg)
+/usr/local/lib/python3.9/site-packages/sanic_cors/extension.py:39: DeprecationWarning: distutils Version classes are deprecated. Use packaging.version instead.
+  SANIC_VERSION = LooseVersion(sanic_version)
+2025-04-01 01:30:26 INFO     rasa_sdk.endpoint  - Starting action endpoint server...
+2025-04-01 01:30:26 INFO     rasa_sdk.executor  - Registered function for 'action_reset_slots'.
+2025-04-01 01:30:26 INFO     rasa_sdk.executor  - Registered function for 'action_handle_unknown_question'.
+2025-04-01 01:30:26 INFO     rasa_sdk.executor  - Registered function for 'action_provide_guide'.
+2025-04-01 01:30:26 INFO     rasa_sdk.executor  - Registered function for 'action_answer_duration'.
+2025-04-01 01:30:26 INFO     rasa_sdk.endpoint  - Starting plugins...
+2025-04-01 01:30:26 INFO     rasa_sdk.endpoint  - Action endpoint is up and running on http://0.0.0.0:5055
+2025-04-01 01:33:41 ERROR    rasa_sdk.endpoint  - Exception occurred during execution of request <Request: POST /webhook>
+Traceback (most recent call last):
+  File "handle_request", line 83, in handle_request
+    )
+  File "/usr/local/lib/python3.9/site-packages/rasa_sdk/endpoint.py", line 113, in webhook
+    result = await executor.run(action_call)
+  File "/usr/local/lib/python3.9/site-packages/rasa_sdk/executor.py", line 399, in run
+    action(dispatcher, tracker, domain)
+  File "/content/drive/MyDrive/RAS_hui2/rasa_Chatbot_hui/actions/actions.py", line 825, in run
+    if hoat_dong_chinh and hoat_dong_chinh[0] in node:
+TypeError: argument of type 'NoneType' is not iterable

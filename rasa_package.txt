@@ -1,0 +1,3 @@
+pip install rasa rasa-sdk
+pip install flask requests
+pip install transformers

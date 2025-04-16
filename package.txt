@@ -1,0 +1,12 @@
+pip install "sqlalchemy<2.0"
+pip install sentencepiece
+pip install pyOpenSSL
+pip install fairseq==0.12.2
+pip install fastBPE
+pip install regex requests
+pip install transformers torch torchvision torchaudio
+pip install SQLAlchemy pymysql
+pip install spacy
+pip install "omegaconf<2.1"
+pip install rasa
+pip install rasa-sdk
