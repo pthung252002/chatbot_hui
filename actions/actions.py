@@ -1,27 +1,24 @@
+import traceback
+import requests
+from typing import Any, Text, Dict, List
+
 from rasa_sdk import Action, Tracker
 from rasa_sdk.events import SlotSet
 from rasa_sdk.executor import CollectingDispatcher
-from typing import Any, Text, Dict, List
-from langchain.chat_models import ChatOpenAI
+
 from langchain.vectorstores import FAISS
 from langchain.embeddings import HuggingFaceEmbeddings
-from langchain.prompts import PromptTemplate
-from langchain.chains import RetrievalQA
-import os
-import traceback
-
-# Danh sách API key từ OpenRouter để thay khi hết token
-API_KEYS = [
-<<<<<<< HEAD
-=======
-
->>>>>>> a6812d46e693127782f9c9a70bb26cb92ae60e10
-]
 
 # Khai báo chung
 embedding = HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2")
 vectorstore = FAISS.load_local("vector_db", embedding)
 
+# Danh sách API key của Gemini để luân phiên sử dụng
+API_KEYS = [
+
+]
+
+# Mẫu prompt để kết hợp context và câu hỏi người dùng
 custom_prompt_template = """Sử dụng thông tin dưới đây để trả lời câu hỏi của người dùng.
 
 - Nếu bạn không biết câu trả lời, hãy nói là bạn không biết và nhờ người dùng đặt lại câu hỏi rõ ràng hơn, đừng bịa ra câu trả lời.
@@ -35,25 +32,21 @@ Context: {context}
 Question: {question}
 """
 
-custom_prompt = PromptTemplate(
-    template=custom_prompt_template,
-    input_variables=["context", "question"]
-)
+def call_gemini_api(prompt: str, api_key: str) -> str:
+    url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key={api_key}"
+    headers = {"Content-Type": "application/json"}
+    body = {
+        "contents": [{"parts": [{"text": prompt}]}]
+    }
 
-def create_llm(api_key: str):
-    return ChatOpenAI(
-        model_name="nvidia/llama-3.1-nemotron-ultra-253b-v1:free",  # hoặc model bạn muốn
-        temperature=0,
-        openai_api_key=api_key,
-        openai_api_base="https://openrouter.ai/api/v1",
-        request_timeout=15  # giới hạn tối đa 15 giây
-    )
+    response = requests.post(url, headers=headers, json=body, timeout=15)
+    response.raise_for_status()
+    return response.json()["candidates"][0]["content"]["parts"][0]["text"]
 
 # Hàm để reset slot sau khi cang cấp các hướng dẫn
 class ActionResetSlots(Action):
     def name(self):
         return "action_reset_slots"
-
     def run(self, dispatcher, tracker, domain):
         return [
             SlotSet("hoat_dong_chinh", None),
@@ -64,8 +57,8 @@ class ActionResetSlots(Action):
             SlotSet("tro_tu", None),
             SlotSet("tro_tu2", None)
         ]
-class ActionProvideGuide(Action):
 
+class ActionProvideGuide(Action):
     def name(self) -> Text:
         return "action_provide_guide"
 
@@ -74,31 +67,25 @@ class ActionProvideGuide(Action):
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
 
         user_question = tracker.latest_message.get("text")
-        print(f"** Câu hỏi từ người dùng: {user_question}")
+        print(f"[1] Câu hỏi từ người dùng: {user_question}")
+
+        # Trích xuất context từ vectorstore FAISS
+        docs = vectorstore.similarity_search(user_question, k=4)
+        context = "\n\n".join([doc.page_content for doc in docs])
+
+        # Dựng prompt
+        final_prompt = custom_prompt_template.format(context=context, question=user_question)
 
         answer = "Xin lỗi, đã có lỗi xảy ra khi xử lý câu hỏi của bạn."
 
         for api_key in API_KEYS:
             try:
-                print(f"Đang thử key: {api_key[:15]}...")
-                llm = create_llm(api_key)
-                qa_chain = RetrievalQA.from_chain_type(
-                    llm=llm,
-                    retriever=vectorstore.as_retriever(),
-                    chain_type="stuff",
-                    chain_type_kwargs={"prompt": custom_prompt},
-                    return_source_documents=True
-                )
-                result = qa_chain({"query": user_question})
-                answer = result["result"]
-
-                print(f"Dùng key {api_key[:15]}... thành công!")
-                #for doc in result["source_documents"]:
-                    #print("📄 Chunk:\n", doc.page_content[:1000])
-                break  # Thành công thì dừng thử key tiếp theo
-
+                print(f"[2] Đang thử key: {api_key[:15]}...")
+                answer = call_gemini_api(final_prompt, api_key)
+                print(f"[3] Dùng key {api_key[:15]}... thành công! \n")
+                break
             except Exception as e:
-                print(f"Key {api_key[:15]}... lỗi: {str(e)}")
+                print(f"Key {api_key[:15]}... lỗi: {str(e)} \n")
                 print(traceback.format_exc())
                 continue
 
@@ -112,31 +99,57 @@ class ActionAnswerDuration(Action):
     def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
 
         user_question = tracker.latest_message.get("text")
-        print(f"** Câu hỏi từ người dùng: {user_question}")
+        print(f"[1] Câu hỏi từ người dùng: {user_question}")
+
+        # Trích xuất context từ vectorstore FAISS
+        docs = vectorstore.similarity_search(user_question, k=4)
+        context = "\n\n".join([doc.page_content for doc in docs])
+
+        # Dựng prompt
+        final_prompt = custom_prompt_template.format(context=context, question=user_question)
 
         answer = "Xin lỗi, đã có lỗi xảy ra khi xử lý câu hỏi của bạn."
 
         for api_key in API_KEYS:
             try:
-                print(f"Đang thử key: {api_key[:15]}...")
-                llm = create_llm(api_key)
-                qa_chain = RetrievalQA.from_chain_type(
-                    llm=llm,
-                    retriever=vectorstore.as_retriever(),
-                    chain_type="stuff",
-                    chain_type_kwargs={"prompt": custom_prompt},
-                    return_source_documents=True
-                )
-                result = qa_chain({"query": user_question})
-                answer = result["result"]
-
-                print(f"Dùng key {api_key[:15]}... thành công!")
-                #for doc in result["source_documents"]:
-                    #print("📄 Chunk:\n", doc.page_content[:1000])
-                break  # Thành công thì dừng thử key tiếp theo
-
+                print(f"[2] Đang thử key: {api_key[:15]}...")
+                answer = call_gemini_api(final_prompt, api_key)
+                print(f"[3] Dùng key {api_key[:15]}... thành công! \n")
+                break
             except Exception as e:
-                print(f"Key {api_key[:15]}... lỗi: {str(e)}")
+                print(f"Key {api_key[:15]}... lỗi: {str(e)} \n")
+                print(traceback.format_exc())
+                continue
+
+        dispatcher.utter_message(json_message={"html": answer})
+        return []
+
+class ActionAnswerUnkownQuestions(Action):
+    def name(self) -> Text:
+        return "action_handle_unknown_question"
+
+    def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+
+        user_question = tracker.latest_message.get("text")
+        print(f"[1] Câu hỏi từ người dùng: {user_question}")
+
+        # Trích xuất context từ vectorstore FAISS
+        docs = vectorstore.similarity_search(user_question, k=4)
+        context = "\n\n".join([doc.page_content for doc in docs])
+
+        # Dựng prompt
+        final_prompt = custom_prompt_template.format(context=context, question=user_question)
+
+        answer = "Xin lỗi, đã có lỗi xảy ra khi xử lý câu hỏi của bạn."
+
+        for api_key in API_KEYS:
+            try:
+                print(f"[2] Đang thử key: {api_key[:15]}...")
+                answer = call_gemini_api(final_prompt, api_key)
+                print(f"[3] Dùng key {api_key[:15]}... thành công! \n")
+                break
+            except Exception as e:
+                print(f"Key {api_key[:15]}... lỗi: {str(e)} \n")
                 print(traceback.format_exc())
                 continue
 
